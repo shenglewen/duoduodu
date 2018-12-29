@@ -1,0 +1,14 @@
+<view class="section"> 
+  <input placeholder="输入关键字" auto-focus type="text" bindinput="bindKeyInput" bindtap="bindtext" value='{{detailedaddress}}'/> 
+</view> 
+<view class="sug_info" wx:if="{{a}}"> 
+  <text wx:for="{{sugData}}" wx:for-index="i" wx:for-item="con" bindtap='bindocn' data-address="{{con.name}}" data-longitude="{{con.location.lng}}" data-iconPath="{{'../img/marker_red.png'}}" data-latitude="{{con.location.lat}}">
+{{con.name}}
+</text>
+</view>
+<view class="map_container"> 
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14"  markers="{{markers}}" bindmarkertap="makertap"></map> 
+</view> 
+<view class="rgc_info"> 
+  <text>{{mest}}</text> 
+</view>

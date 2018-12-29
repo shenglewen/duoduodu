@@ -1,0 +1,116 @@
+/* duoduo/withdraw/tixian.wxss */
+ page{ background-color: #f6f6f6;
+}
+.tixian_k{
+height:60rpx;
+background:#fff;
+border-top:1rpx solid #f6f6f6;
+}
+.tixian_kk{
+height:80rpx;
+background:#fff;
+border-top:1rpx solid #f6f6f6;
+}
+.yang_k{
+height:160rpx;
+background:#fff;
+
+}
+.tixian{
+width:90%;
+height:60rpx;
+line-height:60rpx;
+background:#fff;
+margin:0 auto;
+font-size:30rpx;
+}
+.yang{
+width:90%;
+height:160rpx;
+line-height:200rpx;
+background:#fff;
+margin:0 auto;
+font-size:90rpx;
+display: flex;
+}
+.yang_input{
+margin-top:60rpx;
+margin-left:20rpx;
+background:#fff;
+width:50%;
+height:100rpx;
+font-size:60rpx;
+}
+.weixin{
+width:90%;
+height:80rpx;
+line-height:80rpx;
+background:#fff;
+margin:0 auto;
+display:flex;
+justify-content: space-between;
+font-size:26rpx;
+}
+.hong{
+  color:#f45a61;
+}
+.xuanze_k{
+height:100rpx;
+background:#fff;
+margin-top:20rpx;
+}
+.xuanze{
+width:90%;
+height:100rpx;
+
+margin:0 auto;
+display: flex;
+justify-content:space-between;
+}
+.xuanze_tu{
+width:300rpx;
+height:100rpx;
+display: flex;
+}
+.img_tu{
+width:80rpx;
+height:80rpx;
+
+}
+.ti_xian{
+  font-size:30rpx;
+   margin-top:30rpx;
+}
+button{
+  width:80%;
+  margin-top:160rpx;
+  background:#f45a61;
+}
+
+/* 对勾 */
+.right{
+  float:right;
+  margin-top:20rpx;
+  color:#f45a61;
+}
+checkbox .wx-checkbox-input{
+border-radius: 50%;
+width: 40rpx; 
+height: 40rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+border: none;
+background: #f45a61;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+border-radius: 50%;
+width: 40rpx;
+height: 40rpx;
+line-height: 40rpx;
+text-align: center;
+font-size:30rpx; 
+color:#fff;
+background: transparent;
+transform:translate(-50%, -50%) scale(1);
+-webkit-transform:translate(-50%, -50%) scale(1);
+}
