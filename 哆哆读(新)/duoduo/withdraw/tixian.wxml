@@ -1,0 +1,48 @@
+<!--duoduo/withdraw/tixian.wxml-->
+<view class="tixian_k">
+      <view class="tixian">
+      提现金额(元)
+      </view>
+</view>
+<!-- 提现 -->
+ <view class="yang_k">
+          <view class="yang">
+          ¥ 
+          <input class="yang_input" type="digit" name="userName" 
+            bindinput="userNameInput"/>
+          </view>
+    </view>
+<!-- 全部提现 -->
+ <view class="tixian_kk">
+      <view class="weixin">
+          <view>可用余额23.31元</view>
+          <view class="hong">全部提现</view>
+       </view>
+ </view>
+<!-- 选择 -->
+ <view class="xuanze_k">
+   <view class="xuanze">
+      <view class="xuanze_tu">
+  <image class="img_tu" src="https://dododu.2om.cn/public/images/a6.png" mode="aspectFill">
+        </image>   
+<view class="ti_xian"> 微信提现 </view> 
+       </view>
+      
+<!-- 对勾 -->
+            <!-- <radio-group  class="right">
+            <radio color="#f45a61" >
+            
+            </radio>
+            </radio-group> -->
+            <checkbox-group class="right" >
+            <label >
+            <checkbox ></checkbox>
+            </label> 
+            </checkbox-group>
+
+
+
+  </view>
+  </view>
+
+  <button type="warn" bindtap=""> 提现 </button>

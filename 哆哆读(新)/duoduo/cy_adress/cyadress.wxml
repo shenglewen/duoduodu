@@ -1,0 +1,63 @@
+<!--duoduo/cy_adress/cyadress.wxml-->
+<view class="kuang"></view>
+<block wx:for="{{masg}}" wx:for-index="i" wx:for-item="a">
+  <view class="adress_k">
+    <view class="adress_n">
+      <view class="name_left">
+        <view class="name">
+          <text class="name_m">{{a.address}}</text>
+          <text class="shuzi">{{a.mobile}}</text>
+          <block wx:if="{{a.status==1}}">
+            <text class="moren">默认</text>
+          </block>
+          <block wx:else>
+            <text class="moren yanse">默认</text>
+          </block>
+        </view>
+          <block wx:if="{{a.status==1}}">        
+        <view class="neirong">
+          {{a.address}}
+        </view>
+        </block>
+        <block wx:else>        
+        <view class="neirong shihe">
+          {{a.address}}
+        </view>
+        </block>
+      </view>
+      <view class="name_right">
+        <view class="right">
+          <text class="delete" bindtap='del' id='{{a.addressid}}'> 删除  </text>
+          <span class="iconfont icon-shu"></span>
+          <text class="bianji"> 编辑 </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+
+<!-- 二内容 -->
+<view class="adress_k">
+  <view class="adress_n">
+    <view class="name_left">
+      <view class="name">
+        <text class="name_m">王哈哈</text>
+        <text class="shuzi">13261101062</text>
+        <text class="moren yanse">默认</text>
+      </view>
+      <view class="neirong shihe">
+        北京市 北京市朝阳市 朝阳区财满街财经中心 9号楼前排底上2层0523
+      </view>
+    </view>
+    <view class="name_right">
+      <view class="right">
+        <text class="delete"> 删除  </text>
+        <span class="iconfont icon-shu"></span>
+        <text class="bianji">   编辑</text>
+      </view>
+    </view>
+  </view>
+</view>
+<navigator class="tianjia" url='../add/jiadress'>添加新地址</navigator>

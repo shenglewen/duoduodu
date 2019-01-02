@@ -1,0 +1,39 @@
+/* duoduo/niticexq/noticexq.wxss */
+page{
+border-top:1rpx solid #f6f6f6;
+}
+.wai{
+ width:90%;
+margin:0 auto;
+overflow: hidden;
+}
+.name{
+ font-size:32rpx;
+ margin:0 auto;
+}
+.time{
+font-size:30rpx;
+color:#999;
+  }
+
+.xitu{
+
+}
+.name_n{
+  text-align: center;
+  font-size:30rpx;
+  color:#f45a61;
+  margin-top:30rpx;
+}
+.n_cont{
+
+font-size:30rpx;
+margin-top:30rpx;
+
+}
+.jilu{
+ width:20rpx;
+ height:20rpx;
+position:fixed;
+
+}
