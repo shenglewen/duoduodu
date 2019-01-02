@@ -1,6 +1,5 @@
 {
   "pages": [
-    "duoduo/add/jiadress",
     
     "login/bangding/dff ",
     
@@ -9,7 +8,7 @@
     "duoduo/share/share",
     "duoduo/bank/read",
     "duoduo/my/home",
-
+    "duoduo/add/jiadress",
     "duoduo/message/basic",    
     "duoduo/my_library/mylibraries",
     "duoduo/my_borrow/myborrow",

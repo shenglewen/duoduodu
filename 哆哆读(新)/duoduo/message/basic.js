@@ -79,6 +79,62 @@ Page({
       },
     ]
   },
+  // 面页加载
+  onReady: function () {
+    //如果有年龄显示年龄
+    var sex = this.data.objectArray[app.data.user.gender]
+    if (app.data.user.index != "") {
+      this.setData({
+        sex: sex
+      })
+    }
+    //如果有年级。。。
+    if (app.data.user.yeargrade != "" && app.data.user.yeargrade != null) {
+      this.setData({
+        yeargrades: app.data.user.yeargrade
+      })
+    }
+    //如果有学校。。。
+
+    if (app.data.user.school != "" && app.data.user.school != null) {
+      this.setData({
+        schools: app.data.user.school
+      })
+    }
+    //爱好r
+    var hobby = app.data.user.hobby
+    if ( hobby != null){
+      var hobby = hobby.split(",");
+      var hobbys = this.data.hobby
+      hobby.pop()
+      for (var i = 0; i < hobby.length; i++) {
+        var a = hobby[i] - 1
+        var uphobby = "hobby[" + a + "].checked";
+        this.setData({
+          uphobby: true
+        })
+      }
+    }
+    
+    //如果有年级。。。
+    if (app.data.user.birthday != "" && app.data.user.birthday != null) {
+      this.setData({
+        dates: app.data.user.birthday
+      })
+    }
+    //显示微信头像.昵称和默认选中身份
+    var identity = app.data.user.identity - 1;
+    var upidentity = "items[" + identity + "].checked";
+    this.setData({
+      username: app.data.user.nickname,
+      name: app.data.user.truename,
+      headerimg: app.data.user.face,
+      hobbys: app.data.user.hobby,
+      identity: app.data.user.identity,
+      upidentity: true
+    })
+console.log(this.data)
+  },
   //  点击时间组件确定事件  
   bindTimeChange: function(e) {
 
@@ -134,62 +190,7 @@ Page({
     })
 
   },
-  // 面页加载
-  onReady: function() {
-    //如果有年龄显示年龄
-    var sex = this.data.objectArray[app.data.user.gender]
-    if (app.data.user.index != "") {
-      this.setData({
-        sex: sex
-      })
-    }
-    //如果有年级。。。
-    if (app.data.user.yeargrade != "") {
-      this.setData({
-        yeargrades: app.data.user.yeargrade
-      })
-    }
-    //如果有学校。。。
 
-    if (app.data.user.school != "") {
-      this.setData({
-        schools: app.data.user.school
-      })
-    }
-    //爱好
-    var hobby = app.data.user.hobby.split(",");
-    var hobbys = this.data.hobby
-    hobby.pop()
-    for(var i=0;i<hobby.length;i++){
-      var a=hobby[i]-1
-      var uphobby = "hobby[" + a + "].checked";
-      this.setData({
-        [uphobby]: true
-      })
-    }
-
-
-   
-
-    //如果有年级。。。
-    if (app.data.user.birthday != "") {
-      this.setData({
-        dates: app.data.user.birthday
-      })
-    }
-    //显示微信头像.昵称和默认选中身份
-    var identity = app.data.user.identity - 1;
-    var upidentity = "items[" + identity + "].checked";
-    this.setData({
-      username: app.data.user.nickname,
-      name: app.data.user.truename,
-      headerimg: app.data.user.face,
-      hobbys:app.data.user.hobby,
-      identity: app.data.user.identity,
-      [upidentity]:true
-    })
-    
-  },
   checkboxChange: function(e) {
     var arr = e.detail.value
 

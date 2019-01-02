@@ -32,7 +32,7 @@
    <view class="jianjie">
       <view class="jianjie_l">
       <navigator class="wenzi">详细地址</navigator>
-     <textarea class="wenzi_k" placeholder="如街道、门牌号等" >
+     <textarea class="wenzi_k" placeholder="如街道、门牌号等" bindinput='detailed' value='{{detailed}}'>
       </textarea>
       </view>
     </view>
@@ -57,7 +57,7 @@
     设为默认地址
               <view class="xuanze">
               <view class="body-view">
-    <switch bindchange="switch2Change"/>
+    <switch bindtap='status' checked='{{status ==  1? true : false}}'/>
                      </view>
 
                 </view>

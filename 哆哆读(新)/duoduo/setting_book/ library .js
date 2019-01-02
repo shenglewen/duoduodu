@@ -1,52 +1,18 @@
-// duoduo/cy_adress/cyadress.js
-var app=getApp()
+// duoduo/setting_book/ library .js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     masg:'',
-  },
-  //刪除地址
-  del:function(e){
-     var a=e
-    wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/deladdress',
-      data: {
-        userid: app.data.user.userid,
-        addressid: a.target.id,
-      },
-      success(res) {
-        if (res.code == "200") {
-          console.log(res)
-        } else {
 
-        }
-      }
-    })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that=this
-wx.request({
-  url: 'https://dododu.2om.cn/api.php/user/listsaddress',
-  data: {
-    userid: app.data.user.userid,
-  },
-  header: {
-    'content-type': 'application/json' // 默认值
-  },
-  success(res) {
-    var data= res.data.data
-   that.setData({
-     masg: data
-   })
-   console.log(that.data.masg)
-  }
-})
+
   },
 
   /**
