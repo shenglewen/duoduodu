@@ -83,7 +83,6 @@ Page({
    */
   watchcode: function (event) {
     var code = event.detail.value;
-    var arr=code.split("")
     if (/^[0-9]*$/.test(code)) {
       this.setData({
         code: code

@@ -12,6 +12,11 @@ Page({
       listen: 2234
     }]
   },
+  jmp:function(){
+wx.navigateTo({
+  url: "../settingbook/library",
+})
+  },
   // 滚动切换标签样式
   switchTab: function (e) {
     this.setData({
@@ -50,7 +55,6 @@ Page({
           clientWidth = res.windowWidth,
           rpxR = 750 / clientWidth;
         var calc = clientHeight * rpxR - 180;
-        console.log(calc)
         that.setData({
           winHeight: calc
         });

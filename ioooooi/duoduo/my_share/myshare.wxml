@@ -1,0 +1,51 @@
+<!--duoduo/my_share/myshare.wxml-->
+<view class="kuang">
+<view class="kuang_k">
+        <view class="wenb_left">
+    <image class="img_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+    </image>
+      </view>
+<!--  文本图之类       -->
+        <view class="wenb_right">
+        <view class="wenb_li">
+        <text>爱丽斯漫游记</text>
+        </view>
+         <view class="wenb_rq">借阅日期:2018.06.29-2018.07.29<text class="hong">(03/20)</text></view>
+          <view class="tou_tu">
+           <view class="tou_yuan">
+           <image class="img_tu2" src="chttps://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+</image>
+           </view>
+          <text class="w_name">王世家</text>
+          <!-- 超时未还 -->
+            <text class="weihuan">超时未还</text>
+          
+          </view>
+        </view>
+</view>
+</view>
+<view class="kuang">
+<view class="kuang_k">
+
+        <view class="wenb_left">
+    <image class="img_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+    </image>
+      </view>
+<!--  文本图之类       -->
+        <view class="wenb_right">
+        <view class="wenb_li">
+        <text>爱丽斯漫游记</text>
+         <span class="iconfont icon-bianji"></span> 
+        </view>
+         <view class="wenb_rq">借阅日期:2018.06.29-2018.07.29<text class="hong">(03/20)</text></view>
+          <view class="tou_tu">
+           <view class="tou_yuan">
+           <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+</image>
+           </view>
+          <text class="w_name">王世家</text>
+         
+          </view>
+        </view>
+</view>
+</view>

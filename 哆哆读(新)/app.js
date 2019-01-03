@@ -2,7 +2,8 @@
 App({
   data: {
     user: {},
-    markers:[]
+    markers:[],
+    shop:{}
   },
   onLaunch: function () {
     // 展示本地存储能力

@@ -125,6 +125,9 @@ this.setData({
       },
       success(res) {
         console.log(res.data)
+        wx.switchTab({
+          url: '../my/home',
+        });
 
       }
     })

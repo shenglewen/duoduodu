@@ -31,9 +31,11 @@ Page({
           // },
           method: 'POST',
           success: function (retult) {
-            console.log(app.data.user)
+            console.log(retult)
             app.data.user = retult.data.data;
+            app.data.shop = retult.data.shop;
             console.log(app.data.user)
+            console.log(app.data.shop)
             //将用户信息保存到本地缓存
             // app.setGlobalUserInfo(userdata);
             //跳转到首页

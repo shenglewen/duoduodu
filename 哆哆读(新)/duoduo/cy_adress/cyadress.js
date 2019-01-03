@@ -11,20 +11,33 @@ Page({
   //刪除地址
   del:function(e){
      var a=e
-    wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/deladdress',
-      data: {
-        userid: app.data.user.userid,
-        addressid: a.target.id,
-      },
-      success(res) {
-        if (res.code == "200") {
-          console.log(res)
-        } else {
+     var that =this
+    wx.showModal({
+      title: '提示',
+      content: '确定删除',
+      success: function (res) {
+        if (res.confirm) {
+          wx.request({
+            url: 'https://dododu.2om.cn/api.php/user/deladdress',
+            data: {
+              userid: app.data.user.userid,
+              addressid: a.target.id,
+            },
+            success(res) {
+              if (res.data.code == "200") {
+                that.onLoad()
+                console.log(res)
+              } else {
 
+              }
+            }
+          })
+        } else if (res.cancel) {
+          
         }
       }
-    })
+    }) 
+   
   },
   /**
    * 生命周期函数--监听页面加载
@@ -47,6 +60,12 @@ wx.request({
    console.log(that.data.masg)
   }
 })
+  },
+  jmp:function(e){
+    var a = '../modify/jiadress?id='+e.target.id
+   wx.navigateTo({
+     url: a,
+   })
   },
 
   /**
