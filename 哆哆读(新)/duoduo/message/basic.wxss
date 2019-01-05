@@ -1,5 +1,10 @@
 /* duoduo/message/basic.wxss */
 /* page{background-color:#edf0f3;} */
+view{
+  font-family: 'Glyphicons';
+  font-weight:600;
+
+}
 .head{
 height:120rpx;
 background-color:#fff;

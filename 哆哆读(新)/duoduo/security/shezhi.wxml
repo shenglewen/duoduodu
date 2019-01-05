@@ -2,24 +2,24 @@
 <!-- 登录密码 -->
  <view class="xiugaik">
 
-<view class="login"  bindtap='bangding'>
-     <text>绑定手机号</text> 
+<view class="login">
+     <text>登录密码</text> 
   <view class="login_tu">
         <image class="hha" src="https://dododu.2om.cn/public/images/a4.png" mode="aspectFill">
     </image>
   </view>
-          <text class="xiugaiw">去绑定</text>
+          <text class="xiugaiw"> 修改</text>
     </view>
 </view> 
 <!-- 绑定 -->
 <view class="xiugaik">
 
-<view class="login"  bindtap='change'>
-     <text>修改手机号</text> 
+<view class="login">
+     <text>绑定手机号</text> 
   <view class="login_tu">
         <image class="hha" src="https://dododu.2om.cn/public/images/a4.png" mode="aspectFill">
     </image>
   </view>
-          <text class="xiugaiw">去修改</text>
+          <text class="xiugaiw"> 去绑定</text>
     </view>
 </view> 
