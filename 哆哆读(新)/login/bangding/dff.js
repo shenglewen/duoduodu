@@ -2,15 +2,19 @@ const app = getApp()  //用户授权使用的
 
 // login/bangding/dff.js
 Page({
+  data: {
 
+  },
   /**
    * 用户授权
    * **/
   doLogin(e) {
-    // console.log(e.detail.errMsg)   //返回 ok
-    // console.log(e.detail.userInfo) //用户信息  对象
-    // console.log(e.detail.rawData)  //用户信息  字符串
+    console.log(e.detail.errMsg)   //返回 ok
+    console.log(e.detail.userInfo) //用户信息  对象/
+    console.log(e.detail.rawData)  //用户信息  字符串
     var userdata = e.detail.userInfo;
+    var code = app.globalData.code;
+    console.log(userdata)
 
     wx.login({
       success: function (res) {
@@ -31,17 +35,22 @@ Page({
           // },
           method: 'POST',
           success: function (retult) {
-            // console.log(retult)
-            app.data.user = retult.data.data;
-            app.data.shop = retult.data.shop;
-            console.log(app.data.user)
-            console.log(app.data.shop)
-            //将用户信息保存到本地缓存
-            // app.setGlobalUserInfo(userdata);
-            //跳转到首页
-            wx.switchTab({
-              url: '/duoduo/index/index',
-            })
+            
+            if(retult.data.code == '200'){
+              app.data.user = retult.data.data;
+              app.data.shop = retult.data.shop;
+              //跳转到首页
+              wx.switchTab({
+                url: '/duoduo/index/index',
+              })
+            }else{
+              wx.showModal({
+                title: '授权失败',
+                content: '请重新授权',
+              })
+            }
+
+
           }
         })
       }
@@ -51,9 +60,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
 
-  },
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,9 +1,17 @@
 {
   "pages": [
     
+<<<<<<< HEAD
     "login/bangding/dff",
+=======
+>>>>>>> origin/shenglewen
     
     "duoduo/index/index",
+
+    "login/bangding/dff",
+    
+
+
     "duoduo/borrow/jieyue",
     "duoduo/share/share",
     "duoduo/bank/read",
