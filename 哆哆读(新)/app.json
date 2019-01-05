@@ -3,15 +3,11 @@
     
     
     "duoduo/index/index",
-
-    "login/bangding/dff",
-    
-
-
     "duoduo/borrow/jieyue",
-    "duoduo/share/share",
     "duoduo/bank/read",
     "duoduo/my/home",
+    "duoduo/fabugx/fabugx",
+    
 
     "duoduo/bianji/share",    
     "duoduo/add/jiadress",
@@ -36,11 +32,12 @@
     "duoduo/check/check",
     "duoduo/niticexq/noticexq",
     "duoduo/notice/notice",
-    "duoduo/fabugx/fabugx",
     "duoduo/readnum/bang",
     "duoduo/my_library _dh/daihuan",
     "duoduo/message_gl/manage",
     "duoduo/library_x/details",
+    "duoduo/share/share",
+    "login/bangding/dff",
     "duoduo/settingbook/library"
   
   ],
