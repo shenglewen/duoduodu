@@ -31,7 +31,7 @@ Page({
           // },
           method: 'POST',
           success: function (retult) {
-            console.log(retult)
+            // console.log(retult)
             app.data.user = retult.data.data;
             app.data.shop = retult.data.shop;
             console.log(app.data.user)

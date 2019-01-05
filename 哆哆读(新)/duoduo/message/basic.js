@@ -109,9 +109,10 @@ Page({
       hobby.pop()
       for (var i = 0; i < hobby.length; i++) {
         var a = hobby[i] - 1
-        var uphobby = "hobby[" + a + "].checked";
+        var uphobby = 'hobby[' + a + '].checked';
+        console.log(uphobby)
         this.setData({
-          uphobby: true
+          [uphobby]: true
         })
       }
     }
@@ -124,14 +125,15 @@ Page({
     }
     //显示微信头像.昵称和默认选中身份
     var identity = app.data.user.identity - 1;
-    var upidentity = "items[" + identity + "].checked";
+    var upidentity = 'items['+ identity + '].checked';
+    console.log(upidentity)
     this.setData({
       username: app.data.user.nickname,
       name: app.data.user.truename,
       headerimg: app.data.user.face,
       hobbys: app.data.user.hobby,
       identity: app.data.user.identity,
-      upidentity: true
+      [upidentity]: true
     })
 console.log(this.data)
   },
@@ -252,7 +254,7 @@ console.log(this.data)
     var identity = that.identity;
 
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/upinfo', // 仅为示例，并非真实的接口地址
+      url: 'https://dododu.2om.cn/api.php/user/upinfo', 
       data: {
         userid: userid,
         username: that.username,
@@ -269,7 +271,8 @@ console.log(this.data)
       },
       success(res) {
         var data=res.data.data
-        console.log(data)
+        console.log(res)
+        if (res.data.code == 200) {
         app.data.user.truename=data.truename
         app.data.user.username = data.username
         app.data.user.yeargrade = data.yeargrade
@@ -277,7 +280,18 @@ console.log(this.data)
         app.data.user.birthday = data.birthday
         app.data.user.hobby=data.hobby
         app.data.user.identity=data.identity
-
+          wx.showModal({
+            title: '绑定成功',
+            content: '您的信息已经修改成功',
+            success: function (res) {
+              if (res.confirm) {
+                wx.switchTab({
+                  url: '../my/home',
+                })
+              }
+            }
+          })
+        }
       }
     })
   }

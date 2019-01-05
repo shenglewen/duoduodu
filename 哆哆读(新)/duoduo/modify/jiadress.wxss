@@ -96,3 +96,7 @@ overflow: hidden;
     text-overflow:ellipsis;
     white-space:nowrap; 
 }
+.button{
+  color: #fff;
+  background: red;
+}

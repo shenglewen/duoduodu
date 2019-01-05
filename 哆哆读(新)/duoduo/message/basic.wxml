@@ -12,14 +12,15 @@
 <view class="xinxi_k">
   <view class="name_n">
     昵称
-   <text class="qian">{{username}}</text>
+   <input class="tianxie" type="text" value="{{username}}" bindinput="name" disabled='true'></input>
+   
   </view>
 </view>
 <!-- 姓名 -->
 <view class="xinxi_k">
   <view class="name_n">
      姓名
-   <input class="tianxie" type="text" style="text-align:right" placeholder="请填写"placeholder-style="color:#bababa;" value="{{name}}" bindinput="name"/>
+   <input class="tianxie" type="text" value="{{name}}" bindinput="name"></input>
   </view>
 </view>
 <!-- 性别 -->
@@ -91,7 +92,7 @@
       </view>
 </view>
 
-<!-- 身份 -->
+<!-- 兴趣 -->
   <view class="shenfen_k">
    <view class="shenfen">
    <view class="shenfen_left">
@@ -99,7 +100,7 @@
    </view>
  <view class="shenfen_right">
 
-<!-- 身份选择器 -->
+<!-- 兴趣选择器 -->
 <checkbox-group bindchange="checkboxChange">
     <label class="checkbox" wx:for-items="{{hobby}}">
     <view class="nini">
@@ -131,6 +132,6 @@
     </view>
   
   </view>
-<button bindtap='userupinfo'>保存修改</button>
+<button class='cheng' bindtap='userupinfo'>保存修改</button>
 
   

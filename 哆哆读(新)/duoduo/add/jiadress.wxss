@@ -19,6 +19,10 @@ justify-content: space-between;
 .qian{
   color:#bababa;
 }
+.button{
+  background: red;
+  color: #fff;
+}
 .tianxie{
   width:60%;
 line-height:100rpx;

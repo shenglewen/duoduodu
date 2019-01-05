@@ -35,4 +35,4 @@
     </view>
   </view>
 </block>
-<navigator class="tianjia" url='../add/jiadress'>添加新地址</navigator>
+<button class="tianjia" bindtap='jump'>添加新地址</button> 

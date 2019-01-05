@@ -16,24 +16,16 @@
   <view class="yinru">超时</view>
 </view>
 <!-- 书 -->
-<view class="contect">
-  <image class="shufeng" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+<block wx:for="{{books}}" wx:for-index="i" wx:for-item="a">
+<view class="contect" id="{{a.productid}}" bindtap='binaji'>
+  <image class="shufeng" src="{{a.thumb}}" mode="aspectFill">
   </image>
   <view class="kuang">
-    <view class="shu_name">酷猫日记</view>
+    <view class="shu_name">{{a.title}}</view>
     <view class="name">作者:
-      <text>赵嘻嘻</text>
+      <text>{{a.zuozhe}}</text>
     </view>
   </view>
 </view>
+</block>
 <!-- 重复书 -->
-<view class="contect">
-  <image class="shufeng" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
-  </image>
-  <view class="kuang">
-    <view class="shu_name">酷猫日记</view>
-    <view class="name">作者:
-      <text>赵嘻嘻</text>
-    </view>
-  </view>
-</view>

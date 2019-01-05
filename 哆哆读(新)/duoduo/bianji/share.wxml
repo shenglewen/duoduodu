@@ -1,7 +1,4 @@
 <!--duoduo/share/share.wxml-->
-<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==1?false:true}}">扫码填书</button>
-
-<view wx:if="{{hidden==0?false:true}}"> 
 <view class="shuji_k">
 <view class="shuji">书籍详情</view>
 </view>
@@ -55,6 +52,7 @@
       </view>
     </view>
 </view>
+
 <!-- 标签 -->
 <view class="xinxi_k">
 
@@ -74,8 +72,6 @@
 </view>
   </view>
 </view>
-</view>
-
 <!-- 有偿租赁 -->
  <view class="zuping_k"> 
   <view class="zuping">
@@ -189,6 +185,5 @@
 </view>
   </view>
 </view>
-<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==0?false:true}}">扫码填书</button>
 <button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>
