@@ -111,22 +111,7 @@ Page({
           addressid: data[0].addressid,
           address1: data[0].address,
           userid: app.data.user.userid,
-          shopid: app.data.shop.shopid, hidden: 0,
-          buyNumber: 2,
-          days: 7,
-          daysmoney: 1,
-          money: 1,
-          buyNumMin: 1,
-          buyNumMax: 200,
-          sbn: '',
-          author: '',
-          chubanshe: '',
-          description: '',
-          thumb: '',
-          title: '',
-          freedeposit: 0,
-          rentfree: 0,
-        
+          shopid: app.data.shop.shopid
         })
 
       }
@@ -158,6 +143,7 @@ Page({
   },
   
   shaoma: function () {
+    this.onLoad()
     var that=this;
     wx.scanCode({
       success: (res) => {
@@ -216,7 +202,28 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+    this.setData({
+      hidden: 0,
+      buyNumber: 2,
+      days: 7,
+      daysmoney: 1,
+      money: 1,
+      buyNumMin: 1,
+      buyNumMax: 200,
+      sbn: '',
+      author: '',
+      chubanshe: '',
+      description: '',
+      thumb: '',
+      title: '',
+      freedeposit: 0,
+      rentfree: 0,
+      address: '',
+      address1: '',
+      addressid: '',
+      userid: '',
+      shopid: '',
+    })
   },
 
   /**

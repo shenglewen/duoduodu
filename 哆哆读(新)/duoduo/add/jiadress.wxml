@@ -1,74 +1,66 @@
 <!--duoduo/add/jiadress.wxml-->
 <view class="xiax">
-  <!-- 出借人 -->
-  <view class="xinxi_k">
-    <view class="name_n">
-      出借人
-      <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='usename'></input>
-    </view>
+<!-- 出借人 -->
+<view class="xinxi_k">
+  <view class="name_n">
+  出借人
+          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='usename'></input>
   </view>
-  <!-- 手机号 -->
-  <view class="xinxi_k">
-    <view class="name_n">
-      手机号
-      <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='mobile'></input>
-    </view>
+</view>
+<!-- 手机号 -->
+<view class="xinxi_k">
+  <view class="name_n">
+  手机号
+          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='mobile'></input>
   </view>
-  <!-- 所在地区-->
-  <view class="xinxi_k">
-    <view class="xingbie">
+</view>
+<!-- 所在地区-->
+<view class="xinxi_k">
+      <view class="xingbie">
       所在地点
-      <view class="xuanze" bindtap='aaa'>
-        <view class='text'> {{address}}</view>
-        <view class="tuk">
-          <image class="tu" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
+              <view class="xuanze" bindtap='aaa'>
+              <view class='text'> {{address}}</view>
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
           </image>
-        </view>
+           </view>
+                </view>
       </view>
-    </view>
-  </view>
-  <!-- 详细地址 -->
-  <view class="jianjie_k">
-    <view class="jianjie">
+</view>
+<!-- 详细地址 -->
+<view class="jianjie_k">
+   <view class="jianjie">
       <view class="jianjie_l">
-        <navigator class="wenzi">详细地址</navigator>
-        <textarea class="wenzi_k" placeholder="如街道、门牌号等" bindinput='detailed' value='{{detailed}}'>
-        </textarea>
+      <navigator class="wenzi">详细地址</navigator>
+     <textarea class="wenzi_k" placeholder="如街道、门牌号等" bindinput='detailed' value='{{detailed}}'>
+      </textarea>
       </view>
     </view>
-  </view>
+</view>
 </view>
 <!-- 地址标签-->
 <view class="xinxi_k">
-  <view class="xingbie">
+      <view class="xingbie">
     地址标签
-    <view class="xuanze">
-      <picker bindchange="xzdizhi" value="{{dizhival}}" range="{{dizhi}}" mode="selector">
-        <view class="picker">
-          {{dizhitext}}
-        </view>
-      </picker>
-      <view class="tuk">
-        <image class="tu" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
-        </image>
+              <view class="xuanze">
+                请选择
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
+          </image>
+           </view>
+                </view>
       </view>
-    </view>
-  </view>
 </view>
-
-
-
-
 <!-- 默认-->
 <view class="xinxi_k">
-  <view class="xingbie">
+      <view class="xingbie">
     设为默认地址
-    <view class="xuanze">
-      <view class="body-view">
-        <switch bindtap='status' checked='{{status ==  1? true : false}}' />
-      </view>
+              <view class="xuanze">
+              <view class="body-view">
+    <switch bindtap='status' checked='{{status ==  1? true : false}}'/>
+                     </view>
 
-    </view>
-  </view>
-</view>
+                </view>
+      </view>
+</view> 
 <button class="button" bindtap='updiz'>保存地址</button>

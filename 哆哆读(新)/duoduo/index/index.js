@@ -47,7 +47,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData.code)
 
     //等待 code 的写入
       setTimeout(function () {
@@ -69,7 +68,7 @@ Page({
             }
           }
         })
-      }, 2000);
+      }, 1000);
    
   },
 
