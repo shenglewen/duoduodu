@@ -8,7 +8,8 @@
     "duoduo/share/share",
     "duoduo/bank/read",
     "duoduo/my/home",
-    
+
+    "duoduo/bianji/share",    
     "duoduo/add/jiadress",
     "duoduo/modify/jiadress",
     "duoduo/message/basic",    
@@ -65,7 +66,7 @@
       {
         "selectedIconPath": "img/22xuan.png",
         "iconPath": "img/2fd.png",
-        "pagePath": "duoduo/share/share",
+        "pagePath": "duoduo/fabugx/fabugx",
         "text": "共享"
       },
       {

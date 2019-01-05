@@ -37,7 +37,8 @@ Page({
          mobile: res.data.data.mobile,
          longitude: res.data.data.longitude,
          latitude: res.data.data.latitude,
-         detailed: res.data.data.address
+         detailed: res.data.data.address,
+         status:res.data.data.status
        })
        console.log(that.data)
           } 
@@ -147,10 +148,21 @@ this.setData({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res.data)
-        wx.switchTab({
-          url: '../my/home',
-        });
+        if (res.data.code == 200) {
+
+          wx.showModal({
+            title: '添加成功',
+            content: '新地址已添加成功',
+            success: function (res) {
+              if (res.confirm) {
+                wx.switchTab({
+                  url: '../my/home',
+                })
+              }
+            }
+          })
+
+        }
       }
     })
   },

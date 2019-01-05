@@ -7,7 +7,16 @@ Page({
   data: {
 
   },
-
+  jomp:function(){
+    wx.navigateTo({
+      url: "../share/share",
+    })
+  },
+  jompa:function() {
+    wx.navigateTo({
+      url: "../my_library/mylibraries",
+    })
+  },
   /**
   * 生命周期函数--监听页面加载
   */

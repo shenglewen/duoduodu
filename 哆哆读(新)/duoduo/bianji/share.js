@@ -7,7 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    hidden:0,
     buyNumber: 2,
     days:7,
     daysmoney:1,
@@ -61,17 +60,9 @@ Page({
       },
       success(res) {
         console.log(res)
-        wx.showModal({
-          title: '分享成功',
-          content: '您的书籍已分享成功',
-          success: function (res) {
-            if (res.confirm) {
-              wx.switchTab({
-                url: '../fabugx/fabugx',
-        })
-            } 
-          }
-        }) 
+        // wx.navigateTo({
+        //   url: '../my_library/mylibraries',
+        // })
 
       }
     })
@@ -95,7 +86,29 @@ Page({
   },
   //面页第一次加载时加载
   onLoad: function (options) {
-    var that = this
+    console.log(options)
+    var that=this
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/product/upproduct',
+      data: {
+        userid: app.data.user.userid,
+        shopid:app.data.shop.shopid,
+        productid: options.id
+      },
+      success:function(res){
+        console.log
+        var book=res.data.data[0]
+        that.setData({
+          isbn:book.isbn,
+          freedeposit: book.freedeposit,
+          rentfree: book.rentfree,
+          price_collage:book.price_collage,
+          price:book.price,
+          zuyong: book.zuyong,
+          address: that.data.addressid
+        })
+      }
+    })
     wx.request({
       url: 'https://dododu.2om.cn/api.php/user/listsaddress',
       data: {
@@ -108,10 +121,10 @@ Page({
         var data = res.data.data
         that.setData({
           address: data,
-          addressid: data[0].addressid,
+          addressid:data[0].addressid,
           address1: data[0].address,
-          userid: app.data.user.userid,
-          shopid: app.data.shop.shopid
+          userid:app.data.user.userid,
+          shopid:app.data.shop.shopid
         })
 
       }
@@ -141,48 +154,6 @@ Page({
       })
     }
   },
-  
-  shaoma: function () {
-    this.onLoad()
-    var that=this;
-    wx.scanCode({
-      success: (res) => {
-        var num = res.result
-        var pd = /[9][7][7-9][0-9]{1,}/
-        if (pd.test(num)){
-          that.setData({
-            sbn: res.result
-          })
-          wx.request({
-            url: 'https://dododu.2om.cn/api.php/product/gteisbn',
-            data: {
-              isbn: res.result
-            },
-            header: {
-              'content-type': 'application/json' // 默认值
-            },
-            success: function (data) {
-              console.log(data)
-              that.setData({
-                author: data.data.data.author,
-                chubanshe: data.data.data.chubanshe,
-                description: data.data.data.description,
-                thumb: data.data.data.thumb,
-                title: data.data.data.title,
-                hidden:1
-              })
-            }
-          })
-        }else{
-          //返回提示不是书籍
-        }
-       
-      },
-      fail: (res) => {
-      }
-    })
-  
-  },
  
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -202,28 +173,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    this.setData({
-      hidden: 0,
-      buyNumber: 2,
-      days: 7,
-      daysmoney: 1,
-      money: 1,
-      buyNumMin: 1,
-      buyNumMax: 200,
-      sbn: '',
-      author: '',
-      chubanshe: '',
-      description: '',
-      thumb: '',
-      title: '',
-      freedeposit: 0,
-      rentfree: 0,
-      address: '',
-      address1: '',
-      addressid: '',
-      userid: '',
-      shopid: '',
-    })
+
   },
 
   /**

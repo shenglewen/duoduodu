@@ -360,18 +360,10 @@ font-size:35rpx;
 margin-left:40rpx; 
 
 }
-.shaoma{
-  width:90%;
-margin:0 auto;
-margin-top:150rpx;
-margin-bottom: 150rpx;
-height:100rpx;
-line-height:100rpx;
-}
 .agong{
 width:90%;
 margin:0 auto;
-margin-top:75rpx;
+margin-top:150rpx;
 height:100rpx;
 line-height:100rpx;
 }

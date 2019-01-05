@@ -8,6 +8,11 @@ Page({
   data: {
      masg:'',
   },
+  jump:function(){
+   wx.navigateTo({
+      url: '../add/jiadress'
+    }) 
+  },
   //刪除地址
   del:function(e){
      var a=e
