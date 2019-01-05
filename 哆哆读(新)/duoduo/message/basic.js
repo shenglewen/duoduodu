@@ -106,10 +106,10 @@ Page({
         })
       }
     }
-<<<<<<< HEAD
+
     //身份
    
-    if (hobby != null) {
+    if (app.data.user.identity != null) {
       var identity = app.data.user.identity - 1;
       console.log(app.data.user.identity)
       var upidentity = "items[" + identity + "].checked";
@@ -118,9 +118,7 @@ Page({
         })
       }
     
-=======
 
->>>>>>> origin/shenglewen
     //如果有年级。。。
     if (app.data.user.birthday != "" && app.data.user.birthday != null) {
       this.setData({
@@ -128,13 +126,7 @@ Page({
       })
     }
     //显示微信头像.昵称和默认选中身份
-<<<<<<< HEAD
-  
-=======
-    var identity = app.data.user.identity - 1;
-    var upidentity = 'items[' + identity + '].checked';
-    console.log(upidentity)
->>>>>>> origin/shenglewen
+
     this.setData({
       username: app.data.user.nickname,
       name: app.data.user.truename,
