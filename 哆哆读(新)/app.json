@@ -1,9 +1,13 @@
 {
   "pages": [
     
-    "login/bangding/dff ",
     
     "duoduo/index/index",
+
+    "login/bangding/dff",
+    
+
+
     "duoduo/borrow/jieyue",
     "duoduo/share/share",
     "duoduo/bank/read",
