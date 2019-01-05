@@ -2,15 +2,19 @@ const app = getApp()  //用户授权使用的
 
 // login/bangding/dff.js
 Page({
+  data: {
 
+  },
   /**
    * 用户授权
    * **/
   doLogin(e) {
-    // console.log(e.detail.errMsg)   //返回 ok
-    // console.log(e.detail.userInfo) //用户信息  对象
-    // console.log(e.detail.rawData)  //用户信息  字符串
+    console.log(e.detail.errMsg)   //返回 ok
+    console.log(e.detail.userInfo) //用户信息  对象/
+    console.log(e.detail.rawData)  //用户信息  字符串
     var userdata = e.detail.userInfo;
+    var code = app.globalData.code;
+    // console.log(code)
 
     wx.login({
       success: function (res) {
@@ -51,15 +55,26 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-
-  },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/user/getopenid',
+      data:{
+        code: app.globalData.code,
+      },
+      success:function(res){
+           console.log(res)
+           if(res.data.code){
+             wx.switchTab({
+               url: '/duoduo/index/index',
+             })
+           }
+      }
+    })
   },
 
   /**
