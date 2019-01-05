@@ -1,0 +1,270 @@
+/* duoduo/message/basic.wxss */
+/* page{background-color:#edf0f3;} */
+.head{
+height:120rpx;
+background-color:#fff;
+border-top:1rpx solid #edf0f3;
+}
+.head_l{
+width:90%;
+height:120rpx;
+line-height:120rpx;
+background-color:#fff;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+.head_tu{
+width:110rpx;
+height:110rpx;
+background-color:#fff;
+border-radius:50%;
+margin-top:8rpx;
+}
+.head_tu1{
+width:100%;
+height:110rpx;
+border-radius:50%;
+}
+.xinxi_k{
+height:100rpx;
+background-color:#fff;
+border-top:1rpx solid #edf0f3;
+}
+.name_n{
+width:90%;
+height:100rpx;
+line-height:100rpx;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+.qian{
+  color:#bababa;
+  font-weight:100;
+
+}
+.tianxie{
+width:60%;
+line-height:100rpx;
+margin-top:30rpx;
+color:#bababa;
+font-family: 'Glyphicons';
+font-weight:100;
+text-align: right;
+}
+.xingbie{
+width:90%;
+height:100rpx;
+line-height:100rpx;
+
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+.xuanze{
+/* width:60%; */
+height:100rpx;
+line-height:100rpx;
+text-align: right;
+/* background:#f0f; */
+display: flex;
+justify-content: space-between;
+color:#bababa;
+  font-weight:100;
+
+}
+.tuk{
+width:45rpx;
+height:100rpx;
+ /* background:#f00;  */
+
+}
+.tu{
+width:33rpx;
+height:40rpx;
+margin-top:33rpx;
+}
+.shenfen_k{
+height:200rpx;
+background-color:#fff;
+border-top:1rpx solid #edf0f3;
+border-bottom:1rpx solid #edf0f3;
+
+}
+.shenfen{
+width:95%;
+height:180rpx;
+margin:0 auto;
+background:#f6f6f6;
+display: flex;
+margin-top:10rpx;
+}
+.shenfen_left{
+  padding-left:22rpx;
+width:24%;
+height:180rpx;
+/* background:#f0f; */
+}
+.shenfen_right{
+width:76%;
+height:180rpx;
+}
+
+radio .wx-radio-input{
+width: 30rpx; 
+height: 30rpx;
+border-radius: 0%;
+
+}
+checkbox .wx-checkbox-input{
+width: 30rpx; 
+height: 30rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+width: 32rpx;
+height: 32rpx;
+line-height: 30rpx;
+text-align: center;
+font-size:25rpx; 
+color:#f45a61 ; 
+background: #fff;
+transform:translate(-50%, -50%) scale(1);
+-webkit-transform:translate(-50%, -50%) scale(1);
+}
+checkbox .wx-checkbox-input.wx-radio-checkbox-checked::before{
+width: 30rpx;
+height: 30rpx;
+line-height: 30rpx;
+text-align: center;
+font-size:30rpx; 
+background-color: #e02e24;
+border: 1rpx solid #e02e24; 
+transform:translate(-50%, -50%) scale(1);
+-webkit-transform:translate(-50%, -50%) scale(1);
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+border-color: #f45a61 ;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+border-color: #f45a61 ;
+
+}
+.nini{
+float:left;
+width:145rpx;
+height:60rpx;
+/* background:#f0f; */
+display:flex;
+}
+.hah{
+font-size:25rpx;
+margin-top:12rpx;
+color:#bababa;
+  font-weight:100;
+
+}
+
+.tan {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4);
+position: fixed;
+z-index: 999;
+}
+
+.cloer {
+width: 100%;
+height: 100%;
+}
+.keep {
+width: 100%;
+/* background: #fff; */
+position: fixed;
+bottom: 38%;
+}
+.hong_top{
+width:60%;
+height:100rpx;
+line-height:100rpx;
+text-align:center;
+background:#f45a61 ;  
+margin: 0 auto;
+border-radius:25rpx 25rpx 0rpx 0rpx;
+color:#fff;
+  font-weight:100;
+
+}
+.hong_ce{
+width:60%;
+height:120rpx;
+line-height:120rpx;
+text-align:center;
+background:#fff;  
+margin: 0 auto;
+border-bottom:1rpx solid  #ddd;
+color: #bababa;
+  font-weight:100;
+
+}
+.hong_cn{
+width:60%;
+height:120rpx;
+line-height:120rpx;
+text-align:center;
+background:#fff;  
+margin: 0 auto;
+color: #bababa;
+  font-weight:100;
+
+}
+.hong_bottom{
+width:60%;
+height:100rpx;
+line-height:100rpx;
+text-align:center;
+background:#f45a61 ;  
+margin: 0 auto;
+border-radius: 0rpx 0rpx 25rpx 25rpx;
+color:#fff;
+display: flex;
+  font-weight:100;
+
+}
+.que{
+  width:50%;
+height:100rpx;
+line-height:100rpx;
+text-align:center;
+}
+.xiao{
+width:50%;
+height:100rpx;
+line-height:100rpx;
+text-align:center;
+}
+/* 选择 */
+.section{
+   background:#CABBC7;
+   margin:20rpx;
+   padding:20rpx;
+  
+
+}
+radradio{
+  color: #f45a61 ;
+}
+.cheng{
+  width: 80%;
+  border: none;
+  color: #fff;
+  background: red;
+  margin-top: 2rem
+}
+.picker{
+  font-weight:100;
+
+}
+
