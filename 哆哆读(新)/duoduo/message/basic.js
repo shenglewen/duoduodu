@@ -109,10 +109,10 @@ Page({
       hobby.pop()
       for (var i = 0; i < hobby.length; i++) {
         var a = hobby[i] - 1
-        var uphobby = 'hobby[' + a + '].checked';
+        var uphobby = "hobby["+a+"].checked";
         console.log(uphobby)
         this.setData({
-          [uphobby]: true
+          uphobby: true,
         })
       }
     }
@@ -125,7 +125,7 @@ Page({
     }
     //显示微信头像.昵称和默认选中身份
     var identity = app.data.user.identity - 1;
-    var upidentity = 'items['+ identity + '].checked';
+    var upidentity = "items["+identity+"].checked";
     console.log(upidentity)
     this.setData({
       username: app.data.user.nickname,
@@ -133,7 +133,7 @@ Page({
       headerimg: app.data.user.face,
       hobbys: app.data.user.hobby,
       identity: app.data.user.identity,
-      [upidentity]: true
+      [upidentity]: true,
     })
 console.log(this.data)
   },

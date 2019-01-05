@@ -89,7 +89,7 @@
 </view>
 </navigator>
 <!-- 安全设置 -->
-<navigator class="xinxi_k" url="../accredit_bd/bdshouji">
+<navigator class="xinxi_k" url="../security/shezhi">
 <view class="xinxi">
   <text class="name">安全设置</text>
     <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
