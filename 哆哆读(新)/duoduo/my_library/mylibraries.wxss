@@ -57,6 +57,7 @@ background:#fff;
 margin:20rpx auto;
 border:1rpx solid #f6f6f6;
 display: flex;
+border-radius: 5px;
 }
 .shufeng{
    width:220rpx;
@@ -73,6 +74,7 @@ margin-top:20rpx;
 .kuang{
 margin-top:80rpx;
 margin-left:20rpx;
+border-radius: 5px;
 }
 
 

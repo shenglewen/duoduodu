@@ -54,7 +54,8 @@ Page({
         price: that.data.daysmoney,
         biaoqian: that.data.biaoqian,
         zuyong: that.data.days,
-        address: that.data.addressid
+        address: that.data.address1,
+        addressid: that.data.addressid
       },
       header: {
         'content-type': 'application/json' // 默认值
