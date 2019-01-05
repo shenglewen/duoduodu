@@ -20,8 +20,11 @@ justify-content: space-between;
   color:#bababa;
 }
 .button{
-  background: red;
+width: 80%;
+  border: none;
   color: #fff;
+  background: red;
+  margin-top: 2rem
 }
 .tianxie{
   width:60%;
@@ -99,6 +102,6 @@ overflow: hidden;
     overflow:hidden; 
     text-overflow:ellipsis;
     white-space:nowrap; 
-    width:14rem;
+    width:10rem;
     text-align: right;
 }

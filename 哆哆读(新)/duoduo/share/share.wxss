@@ -244,8 +244,8 @@ color:#bababa;
   display: flex;
   width: 200rpx;
   border-radius: 12 rpx;
- 
   border: 1px solid #ddd;
+  margin-right: 10px;
 }
 #add_r{
 width:30%;
@@ -391,7 +391,7 @@ border-bottom:2rpx solid #fff;
 
 .qushu_suo {
 width:90%;
-height:180rpx;
+height:100rpx;
 border-top:1rpx solid #f6f6f6;
 border-bottom:1rpx solid #f6f6f6;
 margin:0 auto;
@@ -412,23 +412,23 @@ justify-content: space-between;
 }
 .tianxie{
   width:60%;
-line-height:100rpx;
+line-height:90rpx;
 margin-top:30rpx;
 margin-right:45rpx;
 color:#bababa;
 }
 .xingbie_k{
 width:100%;
-height:180rpx;
-line-height:180rpx;
+height:80rpx;
+line-height:94rpx;
 margin:0 auto;
 display: flex;
 justify-content: space-between;
 }
 .xuanze_k{
 /* width:60%; */
-height:180rpx;
-line-height:180rpx;
+height:80rpx;
+line-height:94rpx;
 text-align: right;
 /* background:#f0f; */
 display: flex;
@@ -437,7 +437,7 @@ color:#bababa;
 }
 .tukk{
 width:45rpx;
-height:180rpx;
+height:80rpx;
  background:#fff;  
 
 }
@@ -464,6 +464,12 @@ border-bottom:1rpx solid #f6f6f6;
 
 }
 .bie{
-
+margin-left: 0.5rem;
 font-size:35rpx;
+}
+.address{
+  background:#fd8800;
+  color: #fff;
+  width: 90%;
+  border: none;
 }

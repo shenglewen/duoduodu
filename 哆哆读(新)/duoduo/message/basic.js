@@ -280,7 +280,7 @@ Page({
           app.data.user.hobby = data.hobby
           app.data.user.identity = data.identity
           wx.showModal({
-            title: '绑定成功',
+            title: '修改成功',
             content: '您的信息已经修改成功',
             success: function(res) {
               if (res.confirm) {

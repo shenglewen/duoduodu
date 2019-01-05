@@ -109,3 +109,10 @@ color:#444;
   height: 100%;
   text-align: right;
 }
+.cheng{
+  width: 90%;
+  border: none;
+  color: #fff;
+  background: red;
+  margin-top: 2rem
+}

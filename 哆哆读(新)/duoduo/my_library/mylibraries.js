@@ -18,6 +18,7 @@ wx.navigateTo({
         shopid: app.data.shop.shopid
       },
       success:function(res){
+        console.log(res)
         var books=res.data.data
         that.setData({
           books:books

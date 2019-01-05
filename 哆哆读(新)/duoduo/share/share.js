@@ -111,11 +111,27 @@ Page({
           addressid: data[0].addressid,
           address1: data[0].address,
           userid: app.data.user.userid,
-          shopid: app.data.shop.shopid
+          shopid: app.data.shop.shopid,
+          hidden: 0,
+          buyNumber: 2,
+          days: 7,
+          daysmoney: 1,
+          money: 1,
+          buyNumMin: 1,
+          buyNumMax: 200,
+          sbn: '',
+          author: '',
+          chubanshe: '',
+          description: '',
+          thumb: '',
+          title: '',
+          freedeposit: 0,
+          rentfree: 0,
         })
 
       }
     })
+    console.log()
   },
   //免租金
   freedeposit:function(){
@@ -143,7 +159,6 @@ Page({
   },
   
   shaoma: function () {
-    this.onLoad()
     var that=this;
     wx.scanCode({
       success: (res) => {
@@ -203,26 +218,7 @@ Page({
    */
   onHide: function () {
     this.setData({
-      hidden: 0,
-      buyNumber: 2,
-      days: 7,
-      daysmoney: 1,
-      money: 1,
-      buyNumMin: 1,
-      buyNumMax: 200,
-      sbn: '',
-      author: '',
-      chubanshe: '',
-      description: '',
-      thumb: '',
-      title: '',
-      freedeposit: 0,
-      rentfree: 0,
-      address: '',
-      address1: '',
-      addressid: '',
-      userid: '',
-      shopid: '',
+     
     })
   },
 

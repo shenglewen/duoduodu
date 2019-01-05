@@ -51,7 +51,7 @@ height:345rpx;
 background-color:#fff;
 margin:10rpx auto;
 border:1rpx solid #ddd;
-
+border-radius: 5px;
 }
 .wenb_kk{
 width:90%;
