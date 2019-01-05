@@ -6,6 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    dizhival:"",
+    dizhi: ['学校','家','公司','其他'],
+    dizhitext:'请选择',
     usename:"",
     mobile:"",
     address:"请选择",
@@ -26,7 +29,20 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    
+  }, 
 
+  /**
+   * 选择地址标签
+  */
+  xzdizhi: function (e) {
+    var val = this.data.dizhi[e.detail.value]
+    console.log(val)
+
+    this.setData({
+      dizhitext:val,
+      dizhival:val
+    })
   },
 
   /**
@@ -143,7 +159,7 @@ this.setData({
       }
     })
   },
-  aaa:function(){
+  aaa:function(){   
     var that=this;
     wx.chooseLocation({
       success: function (res) {
