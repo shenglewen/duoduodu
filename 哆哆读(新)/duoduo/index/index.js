@@ -1,5 +1,5 @@
 // duoduo/index/index.js
-
+const app = getApp() 
 Page({
 
   /**
@@ -48,6 +48,28 @@ Page({
    */
   onLoad: function (options) {
 
+    //等待 code 的写入
+      setTimeout(function () {
+        wx.request({
+          url: 'https://dododu.2om.cn/api.php/user/getopenid',
+          data: {
+            code: app.globalData.code,
+          },
+          success: function (res) {
+            console.log(res)
+            if (res.data.code != '200') {
+              wx.navigateTo({
+                url: '/login/bangding/dff',
+              })
+            } else {
+              app.data.user = res.data.data;
+              app.data.shop = res.data.shop;
+              console.log(res.data);
+            }
+          }
+        })
+      }, 1000);
+   
   },
 
   /**
@@ -55,6 +77,7 @@ Page({
    */
   onReady: function () {
 
+  
   },
 
   /**

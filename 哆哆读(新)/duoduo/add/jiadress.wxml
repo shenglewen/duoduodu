@@ -18,8 +18,8 @@
 <view class="xinxi_k">
       <view class="xingbie">
       所在地点
-              <view class="xuanze text" bindtap='aaa'>
-                {{address}}
+              <view class="xuanze" bindtap='aaa'>
+              <view class='text'> {{address}}</view>
               <view class="tuk">   
             <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
           </image>
@@ -32,7 +32,7 @@
    <view class="jianjie">
       <view class="jianjie_l">
       <navigator class="wenzi">详细地址</navigator>
-     <textarea class="wenzi_k" placeholder="如街道、门牌号等" >
+     <textarea class="wenzi_k" placeholder="如街道、门牌号等" bindinput='detailed' value='{{detailed}}'>
       </textarea>
       </view>
     </view>
@@ -57,10 +57,10 @@
     设为默认地址
               <view class="xuanze">
               <view class="body-view">
-    <switch bindchange="switch2Change"/>
+    <switch bindtap='status' checked='{{status ==  1? true : false}}'/>
                      </view>
 
                 </view>
       </view>
 </view> 
-<button bindtap='updiz'>保存地址</button>
+<button class="button" bindtap='updiz'>保存地址</button>

@@ -66,6 +66,10 @@ height:120rpx;
 background:#000;
 margin-top:9rpx;
 }
+.thumb{
+width:100rpx;
+height:120rpx;
+}
 .jianjie_k{
 height:200rpx;
 background:#fff;
@@ -356,10 +360,18 @@ font-size:35rpx;
 margin-left:40rpx; 
 
 }
+.shaoma{
+  width:90%;
+margin:0 auto;
+margin-top:150rpx;
+margin-bottom: 150rpx;
+height:100rpx;
+line-height:100rpx;
+}
 .agong{
 width:90%;
 margin:0 auto;
-margin-top:150rpx;
+margin-top:75rpx;
 height:100rpx;
 line-height:100rpx;
 }

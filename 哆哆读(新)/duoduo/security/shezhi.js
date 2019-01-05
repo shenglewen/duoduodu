@@ -7,7 +7,16 @@ Page({
   data: {
   
   },
-
+bangding:function(){
+  wx.navigateTo({
+    url: '../accredit_bd/bdshouji',
+  })
+},
+change: function () {
+    wx.navigateTo({
+      url: '../accredit_bd/bdshouji',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

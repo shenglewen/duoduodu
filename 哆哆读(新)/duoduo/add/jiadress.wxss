@@ -19,6 +19,10 @@ justify-content: space-between;
 .qian{
   color:#bababa;
 }
+.button{
+  background: red;
+  color: #fff;
+}
 .tianxie{
   width:60%;
 line-height:100rpx;
@@ -95,4 +99,6 @@ overflow: hidden;
     overflow:hidden; 
     text-overflow:ellipsis;
     white-space:nowrap; 
+    width:14rem;
+    text-align: right;
 }

@@ -1,0 +1,168 @@
+/* duoduo/my/home.wxss */
+.b_jing{
+ width:100%;
+height:300rpx;
+
+position:relative;
+top:10rpx;
+overflow:hidden;
+}
+.touha{
+width:500%;
+height:300rpx;
+position:absolute;
+z-index:66;
+}
+.head{
+width:90%;
+height:120rpx;
+
+position:relative;
+z-index:111;
+margin:0 auto;
+margin-top:10%;
+display: flex;
+}
+.head_tk{
+width:125rpx;
+height:125rpx;
+}
+.head_tou{
+width:120rpx;
+height:120rpx;
+border-radius:50%;
+}
+.tou_ming{
+width:100%;
+height:120rpx;
+
+}
+.name_n{
+padding-left:20rpx;
+font-size:40rpx;
+height:60rpx;
+color:#fff;
+}
+.icon-bianji{
+font-size:38rpx;
+
+
+}
+.icon-bianji{
+float:right;
+
+}
+.name_x{
+  color:#fff;
+width:100%;
+display: flex;
+justify-content:space-between;
+margin-top:25rpx;
+}
+.guanzhu_right{
+float:right;
+height:40rpx;
+line-height:40rpx;
+font-size:30rpx;
+display: flex;
+}
+.yuye{
+margin-right:15rpx;
+
+}
+.qti{
+  display:block;
+  border:1rpx solid #fff;
+  border-radius:10rpx;
+  width:80rpx;
+  height:35rpx;
+  line-height:35rpx;
+  text-align:center;
+
+  }
+.guanzhu{
+padding-left:20rpx;
+display:flex;
+
+}
+.guan{
+/* padding:10rpx; */
+font-size:28rpx;
+height:40rpx;
+
+text-align: center;
+}
+.icon-shu{
+font-size:30rpx;
+}
+
+
+
+.content{
+width:100%;
+height:1000rpx;
+background:#fff;
+position:absolute;
+top:260rpx;
+border-radius:30rpx 30rpx 0rpx 0rpx;
+}
+ .nini{
+position:relative;
+top:-12rpx;
+ }
+.shufang_lie{
+width:100%;
+height:220rpx;
+background:#fff;
+
+margin:0 auto;
+position:relative;
+top:30rpx;
+
+}
+.lie{
+  float:left;
+  width:25%;
+  text-align:center;
+
+}
+.zi{
+font-size:30rpx;
+text-align:center;
+position:relative;
+top:-38rpx;
+}
+.lie_img{
+width:90rpx;
+height:90rpx;
+margin:20px;
+}
+.xinxi_k{
+ width:100%;
+ height:90rpx;
+border-top:1rpx solid #ddd;
+background:#fff;
+position:relative;
+top:30rpx;
+}
+.xinxi{
+ width:95%;
+ height:90rpx;
+line-height:90rpx;
+margin:0 auto;
+background:#fff;
+display: flex;
+justify-content: space-between;
+}
+.jian{
+width:50rpx;
+ height:50rpx;
+position:relative;
+top:22rpx;
+}
+.name{
+
+  font-size:32rpx;
+}
+
+

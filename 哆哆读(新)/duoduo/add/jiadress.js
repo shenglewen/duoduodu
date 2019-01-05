@@ -10,7 +10,9 @@ Page({
     mobile:"",
     address:"请选择",
     longitude: '',
-    latitude: ''
+    latitude: '',
+    status:0,
+    detailed:'',
   },
 
   /**
@@ -68,12 +70,20 @@ Page({
   onShareAppMessage: function () {
 
   },
+  //詳細地址
+  detailed:function(e){
+    this.setData({
+      detailed: e.detail.value
+
+    })
+  },
+  //出借人
   usename:function(e){
-console.log()
 this.setData({
   usename: e.detail.value
 })
   },
+  //手機號
   mobile: function (e) {
    
  this.setData({
@@ -82,22 +92,53 @@ this.setData({
     
    
   },
+  //是否默認
+
+  status:function(){
+    if (this.data.status==0){
+     this.setData({
+       status: 1
+     })
+   }else{
+     this.setData({
+       status: 0
+     })
+   }
+    console.log(this.data.status)
+  },
+
   updiz:function(){
+    var that=this
     wx.request({
       url: 'https://dododu.2om.cn/api.php/user/useraddress',
       data: {
         userid: app.data.user.userid,
-        usename: '',
-        mobile: '',
-        longitude:'',
-        latitude:'',
-        status:""
+        username: that.data.usename,
+        mobile: that.data.mobile,
+        longitude: that.data.longitude,
+        latitude: that.data.latitude,
+        status: that.data.status,
+        address:that.data.detailed
       },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res.data)
+        if (res.data.code == 200) {
+
+          wx.showModal({
+            title: '添加成功',
+            content: '新地址已添加成功',
+            success: function (res) {
+              if (res.confirm) {
+                wx.switchTab({
+                  url: '../my/home',
+                })
+              }
+            }
+          })
+
+        }
 
       }
     })
@@ -107,12 +148,13 @@ this.setData({
     wx.chooseLocation({
       success: function (res) {
         // console.log(res)
+             // console.log(that.data)
         that.setData({
           address: res.address,
           longitude: res.longitude,
           latitude: res.latitude
         });
-        // console.log(that.data)
+       
       },
       fail: function () {
         // fail

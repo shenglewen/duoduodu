@@ -1,15 +1,25 @@
 {
   "pages": [
-    "duoduo/add/jiadress",
     
-    "login/bangding/dff ",
+<<<<<<< HEAD
+    "login/bangding/dff",
+=======
+>>>>>>> origin/shenglewen
     
     "duoduo/index/index",
+
+    "login/bangding/dff",
+    
+
+
     "duoduo/borrow/jieyue",
     "duoduo/share/share",
     "duoduo/bank/read",
     "duoduo/my/home",
 
+    "duoduo/bianji/share",    
+    "duoduo/add/jiadress",
+    "duoduo/modify/jiadress",
     "duoduo/message/basic",    
     "duoduo/my_library/mylibraries",
     "duoduo/my_borrow/myborrow",
@@ -19,7 +29,6 @@
     "duoduo/accredit_np/npassword",
     "duoduo/security/shezhi",
     "duoduo/withdraw/tixian",
-    "duoduo/setting_book/ library ",
     "duoduo/borrow_q/affirm_b",
     "duoduo/duihua_k/duihua",
     "duoduo/accredit/accredit",
@@ -36,10 +45,7 @@
     "duoduo/my_library _dh/daihuan",
     "duoduo/message_gl/manage",
     "duoduo/library_x/details",
-    "duoduo/map/map"
-    
-    
-   
+    "duoduo/settingbook/library"
   
   ],
   "window": {
@@ -68,7 +74,7 @@
       {
         "selectedIconPath": "img/22xuan.png",
         "iconPath": "img/2fd.png",
-        "pagePath": "duoduo/share/share",
+        "pagePath": "duoduo/fabugx/fabugx",
         "text": "共享"
       },
       {

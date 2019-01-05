@@ -1,21 +1,6 @@
 // duoduo/message/basic.js
 var app = getApp()
-// Page({
 
-// data: {
-// },
-//   closecart: function () {
-//     var that = this;
-//     that.setData({
-//       off: false
-//     });
-//   },
-//   showcart: function () {
-//     var that = this;
-//     that.setData({
-//       off: true,
-//     });
-//   },
 Page({
   data: {
     hobbys: "",
@@ -35,28 +20,34 @@ Page({
     schools: "请选择",
     school: ['xx', 'xx', 'xx', 'xx'],
     items: [{
-        name: '学生',
-        value: '1',
-        checked: false }, {
-        name: '爸爸',
-        value: '2',
-        checked: false }, {
-        name: '妈妈',
-        value: '3',
-        checked: false }, {
-        name: '爷爷',
-        value: '4',
-        checked: false }, {
-        name: '奶奶',
-        value: '5',
-        checked: false}, {
-        name: '书馆馆长',
-        value: '6',
-        checked: false }, {
-        name: '其他',
-        value: '7',
-        checked: false},
-    ],
+      name: '学生',
+      value: '1',
+      checked: false
+    }, {
+      name: '爸爸',
+      value: '2',
+      checked: false
+    }, {
+      name: '妈妈',
+      value: '3',
+      checked: false
+    }, {
+      name: '爷爷',
+      value: '4',
+      checked: false
+    }, {
+      name: '奶奶',
+      value: '5',
+      checked: false
+    }, {
+      name: '书馆馆长',
+      value: '6',
+      checked: false
+    }, {
+      name: '其他',
+      value: '7',
+      checked: false
+    }, ],
     hobby: [{
         name: '读书',
         value: '1',
@@ -78,6 +69,80 @@ Page({
         checked: false
       },
     ]
+  },
+  // 面页加载
+  onReady: function() {
+    //如果有年龄显示年龄
+    var sex = this.data.objectArray[app.data.user.gender]
+    if (app.data.user.index != "") {
+      this.setData({
+        sex: sex
+      })
+    }
+    //如果有年级。。。
+    if (app.data.user.yeargrade != "" && app.data.user.yeargrade != null) {
+      this.setData({
+        yeargrades: app.data.user.yeargrade
+      })
+    }
+    //如果有学校。。。
+
+    if (app.data.user.school != "" && app.data.user.school != null) {
+      this.setData({
+        schools: app.data.user.school
+      })
+    }
+    //爱好r
+    var hobby = app.data.user.hobby
+    if (hobby != null) {
+      var hobby = hobby.split(",");
+      var hobbys = this.data.hobby
+      hobby.pop()
+      for (var i = 0; i < hobby.length; i++) {
+        var a = hobby[i] - 1
+        var uphobby = "hobby["+a+"].checked";
+        this.setData({
+          [uphobby]: true,
+        })
+      }
+    }
+<<<<<<< HEAD
+    //身份
+   
+    if (hobby != null) {
+      var identity = app.data.user.identity - 1;
+      console.log(app.data.user.identity)
+      var upidentity = "items[" + identity + "].checked";
+        this.setData({
+          [upidentity]: true,
+        })
+      }
+    
+=======
+
+>>>>>>> origin/shenglewen
+    //如果有年级。。。
+    if (app.data.user.birthday != "" && app.data.user.birthday != null) {
+      this.setData({
+        dates: app.data.user.birthday
+      })
+    }
+    //显示微信头像.昵称和默认选中身份
+<<<<<<< HEAD
+  
+=======
+    var identity = app.data.user.identity - 1;
+    var upidentity = 'items[' + identity + '].checked';
+    console.log(upidentity)
+>>>>>>> origin/shenglewen
+    this.setData({
+      username: app.data.user.nickname,
+      name: app.data.user.truename,
+      headerimg: app.data.user.face,
+      hobbys: app.data.user.hobby,
+      identity: app.data.user.identity,
+    })
+    console.log(this.data)
   },
   //  点击时间组件确定事件  
   bindTimeChange: function(e) {
@@ -134,66 +199,11 @@ Page({
     })
 
   },
-  // 面页加载
-  onReady: function() {
-    //如果有年龄显示年龄
-    var sex = this.data.objectArray[app.data.user.gender]
-    if (app.data.user.index != "") {
-      this.setData({
-        sex: sex
-      })
-    }
-    //如果有年级。。。
-    if (app.data.user.yeargrade != "") {
-      this.setData({
-        yeargrades: app.data.user.yeargrade
-      })
-    }
-    //如果有学校。。。
 
-    if (app.data.user.school != "") {
-      this.setData({
-        schools: app.data.user.school
-      })
-    }
-    //爱好
-    var hobby = app.data.user.hobby.split(",");
-    var hobbys = this.data.hobby
-    hobby.pop()
-    for(var i=0;i<hobby.length;i++){
-      var a=hobby[i]-1
-      var uphobby = "hobby[" + a + "].checked";
-      this.setData({
-        [uphobby]: true
-      })
-    }
-
-
-   
-
-    //如果有年级。。。
-    if (app.data.user.birthday != "") {
-      this.setData({
-        dates: app.data.user.birthday
-      })
-    }
-    //显示微信头像.昵称和默认选中身份
-    var identity = app.data.user.identity - 1;
-    var upidentity = "items[" + identity + "].checked";
-    this.setData({
-      username: app.data.user.nickname,
-      name: app.data.user.truename,
-      headerimg: app.data.user.face,
-      hobbys:app.data.user.hobby,
-      identity: app.data.user.identity,
-      [upidentity]:true
-    })
-    
-  },
   checkboxChange: function(e) {
     var arr = e.detail.value
 
-    var str = "";
+    var str = "0";
     for (var i = 0; i < arr.length; i++) {
       str += arr[i] + ","
     }
@@ -229,7 +239,7 @@ Page({
             var data = res.data
             var img = JSON.parse(data).data
             // console.log(img)
-            app.data.user.face =img
+            app.data.user.face = img
             that.setData({
               headerimg: img
             })
@@ -251,7 +261,7 @@ Page({
     var identity = that.identity;
 
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/upinfo', // 仅为示例，并非真实的接口地址
+      url: 'https://dododu.2om.cn/api.php/user/upinfo',
       data: {
         userid: userid,
         username: that.username,
@@ -267,16 +277,28 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        var data=res.data.data
-        console.log(data)
-        app.data.user.truename=data.truename
-        app.data.user.username = data.username
-        app.data.user.yeargrade = data.yeargrade
-        app.data.user.school = data.school
-        app.data.user.birthday = data.birthday
-        app.data.user.hobby=data.hobby
-        app.data.user.identity=data.identity
-
+        var data = res.data.data
+        console.log(res)
+        if (res.data.code == 200) {
+          app.data.user.truename = data.truename
+          app.data.user.username = data.username
+          app.data.user.yeargrade = data.yeargrade
+          app.data.user.school = data.school
+          app.data.user.birthday = data.birthday
+          app.data.user.hobby = data.hobby
+          app.data.user.identity = data.identity
+          wx.showModal({
+            title: '绑定成功',
+            content: '您的信息已经修改成功',
+            success: function(res) {
+              if (res.confirm) {
+                wx.switchTab({
+                  url: '../my/home',
+                })
+              }
+            }
+          })
+        }
       }
     })
   }

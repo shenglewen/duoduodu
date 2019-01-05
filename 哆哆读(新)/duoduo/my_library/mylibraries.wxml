@@ -1,32 +1,31 @@
 <view class="head">
-<view class="head_n">
-<image class="touxiang" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
-    </image>   
-<text class="hehe">王呵呵的书馆</text>
-    <span class="iconfont icon-right"></span> 
-</view>
+  <view class="head_n" bindtap='jmp'>
+    <image class="touxiang" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+    </image>
+
+
+    <text class="hehe">王呵呵的书馆</text>
+
+    <span class="iconfont icon-right"></span>
+  </view>
 </view>
 <view class="liebiao">
-      <view class="yinru hong"> 上传</view>
-      <view class="yinru">待还</view>
-      <view class="yinru">已还</view>
-      <view class="yinru">超时</view>
+  <view class="yinru hong"> 上传</view>
+  <view class="yinru">待还</view>
+  <view class="yinru">已还</view>
+  <view class="yinru">超时</view>
 </view>
 <!-- 书 -->
-<view class="contect">
-<image class="shufeng" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
-    </image>  
-<view class="kuang"> 
-<view class="shu_name">酷猫日记</view>
-<view class="name">作者:<text>赵嘻嘻</text></view>
+<block wx:for="{{books}}" wx:for-index="i" wx:for-item="a">
+<view class="contect" id="{{a.productid}}" bindtap='binaji'>
+  <image class="shufeng" src="{{a.thumb}}" mode="aspectFill">
+  </image>
+  <view class="kuang">
+    <view class="shu_name">{{a.title}}</view>
+    <view class="name">作者:
+      <text>{{a.zuozhe}}</text>
     </view>
+  </view>
 </view>
+</block>
 <!-- 重复书 -->
-<view class="contect">
-<image class="shufeng" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
-    </image>  
-<view class="kuang"> 
-<view class="shu_name">酷猫日记</view>
-<view class="name">作者:<text>赵嘻嘻</text></view>
-    </view>
-</view>

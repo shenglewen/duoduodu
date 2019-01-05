@@ -8,7 +8,7 @@ Page({
    */
   data: {
     mobile:"",
-    code:"1",
+    code:"",
   },
 
   /**
@@ -83,7 +83,6 @@ Page({
    */
   watchcode: function (event) {
     var code = event.detail.value;
-    var arr=code.split("")
     if (/^[0-9]*$/.test(code)) {
       this.setData({
         code: code
@@ -149,7 +148,20 @@ wx.request({
         userid:userid,
       },
       success(res) {
-         console.log(res)
+        if(res.code==200){
+          wx.showModal({
+            title: '绑定成功',
+            content: '您的手机已经修改成功',
+            success: function (res) {
+              if (res.confirm) {
+                wx.switchTab({
+                  url: '../my/home',
+                })
+              }
+            }
+          })
+        }
+        
       }
   })
   }

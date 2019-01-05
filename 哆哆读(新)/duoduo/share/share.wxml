@@ -1,4 +1,7 @@
 <!--duoduo/share/share.wxml-->
+<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==1?false:true}}">扫码填书</button>
+
+<view wx:if="{{hidden==0?false:true}}"> 
 <view class="shuji_k">
 <view class="shuji">书籍详情</view>
 </view>
@@ -7,7 +10,7 @@
    <view class="shuming">
       <view class="shuming_l">
        <text class="daa">  书名</text>
-       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入书名"placeholder-style="color:#bababa;"></input>
+       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入书名"placeholder-style="color:#bababa;" value='{{title}}'></input>
       </view>
     </view>
 </view>
@@ -17,7 +20,7 @@
       <view class="fengmian_l">
       
        <text class="da">  封面</text>
-      <view class="fmtu"></view>
+      <view class="fmtu"><image class='thumb' src='{{thumb}}'></image></view>
       </view>
     </view>
 </view>
@@ -26,7 +29,7 @@
    <view class="jianjie">
       <view class="jianjie_l">
       <text class="wenzi">简介</text>
-     <textarea class="wenzi_k"> </textarea>
+     <textarea class="wenzi_k">{{description}} </textarea>
       </view>
     </view>
 </view>
@@ -37,7 +40,7 @@
       <view class="shuming_l">
       
         <text class="daa"> 作者</text>
-       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入作者"placeholder-style="color:#bababa;"></input>
+       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入作者"placeholder-style="color:#bababa;" value='{{author}}'></input>
       </view>
     </view>
 </view>
@@ -48,11 +51,10 @@
       <view class="shuming_l">
       
         <text class="daa"> 出版社</text>
-       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入出版社"placeholder-style="color:#bababa;"></input>
+       <input class="tianxie" type="text" style="text-align:right" placeholder="请输入出版社"placeholder-style="color:#bababa;" value='{{chubanshe}}'></input>
       </view>
     </view>
 </view>
-
 <!-- 标签 -->
 <view class="xinxi_k">
 
@@ -72,6 +74,8 @@
 </view>
   </view>
 </view>
+</view>
+
 <!-- 有偿租赁 -->
  <view class="zuping_k"> 
   <view class="zuping">
@@ -80,18 +84,18 @@
   <view class="zuping_right"> 
   <view class="nini">
   <!-- 选择 -->
-<checkbox-group >
+<checkbox-group bindtap="freedeposit">
 <label >
-<checkbox ></checkbox>
+<checkbox checked='{{freedeposit==0?false:true}}'></checkbox>
 </label> 
 </checkbox-group>
 <text class="hah">免租金</text>
 </view>
   <view class="nini">
   <!-- 选择 -->
-<checkbox-group >
+<checkbox-group bindtap="rentfree">
 <label >
-<checkbox ></checkbox>
+<checkbox checked='{{rentfree==0?false:true}}'></checkbox>
 </label> 
 </checkbox-group>
 <text class="hah">免押金</text>
@@ -103,7 +107,7 @@
  
   </view>
 <!--押金 -->
-<view class="library_k">
+<view class="library_k" wx:if="{{rentfree==0}}">
 <view class="haha_k">
       <view class="libraryy">
      <text class="daaa">押金</text>
@@ -122,7 +126,7 @@
 </view>
   </view>
 <!--租金 -->
-<view class="library_k">
+<view class="library_k"  wx:if="{{freedeposit==0}}">
 <view class="haha_k">
       <view class="libraryy">
        <text class="daaa"> 租金</text>
@@ -173,7 +177,9 @@
       <view class="xingbie_k"  bindtap='showcart'>
       <text class="bie"> 取书点 </text> 
                 <view class="xuanze_k">
-                请选择
+               <picker bindchange='bindPickerChange' value="{{addressarr}}" range="{{address}}" range-key="{{'address'}}">
+{{address1}}
+  </picker>
               <view class="tukk">   
             <image class="tu_t" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
           </image>
@@ -183,6 +189,6 @@
 </view>
   </view>
 </view>
-<button class="agong" type="warn" bindtap="shaoma">扫码填书</button>
-<button class="agong" type="warn" bindtap="book"> 立即共享 </button>
+<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==0?false:true}}">扫码填书</button>
+<button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>
