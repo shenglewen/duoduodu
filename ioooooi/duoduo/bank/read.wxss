@@ -1,0 +1,169 @@
+/* duoduo/bank/read.wxss */
+.banner{
+height:300rpx;
+background:#000;
+
+}
+.banner_img{
+width:100%;
+height:300rpx;
+
+}
+.bijis{
+width:180rpx;
+height:50rpx;
+line-height:45rpx;
+background:#f45a61;
+position:absolute;
+right:50rpx;
+top:20rpx;
+border-radius:50rpx;
+color:#fff;
+display: flex;
+justify-content: space-between;
+}
+.jifen{
+width:180rpx;
+height:50rpx;
+line-height:45rpx;
+background:#f45a61;
+position:absolute;
+right:50rpx;
+top:100rpx;
+border-radius:50rpx;
+color:#fff;
+display: flex;
+justify-content: space-between;
+}
+.wotu{
+width:150rpx;
+height:150rpx;
+background:#f45a61;
+position:absolute;
+right:70rpx;
+top:200rpx;
+border-radius:15rpx;
+}
+.xiang{
+width:150rpx;
+height:150rpx;
+position:absolute;
+right:70rpx;
+top:200rpx;
+border-radius:15rpx;
+}
+.haha{
+  width:80%;
+}
+.bj{
+padding-left:20rpx;
+padding-top:20rpx;
+font-size:26rpx;
+}
+.shu{
+font-size:30rpx;
+position:relative;
+top:-3rpx;
+}
+.zuo{
+width:35rpx;
+height:35rpx;
+margin-top:10rpx;
+}
+/* 内容 */
+.conter{
+    width:90%;
+    background:#fff;
+    margin:30rpx auto;
+}
+.kuai_tou{
+   float:left;
+   width:100rpx;
+   height:100rpx;
+   border-radius:10rpx;
+}
+.tou_img{
+ float:left;
+ width:100rpx;
+ height:100rpx;
+ border-radius:10rpx;
+}
+.name{
+font-size:30rpx;
+margin-left:20rpx;
+}
+.xiexie{
+font-size:26rpx;
+margin-left:120rpx;
+}
+.xie_tu{
+margin-left:110rpx;
+background:#fff;
+}
+.bujitu{
+width:250rpx;
+height:250rpx;
+padding:12rpx;
+}
+.dianzan{
+  width:90%;
+height:56rpx;
+background:#fff;
+margin:10rpx auto;
+display:flex;
+justify-content:space-between;
+}
+.shijian{
+font-size:26rpx;
+margin-top:12rpx;
+margin-left:100rpx;
+color:#ddd;
+}
+.left{
+float:right;
+ width:150rpx;
+ height:56rpx;
+background:#fff;
+}
+.right{
+  float:right;
+ width:200rpx;
+ height:56rpx;
+ border-right:1rpx solid #ddd;
+background:#fff;
+}
+.dzan{
+width:20%;
+height:65%;
+margin-left:100rpx;
+}
+.fen{
+float:right;
+width:44rpx;
+height:34rpx;
+margin-top:12rpx;
+}
+.ping{
+width:44rpx;
+height:36rpx;
+margin-left:25rpx;
+}
+.xiao{
+font-size:20rpx;
+padding-left:20rpx;
+}
+.jiyi{
+  width:60%;
+  height:60rpx;
+  font-size:30rpx;
+  background:#f45a61;
+  box-shadow:1px 6px 14px #f45a61;
+  text-align:center;
+  line-height:60rpx;
+  color:#fff;
+  border-radius:10rpx;
+
+  position:fixed;
+  left:160rpx;
+  bottom:60rpx;
+}

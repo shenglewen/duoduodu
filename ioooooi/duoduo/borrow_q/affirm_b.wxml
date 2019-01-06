@@ -1,0 +1,73 @@
+<!--duoduo/borrow_q/affirm_b.wxml-->
+<view class="b_head">
+   <view class="b_head_z">
+     <view class="b_headtu">
+        <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        </image>
+      </view>
+     <text class="shuguan">孙世家的书馆</text>
+     </view>
+</view>
+<view class="shuji">
+   <view class="shujik">
+  <view class="shujik_left">
+  <image class="left_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+    </image>
+  </view>
+      <view class="shujik_right">
+        <view class="rwen">转动时光的伞转动时光的伞转动时光的伞转动.....                   </view>
+           <view class="wen_zuo">作者:安特·哈哈·你你</view>
+       </view>
+   </view>
+</view>
+<!-- 取书地点 -->
+<view class="qushu">
+      <text class="qwe">取书地点:</text>
+      <view class="qushu_r">
+      北京市昌平区中央戏剧学院宿舍楼1号2单元1234
+      </view>
+</view>
+<!-- 取书时间-->
+<view class="qushu_time">
+     <text class="qwe">取书时间:</text>
+     <view class="timesj">
+     17:50(下单后请联系出借人)
+      </view>
+</view>
+<!-- 注 -->
+<view class="zhu">
+注:线上只需要支付押金即可借书,最长可借阅10天,超时借书人将扣除全部押金
+
+
+</view>
+<!-- 底部 -->
+<view class="footer">
+  <view class="xianshang zhifuj">
+        <text class="yuan1">线上支付租金:</text>
+        <text class="yuan">¥6.5</text>
+  </view>
+  <view class="xianshang zhifuj">
+          <text class="yuan1">线上支付租金:</text>
+          <text class="yuan">¥15.5</text>
+  </view>
+      <view class="xianshang yuan3"bindtap='showcart'  >
+              支付押金
+      </view>
+</view>
+<!-- 支付弹窗 -->
+
+<view class='tan' wx:if="{{off == true}}">
+<view class='cloer' bindtap='closecart'></view>
+<view class='keep'>
+<view class="conter_l">
+<view class="conter_z">已支付</view>
+<view class="conter_tu">请联系出借人
+ <image class="imgtu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        </image>
+
+
+</view>
+
+</view>
+</view>
+</view>

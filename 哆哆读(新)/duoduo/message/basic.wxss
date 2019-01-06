@@ -257,11 +257,9 @@ radradio{
   color: #f45a61 ;
 }
 .cheng{
-  width: 80%;
   border: none;
   color: #fff;
   background: red;
-  margin-top: 2rem
 }
 .picker{
   font-weight:100;

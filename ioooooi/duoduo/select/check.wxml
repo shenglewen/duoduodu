@@ -1,0 +1,26 @@
+<!--duoduo/select/check.wxml-->
+
+<view class="biaoqian_l">
+标签自动排列
+</view>
+<view class="xuan">
+最多可选5个
+</view>
+<view class="suoyou">
+   <!-- 标签选择内容 -->
+<view class="biaoqian_k">
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+        <view class="biaoqian">童话故事</view>
+
+</view>
+</view>
+ <view class="wan">
+<button class="wc" type="warn" size="" loading="" plain=""
+        disabled="" bindtap="" hover-class=""> 完成</button>
+         </view>

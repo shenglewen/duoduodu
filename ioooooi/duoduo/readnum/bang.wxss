@@ -1,0 +1,88 @@
+/* duoduo/readnum/bang.wxss */
+.bang_k{
+height:100rpx;
+line-height:100rpx;
+text-align: center;
+color:#f45a61;
+border-top:1rpx solid #f6f6f6;
+}
+
+.zhan{
+height:30rpx;
+background:#f6f6f6;
+}
+.kuang{
+height:120rpx;
+background:#fff;
+border-bottom:1rpx solid #ddd;
+}
+.nei{
+width:90%;
+height:120rpx;
+background:#fff;
+margin:0 auto;
+display:flex;
+justify-content: space-between;
+}
+.left{
+display:flex;
+
+}
+.num{
+font-size:60rpx;
+font-style:italic; 
+color:#f0f;
+width:100rpx;
+height:120rpx;
+line-height:120rpx;
+text-align: center;
+/* background:#f33; */
+}
+.tu{
+width:100rpx;
+height:100rpx;
+border-radius:50%;
+margin-top:15rpx;
+}
+.num_n{
+font-size:32rpx;
+}
+.shu_n{
+font-size:26rpx;
+}
+.name{
+padding-left:20rpx;
+margin-top:20rpx;
+
+
+}
+.right{
+  margin-top:45rpx;
+ font-size:26rpx;
+ width:100rpx;
+ height:45rpx;
+ line-height:45rpx;
+ text-align: center;
+ background:#f45a61;
+ border-radius:25rpx;
+ color:#fff;
+}
+  .jia{
+margin-top:45rpx;
+ font-size:26rpx;
+ width:100rpx;
+ height:45rpx;
+ line-height:45rpx;
+ text-align: center;
+ background:#fff;
+ border:1rpx solid #ddd;
+ border-radius:25rpx;
+ color:#ddd;
+
+
+
+
+  }
+  
+  
+ 

@@ -1,47 +1,27 @@
 // duoduo/security/shezhi.js
-var app=getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    mobile:0
+  
   },
 bangding:function(){
   wx.navigateTo({
     url: '../accredit_bd/bdshouji',
   })
 },
-  change: function () {
+change: function () {
     wx.navigateTo({
       url: '../accredit_bd/bdshouji',
     })
   },
-  please:function(){
-   wx.showModal({
-     title: '您未绑定手机',
-     content: '请先绑定手机',
-     success:function(res){
-       if(res.confirm){
-         wx.navigateTo({
-           url: '../accredit_bd/bdshouji',
-         })
-       }
-     }
-   })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
   
-
-  this.setData({
-    mobile: app.data.user.mobile
-  })
-  console.log(mobile)
   },
 
   /**

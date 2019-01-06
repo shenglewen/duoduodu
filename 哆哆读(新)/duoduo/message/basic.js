@@ -109,7 +109,7 @@ Page({
 
     //身份
    
-    if (app.data.user.identity != null) {
+    if (hobby != null) {
       var identity = app.data.user.identity - 1;
       console.log(app.data.user.identity)
       var upidentity = "items[" + identity + "].checked";
@@ -118,7 +118,6 @@ Page({
         })
       }
     
-
     //如果有年级。。。
     if (app.data.user.birthday != "" && app.data.user.birthday != null) {
       this.setData({
@@ -280,7 +279,7 @@ Page({
           app.data.user.hobby = data.hobby
           app.data.user.identity = data.identity
           wx.showModal({
-            title: '修改成功',
+            title: '绑定成功',
             content: '您的信息已经修改成功',
             success: function(res) {
               if (res.confirm) {

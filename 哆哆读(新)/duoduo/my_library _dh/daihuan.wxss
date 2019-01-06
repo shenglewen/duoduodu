@@ -1,0 +1,99 @@
+/* duoduo/my_library _dh/daihuan.wxss */
+page{
+background:#f6f6f6;
+}
+.head{
+height:120rpx;
+background:#fff;
+border-top:1rpx solid #f6f6f6;
+border-bottom:1rpx solid #f6f6f6;
+}
+.hehe{
+position:relative;
+top:-30rpx;
+left:20rpx;
+}
+.kuang{
+margin-top:70rpx;
+}
+.head_n{
+width:90%;
+height:120rpx;
+line-height:120rpx;
+background:#fff;
+margin:0 auto;
+}
+.touxiang{
+width:100rpx;
+height:100rpx;
+background:#fff;
+border-radius:50%;
+margin-top:10rpx;
+}
+.icon-right{
+float:right;
+font-size:60rpx;
+color:#bababa;
+}
+.liebiao{
+height:80rpx;
+background:#fff;
+}
+.yinru{
+float:left;
+width:25%;
+text-align:center;
+line-height:80rpx;
+color:#bababa;
+border-bottom:3rpx solid #f6f6f6;
+}
+.hong{
+color:#f45a61;
+border-bottom:3rpx solid #f45a61;
+}
+.contect{
+width:95%;
+height:350rpx;
+background:#fff;
+margin:20rpx auto;
+border:1rpx solid #f6f6f6;
+display: flex;
+}
+.shufeng{
+  width:220rpx;
+  height:280rpx;
+  padding:32rpx;
+  }
+.shu_name{
+font-size:36rpx;
+}
+.jieriqi{
+font-size:22rpx;
+}
+.radio-group{
+    font-size: 35rpx;
+    display: flex;
+    /* flex-direction: column; */
+
+  }
+  .select{
+    width: 25rpx;
+    height: 25rpx;
+    padding-left:4rpx;
+    padding-right: 4rpx;
+  }
+  .checkbox{
+    display: flex;
+    align-items: center;
+  }
+  .nei{
+   font-size:19rpx;
+  }
+.img_tu2{
+width:80rpx;
+height:80rpx;
+border-radius:50%;
+}
+.w_name{
+font-size:26rpx;
+}

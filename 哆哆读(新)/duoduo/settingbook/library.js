@@ -30,10 +30,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
     if (!app.data.shop.shop_name){
       this.setData({
-        book: app.data.user.nickname + "的书馆",
+        book: app.data.user.nickname+"的书馆",
       })
     }else{
       this.setData({

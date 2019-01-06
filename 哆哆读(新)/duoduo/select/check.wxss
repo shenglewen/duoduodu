@@ -1,0 +1,47 @@
+/* duoduo/select/check.wxss */
+.biaoqian_l{
+height:80rpx;
+line-height: 100rpx;
+background:#fff;
+text-align: center;
+border-top:1rpx solid #ddd;
+
+}
+.xuan{
+height:65rpx;
+background:#fff;
+text-align: center;
+font-size:30rpx;
+ color:#bababa;
+}
+.suoyou{
+ width:90%;
+margin:10rpx auto;
+overflow: hidden;
+}
+.biaoqian{
+float:left;
+margin-left:25rpx;
+margin-top:25rpx;
+width:20%;
+height:60rpx;
+line-height:60rpx;
+/* border:1rpx solid #f45a61 ; */
+ border:1rpx solid #bababa ;
+ color:#bababa;
+font-size:28rpx;
+text-align:center;
+}
+.wc{
+width:90%;
+height:80rpx;
+line-height:80rpx;
+background:#f45a61;
+color:#fff;
+position:absolute;
+bottom:30rpx;
+left:5%;
+right:5%;
+display: block;
+margin:0 auto;
+}

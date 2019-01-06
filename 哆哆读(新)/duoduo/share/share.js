@@ -111,8 +111,7 @@ Page({
           addressid: data[0].addressid,
           address1: data[0].address,
           userid: app.data.user.userid,
-          shopid: app.data.shop.shopid,
-          hidden: 0,
+          shopid: app.data.shop.shopid, hidden: 0,
           buyNumber: 2,
           days: 7,
           daysmoney: 1,
@@ -127,11 +126,11 @@ Page({
           title: '',
           freedeposit: 0,
           rentfree: 0,
+        
         })
 
       }
     })
-    console.log()
   },
   //免租金
   freedeposit:function(){
@@ -217,9 +216,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    this.setData({
-     
-    })
+    
   },
 
   /**

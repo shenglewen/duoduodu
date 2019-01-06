@@ -120,7 +120,7 @@
                         <view class="disf" bindtap="numJiaTap">+</view>
                       </view>
                   </view>
-                   元
+                    元
             </view>     
       </view>
 </view>
@@ -164,7 +164,7 @@
                         <view class="disf" bindtap="numJiaTap1">+</view>
                       </view>
                   </view>
-                  天
+                    天
             </view> 
       </view> 
 </view>
@@ -174,7 +174,7 @@
 <view class="qushu_suo">
 <view class="qushu_k">
 <!-- 点击 -->
-      <view class="xingbie_k"  bindtap='showcart' wx:if='{{address==""?false:true}}'>
+      <view class="xingbie_k"  bindtap='showcart'>
       <text class="bie"> 取书点 </text> 
                 <view class="xuanze_k">
                <picker bindchange='bindPickerChange' value="{{addressarr}}" range="{{address}}" range-key="{{'address'}}">
@@ -189,8 +189,6 @@
 </view>
   </view>
 </view>
-<button class="address" >新增地址</button>
-
-<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==0?false:true}}">重新扫书</button>
+<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==0?false:true}}">扫码填书</button>
 <button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>

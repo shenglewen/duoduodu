@@ -1,0 +1,24 @@
+/* duoduo/fabugx/fabugx.wxss */
+.fb{
+ width:90%;
+ background:#f45a61;
+ color:#fff;
+ height:100rpx;
+ position:fixed;
+ top:80%;
+ left:10rpx;
+ right:10rpx;
+ z-index: 999;
+
+}
+.sg{
+width:90%;
+background:#fa9c9c;
+color:#fff;
+height:100rpx;
+position:fixed; 
+top:90%;
+left:10rpx;
+right:10rpx;
+z-index: 999;
+}
