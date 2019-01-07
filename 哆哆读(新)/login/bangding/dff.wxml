@@ -1,0 +1,3 @@
+<view>
+  <button class='goRegistRtn' type='warn' open-type='getUserInfo' bindgetuserinfo='doLogin'>获取授权</button>
+</view>

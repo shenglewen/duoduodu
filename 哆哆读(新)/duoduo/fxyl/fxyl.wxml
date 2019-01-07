@@ -1,0 +1,33 @@
+<!--duoduo/fxyl/fxyl.wxml-->
+<view class="tu_fx">
+  <image class="fxyl_tu" src="https://dododu.2om.cn/public/images/zu2111.png" mode="aspectFill">
+  </image>
+
+</view>
+<button class="yao">扫码邀请</button>
+<view class="yaoren">
+  <view class="ti">被邀请人</view>
+  <!-- 积分  -->
+  <view class="jifen">
+    <view class="name yi">哈哈哈哈哈</view>
+    <view class="num yi">13297570102</view>
+    <view class="shuzi yi">领取40积分</view>
+  </view>
+<view class="jifen">
+    <view class="name yi">哈哈哈哈哈</view>
+    <view class="num yi">13297570102</view>
+    <view class="shuzi yi">领取40积分</view>
+
+</view>
+
+</view>
+<view class="jingli">
+  分享给好友,有积分奖励哦!
+</view>
+<view class="tub">
+
+     <view class="qw"> <text class="iconfont icon-weixin " style="font-size:50px;color:#32bb39"></text></view>
+       <view class="qw"> <text class="iconfont icon-qq qw" style="font-size:50px;color:#00adf8"></text></view>
+       <view class="qw"> <text class="iconfont icon-xinxi1 qw" style="font-size:50px;color:#66a6e6"></text></view>
+       <view class="qw"> <text class="iconfont icon-weibo qw" style="font-size:50px;color:#ff7748"></text></view>
+</view>

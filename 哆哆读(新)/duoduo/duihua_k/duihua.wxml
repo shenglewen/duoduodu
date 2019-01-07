@@ -1,0 +1,14 @@
+<!--duoduo/duihua_k/duihua.wxml-->
+<view class='sk'>
+<view class='search_k'>
+ <span class="iconfont icon-huatong"></span>  
+<view class='search'>
+ 
+          <input type='text' 
+          confirm-type='search' value="" bindinput='inputBind' bindconfirm='query'></input>
+          <span class="iconfont icon-xiaolian"></span>  
+        </view>
+         <span class="iconfont icon-jiahao-fill"></span>  
+     </view>
+      </view>
+

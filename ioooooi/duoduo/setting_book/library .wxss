@@ -1,0 +1,107 @@
+/* duoduo/setting_book/ library .wxss */
+page{background-color:#edf0f3;}
+.library_k{
+height:100rpx;
+border-bottom:1rpx solid #ddd;
+}
+.library{
+width:90%;
+height:100rpx;
+line-height:100rpx;
+font-size:30rpx;
+/* background:#fff; */
+margin:0 auto;
+display: flex;
+justify-content: space-between; 
+}
+.libraryy{
+width:90%;
+height:100rpx;
+line-height:100rpx;
+font-size:30rpx;
+/* background:#fff; */
+margin:0 auto;
+
+}
+.librar_y{
+width:90%;
+height:100rpx;
+display: flex;
+font-size:30rpx;
+/* background:#fff; */
+margin:0 auto;
+justify-content: space-between; 
+}
+.name{
+  color:#555;
+}
+.namee{
+ 
+  color:#555;
+  float:right;
+  margin-right:42rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height:100rpx; 
+}
+.nam_e{
+ 
+  color:#555;
+  float:right;
+   margin-right:42rpx;
+  
+  display: flex;
+  justify-content: space-between;
+  line-height:100rpx; 
+}
+.namee1{
+
+  color:#555;
+  float:right;
+
+  display: flex;
+  justify-content: space-between; 
+}
+/* 加减 */
+.add {
+  display: flex;
+  width: 200rpx;
+  border-radius: 12 rpx;
+ 
+  border: 1px solid #ddd;
+}
+#add_r{
+width:30%;
+margin-top:20rpx;
+}
+.add view {
+  font-size: 26rpx;
+  width: 80rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  border: 1rpx #ededef solid;
+  text-align: center;
+}
+.add input {
+  font-size: 26rpx;
+  width: 80rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  border: 1rpx #ededef solid;
+text-align:center;
+align-items:center;
+justify-content: center;
+margin: auto; 
+}
+.li_zu{
+
+height:80rpx;
+margin-top:20rpx;
+}
+.zujie{
+  font-size: 23rpx;
+color:#444;
+
+
+
+}

@@ -1,0 +1,163 @@
+<!--duoduo/index/index.wxml-->
+<!-- 轮播此代码勿动(重要) -->
+<swiper indicator-dots="true"indicator-color="#fff"indicator-active-color="#f45a61"
+autoplay="true"current="0"interval="3000">
+    <swiper-item>
+     <image class="banner_img" src="https://dododu.2om.cn/public/images/l1.jpg" mode="aspectFill">
+       </image>
+    </swiper-item>
+     <swiper-item>
+    <image class="banner_img" src="https://dododu.2om.cn/public/images/l2.png" mode="aspectFill">
+       </image>
+    </swiper-item>
+    <swiper-item>
+     <image class="banner_img" src="https://dododu.2om.cn/public/images/l3.png" mode="aspectFill">
+       </image>
+    </swiper-item>
+</swiper>
+<!-- 喇叭 -->
+<view class="xiaoxi_k">
+<view class="xiaoxi">
+ <span class="iconfont icon-laba"></span> 
+   <swiper class="sss"autoplay="true" vertical="true"interval="5000">
+   <swiper-item class="tongzhi">据通知2019-01-01哆哆读有活动啦</swiper-item>
+   <swiper-item class="tongzhi">567</swiper-item>
+    <swiper-item class="tongzhi">567</swiper-item>
+    </swiper> 
+  <span class="iconfont icon-right"></span> 
+</view>
+</view>
+<!-- 列表 -->
+<view class="liebiao_k">
+<view class="liebiao">
+  <view class="wentu"  bindtap="read">
+  <image class="wentu_img" src="https://dododu.2om.cn/public/images/2shubang.png" mode="aspectFill">
+       </image>
+    <text>读书榜</text>   
+  </view>
+  <view class="wentu" bindtap="read_j">
+  <image class="wentu_img" src="https://dododu.2om.cn/public/images/2借书.png" mode="aspectFill">
+       </image>
+   <text>借书榜</text> 
+  </view>
+  <view class="wentu" bindtap="borrow">
+  <image class="wentu_img" src="https://dododu.2om.cn/public/images/2shuguan.png" mode="aspectFill">
+       </image>
+        <text>借书馆</text>
+  </view>
+  <view class="wentu"  bindtap="borrow_s">
+  <image class="wentu_img" src="https://dododu.2om.cn/public/images/3jieshu.png" mode="aspectFill">
+       </image>
+        <text>我要借书</text>
+  </view>
+  <view class="wentu"bindtap="share" >
+  <image class="wentu_img" src="https://dododu.2om.cn/public/images/3youli.png" mode="aspectFill">
+       </image>
+        <text>分享有礼</text>
+  </view>
+
+</view>
+
+</view>
+<!-- 可借列表-->
+<view class="kejie_k">
+<view class="kejie">
+ <span class="iconfont icon-zuobiao"></span> 
+   <text class="zi hong"> 附近可借</text>
+</view>   
+<view class="kejie kuang">
+<span class="iconfont icon-iconfontdiqiu"></span> 
+   <text class="zi "> 全国可借</text>
+</view>  
+<view class="kejie" bindtap="shain">
+<span class="iconfont icon-shaixuan"></span> 
+   <text class="zi">筛选</text>
+ <span class="iconfont icon-angle-down"></span>    
+</view>  
+</view>
+<!-- 附近可借内容 -->
+<view class="fujin_k">
+<view class="fujin">
+<view class="mao">
+<image class="mao_img" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+       </image>
+<!-- <image class="hong_img" src="/images/21192.png" mode="aspectFill">
+       </image> -->
+  </view>
+ <view class="mao_right">
+  <view class="biaoati">
+     <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
+   <image class="xiang_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+       </image>
+    </view>
+      <view class="biaoati_n">
+      <!-- <text>[</text> -->
+      <text class="biati_zn">如果说生命是一次旅行,那么总有些意料如果说生命是一次旅行,那么总有些意料之外转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈如果说生命是一次旅行</text>
+      <!-- <text>]</text> -->
+
+      </view>
+<view class="yue">借阅:<text class="shu">1222</text>次</view>
+<view class="zuobiao_a">
+<view class="tian">
+  <span class="iconfont icon-zuobiao1"></span> 
+  <text class="adress">世贸天阶11号</text>
+      </view>
+<view class="tian_right">
+ <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+     </image>
+
+    <text class="pao">200m</text>
+       <span class="iconfont icon-xin5"></span> 
+  </view>
+
+</view>
+ </view> 
+  </view>
+</view>
+<!-- 扫一扫 -->
+<view class="saoma">
+ <span class="iconfont icon-saoyisao-copy"></span> 
+
+<image class="jilu" src="https://dododu.2om.cn/public/images/002118.png" mode="">
+     </image>
+
+</view>
+<!-- 附近可借内容 -->
+<view class="fujin_k">
+<view class="fujin">
+<view class="mao">
+<image class="mao_img" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+       </image>
+<!-- <image class="hong_img" src="/images/21192.png" mode="aspectFill">
+       </image> -->
+  </view>
+ <view class="mao_right">
+  <view class="biaoati">
+     <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
+   <image class="xiang_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+       </image>
+    </view>
+      <view class="biaoati_n">
+      <!-- <text>[</text> -->
+      <text class="biati_zn">如果说生命是一次旅行,那么总有些意料如果说生命是一次旅行,那么总有些意料之外转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈如果说生命是一次旅行</text>
+      <!-- <text>]</text> -->
+
+      </view>
+<view class="yue">借阅:<text class="shu">1222</text>次</view>
+<view class="zuobiao_a">
+<view class="tian">
+  <span class="iconfont icon-zuobiao1"></span> 
+  <text class="adress">世贸天阶11号</text>
+      </view>
+<view class="tian_right">
+ <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+     </image>
+
+    <text class="pao">200m</text>
+       <span class="iconfont icon-xin5"></span> 
+  </view>
+
+</view>
+ </view> 
+  </view>
+</view>

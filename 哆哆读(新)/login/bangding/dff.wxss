@@ -1,0 +1,15 @@
+/* login/bangding/dff .wxss */
+page{
+  background: #f4f4f4;
+}
+.conser{
+  text-align: center
+}
+.img{
+  width: 5rem;
+  height: 5rem;
+margin: 0 auto;
+ margin-top: 4rem;
+ margin-bottom: 4rem
+}
+
