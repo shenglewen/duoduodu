@@ -9,6 +9,7 @@ Page({
     dizhival:"",
     dizhi: ['学校','家','公司','其他'],
     dizhitext:'请选择',
+
     usename:"",
     mobile:"",
     address:"请选择",
@@ -29,7 +30,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
   }, 
 
   /**
@@ -43,6 +43,7 @@ Page({
       dizhitext:val,
       dizhival:val
     })
+
   },
 
   /**
@@ -159,7 +160,7 @@ this.setData({
       }
     })
   },
-  aaa:function(){   
+  aaa:function(){
     var that=this;
     wx.chooseLocation({
       success: function (res) {

@@ -65,6 +65,7 @@
                 <picker bindchange="yeargradeChange" value="{{indexyeargrade}}" range="{{yeargrade}}" mode = "selector">  
     <view class="picker">  
     {{yeargrades}}
+
     </view>  
   </picker>  
               <view class="tuk">   

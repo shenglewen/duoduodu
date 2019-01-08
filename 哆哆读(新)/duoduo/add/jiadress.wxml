@@ -71,4 +71,5 @@
     </view>
   </view>
 </view>
+
 <button class="button" bindtap='updiz'>保存地址</button>

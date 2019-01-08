@@ -6,7 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+
+   book:'',
+   a:"",
+   latitude:"",
   },
   read: function () {
     wx: wx.navigateTo({
@@ -16,7 +19,8 @@ Page({
  
    read_j: function() {
     wx: wx.navigateTo({
-      url: '../readnum/bang'
+
+      url: '../readnuma/bang'
     })
   },
  
@@ -43,34 +47,48 @@ Page({
       url: '../check/check'
     })
   },
+
+  //收藏
+  collection:function(){
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/user/cs',
+      data:{
+       userid:app.data.user.userid,
+       productid:4,
+       type:1
+      },
+      success(res){
+      console.log(res)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData.code)
 
     //等待 code 的写入
-      setTimeout(function () {
+    var that = this
+
+    wx.getLocation({
+      success: function (res) {
         wx.request({
-          url: 'https://dododu.2om.cn/api.php/user/getopenid',
+          url: 'https://dododu.2om.cn/api.php/product/fjproduct',
           data: {
-            code: app.globalData.code,
+            location_x: res.latitude,
+            location_y: res.longitude
           },
-          success: function (res) {
+          success(res) {
             console.log(res)
-            if (res.data.code != '200') {
-              wx.navigateTo({
-                url: '/login/bangding/dff',
-              })
-            } else {
-              app.data.user = res.data.data;
-              app.data.shop = res.data.shop;
-              console.log(res.data);
-            }
+            that.setData({
+              book: res.data.data
+            })
+
           }
         })
-      }, 2000);
    
+      },
+    })
   },
 
   /**

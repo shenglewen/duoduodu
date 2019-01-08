@@ -1,4 +1,6 @@
 // duoduo/my_collect/mycollect.js
+
+var app=getApp()
 Page({
 
   /**
@@ -18,6 +20,26 @@ Page({
    */
   onLoad: function (options) {
 
+       wx.request({
+         url: 'https://dododu.2om.cn/api.php/user/collection',
+         data:{
+           userid: app.data.user.userid,
+           type:1
+         },
+         success(res){
+           console.log(res)
+         }
+       })
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/user/collection',
+      data: {
+        userid: app.data.user.userid,
+        type: 2
+      },
+      success(res) {
+        console.log(res)
+      }
+    })
   },
 
   /**

@@ -1,3 +1,4 @@
+
 /* duoduo/share/share.wxss */
  page{ background-color: #f6f6f6;
 }
@@ -363,7 +364,7 @@ margin-left:40rpx;
 .agong{
 width:90%;
 margin:0 auto;
-margin-top:150rpx;
+margin-top:25rpx;
 height:100rpx;
 line-height:100rpx;
 }
@@ -458,4 +459,12 @@ border-bottom:1rpx solid #f6f6f6;
 .bie{
 
 font-size:35rpx;
+}
+
+.delbook{
+  width:90%;
+margin:0 auto;
+margin-top:25rpx;
+height:100rpx;
+line-height:100rpx;
 }
