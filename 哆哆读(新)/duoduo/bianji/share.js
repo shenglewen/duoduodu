@@ -27,21 +27,49 @@ Page({
     userid:'',
     shopid:'',
     biaoqian:"111",
-
+   bookid:"",
     
   },//检查参数完整
   aaa:function(){
     console.log(this.data)
   },
+  //删除图书
+  delbook: function () {
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/product/delproduct',
+      data: {
+        userid: app.data.user.userid,
+        shopid: app.data.shop.shopid,
+        productid: this.data.bookid
+      },
+      success: function (res) {
+        if (res.data.code == 200){
+             wx.showModal({
+               title: '删除',
+               content: '共享书籍已经删除',
+               success: function (res) {
+                 if (res.confirm) {
+                   wx.switchTab({
+                     url: '../my/home',
+                   })
+                 
+                 }
+               }
+             })
+           }
+      }
+    })
+},
   //添加书籍共享
   updiz: function () {
     var that = this
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/product/addproduct',
+      url: 'https://dododu.2om.cn/api.php/product/upproduct',
       data: {
+        productid: that.data.bookid,
         isbn: that.data.sbn,
-        userid: that.data.userid,
-        shopid: that.data.shopid,
+        userid: app.data.user.userid,
+        shopid: app.data.shop.shopid,
         zuozhe: that.data.author,
         title: that.data.title,
         thumb: that.data.thumb,
@@ -60,10 +88,16 @@ Page({
       },
       success(res) {
         console.log(res)
-        // wx.navigateTo({
-        //   url: '../my_library/mylibraries',
-        // })
-
+        wx.showModal({
+          title: '修改成功',
+          content: '共享书籍已经发布成功',
+          success:function(res){
+            if(res.confirm){
+                 wx.navigateBack({
+                 })
+            }
+          }
+        })
       }
     })
   },
@@ -89,23 +123,31 @@ Page({
     console.log(options)
     var that=this
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/product/upproduct',
+      url: "https://dododu.2om.cn/api.php/product/infoproduct",
       data: {
         userid: app.data.user.userid,
         shopid:app.data.shop.shopid,
         productid: options.id
       },
       success:function(res){
-        console.log
+        
         var book=res.data.data[0]
+        console.log(book)
         that.setData({
-          isbn:book.isbn,
+          sbn:book.isbn,
           freedeposit: book.freedeposit,
           rentfree: book.rentfree,
-          price_collage:book.price_collage,
-          price:book.price,
-          zuyong: book.zuyong,
-          address: that.data.addressid
+          daysmoney:book.price_collage,
+          money:book.price,
+          days: book.zuyong,
+          address: that.data.addressid,
+          title:book.title,
+          thumb:book.thumb,
+          description:book.description,
+          author: book.zuozhe,
+          chubanshe: book.chubanshe,
+          biaoqian:book.biaoqian,
+          bookid: options.id
         })
       }
     })

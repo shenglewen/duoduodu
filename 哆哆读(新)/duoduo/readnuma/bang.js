@@ -1,5 +1,4 @@
-// duoduo/my_collect/mycollect.js
-var app=getApp()
+// duoduo/readnum/bang.js
 Page({
 
   /**
@@ -8,33 +7,26 @@ Page({
   data: {
 
   },
-  // 跳转到收藏的书房
-  linkTo:function(){
-   wx:wx.navigateTo({
-     url: '../my_collect_shu/mycollectshu'    
-   })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-       wx.request({
-         url: 'https://dododu.2om.cn/api.php/user/collection',
-         data:{
-           userid: app.data.user.userid,
-           type:1
-         },
-         success(res){
-           console.log(res)
-         }
-       })
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/collection',
-      data: {
-        userid: app.data.user.userid,
-        type: 2
+      url: 'https://dododu.2om.cn/api.php/ranking/lists',
+      data:{
+         type:3
       },
-      success(res) {
+      success:function(res){
+          console.log(res)
+      }
+    })
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/ranking/lists',
+      data: {
+        type: 4
+      },
+      success: function (res) {
         console.log(res)
       }
     })

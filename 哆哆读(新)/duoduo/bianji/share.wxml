@@ -185,5 +185,6 @@
 </view>
   </view>
 </view>
+<button class="delbook" type="warn" bindtap="delbook"> 删除图书 </button>
 <button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>
