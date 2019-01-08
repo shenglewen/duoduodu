@@ -1,0 +1,137 @@
+<!--duoduo/message/basic.wxml-->
+<view class="head">
+  <view class="head_l">
+       头像
+      <view class="head_tu" bindtap='headerimg'>
+          <image class="head_tu1" src="{{headerimg}}" mode="aspectFill">
+          </image>
+      </view>
+  </view>
+</view>
+<!-- 昵称 -->
+<view class="xinxi_k">
+  <view class="name_n">
+    昵称
+   <input class="tianxie" type="text" value="{{username}}" bindinput="name" disabled='true'></input>
+   
+  </view>
+</view>
+<!-- 姓名 -->
+<view class="xinxi_k">
+  <view class="name_n">
+     姓名
+   <input class="tianxie" type="text" value="{{name}}" bindinput="name"></input>
+  </view>
+</view>
+<!-- 性别 -->
+<view class="xinxi_k">
+      <view class="xingbie"  bindtap=''>
+        性别
+                <view class="xuanze">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" mode = "selector" >  
+    <view class="picker">  
+    {{sex}}  
+    </view>  
+  </picker>  
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
+          </image>
+           </view>
+                </view>
+      </view>
+</view>
+<!-- 生日 -->
+<view class="xinxi_k">
+      <view class="xingbie"  bindtap='showcart'>
+      生日
+              <view class="xuanze">
+                <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">  
+    <view class="picker">  
+     {{dates}}  
+    </view>  
+  </picker>  
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
+          </image>
+           </view>
+                </view>
+      </view>
+</view>
+<!-- 年级 -->
+<view class="xinxi_k">
+      <view class="xingbie">
+     年级
+              <view class="xuanze">
+                <picker bindchange="yeargradeChange" value="{{indexyeargrade}}" range="{{yeargrade}}" mode = "selector">  
+    <view class="picker">  
+    {{yeargrades}}  
+    </view>  
+  </picker>  
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
+          </image>
+           </view>
+                </view>
+      </view>
+</view>
+<!-- 学校 -->
+<view class="xinxi_k">
+      <view class="xingbie">
+   学校
+            <view class="xuanze">
+                <picker bindchange="schoolChange" value="{{indexschool}}" range="{{school}}" mode = "selector">  
+    <view class="picker">  
+    {{schools}}  
+    </view>  
+  </picker>  
+              <view class="tuk">   
+            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
+          </image>
+           </view>
+                </view>
+      </view>
+</view>
+
+<!-- 兴趣 -->
+  <view class="shenfen_k">
+   <view class="shenfen">
+   <view class="shenfen_left">
+   兴趣爱好
+   </view>
+ <view class="shenfen_right">
+
+<!-- 兴趣选择器 -->
+<checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for-items="{{hobby}}">
+    <view class="nini">
+        <checkbox value="{{item.value}}"  checked="{{item.checked}}"/><text class="hah">{{item.name}}</text>
+        </view>
+    </label>
+</checkbox-group>
+   </view>
+    </view>
+  
+  </view>
+<!-- 身份 -->
+  <view class="shenfen_k">
+   <view class="shenfen">
+   <view class="shenfen_left">
+   您的身份
+   </view>
+ <view class="shenfen_right">
+
+<!-- 身份选择器 -->
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key="property">
+<view class="nini">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/><text class="hah">{{item.name}}</text>
+        </view>
+    </label>
+</radio-group>
+   </view>
+    </view>
+  
+  </view>
+<button class='cheng' bindtap='userupinfo'>保存修改</button>
+
+  
