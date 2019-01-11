@@ -13,6 +13,7 @@ border-bottom:1rpx solid #f6f6f6;
   position:relative;
    top:-30rpx;
     left:20rpx;
+   font-size:35prx;
 }
 .head_n{
 width:90%;
@@ -36,6 +37,7 @@ color:#bababa;
 }
 .liebiao{
 height:80rpx;
+font-size:30rpx;
 background:#fff;
 }
 .yinru{

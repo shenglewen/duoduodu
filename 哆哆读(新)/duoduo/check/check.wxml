@@ -4,7 +4,7 @@
 <view class="kejie_k">
   <view class="kejie">
     <span class="iconfont icon-zuobiao"></span>
-    <text class="zi"> 附近可借</text>
+    <text class="zi"  bindtap="kejie"> 附近可借</text>
   </view>
   <view class="kejie kuang">
     <span class="iconfont icon-iconfontdiqiu"></span>

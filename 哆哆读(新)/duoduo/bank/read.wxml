@@ -68,13 +68,32 @@
 </view>
 <!-- 点赞 -->
 <view class="right">
-     <image class="dzan" src="https://dododu.2om.cn/public/images/1dian.png" mode="aspectFill">
-          </image>
-   <text class="xiao">赞</text>
+     <!-- <image class="dzan" src="https://dododu.2om.cn/public/images/d1.png" mode="aspectFill">
+          </image> -->
+ <image class="dzan {{showView?'show':''}}" src="https://dododu.2om.cn/public/images/d1.png" bindtap="onChangeShowState" mode="aspectFill"></image>
+ <image class="dzan {{showView?'':'show'}}" src="https://dododu.2om.cn/public/images/d2.png" bindtap="onChangeShowState"></image>
+  
 
       </view>
    </view>
   </view>
+  <!-- 评论 -->
+<view class="dizab">
+<image class="jians" src="https://dododu.2om.cn/public/images/sa3.png" mode="aspectFill">
+          </image> 
+<view class="zanm">
+<image class="szan" src="https://dododu.2om.cn/public/images/d1.png" mode="aspectFill"></image> 
+<text class="zming">1123</text>
 </view>
+
+
+</view>
+</view>
+
+
+
+
+
+
 <!-- 挤一挤 -->
-<view class="jiyi">记一记</view>
+<!-- <view class="jiyi" bindtap="onBtnClick" >记一记</view> -->

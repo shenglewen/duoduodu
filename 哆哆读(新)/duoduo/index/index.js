@@ -19,13 +19,11 @@ Page({
       url: '../readnum/bang'
     })
   },
- 
   borrow: function() {
     wx: wx.navigateTo({
       url: '../borrow_library/library_borr'
     })
   },
-  
   borrow_s: function() {
     wx: wx.navigateTo({
       url: '../my_borrow/myborrow'
@@ -37,7 +35,6 @@ Page({
       url: '../fxyl/fxyl'
     })
   },
- 
   shain : function() {
     wx: wx.navigateTo({
       url: '../check/check'
@@ -70,6 +67,17 @@ Page({
           }
         })
       }, 2000);
+
+
+  
+      wx.request({
+        url: 'https://dododu.2om.cn/api.php/product/infoproduct',
+        data:{     
+        },
+        success:function(res){
+              console.log(res)
+        }
+      })
    
   },
 
@@ -77,22 +85,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
   },
 
   /**

@@ -257,9 +257,14 @@ radradio{
   color: #f45a61 ;
 }
 .cheng{
-  border: none;
+ width:90%;
+  position:fixed;
+  bottom:10%;
+  left:5%;
+  right:5%;
+  background: #f45a61 ;
   color: #fff;
-  background: red;
+  
 }
 .picker{
   font-weight:100;

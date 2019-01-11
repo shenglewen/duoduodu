@@ -38,6 +38,7 @@ color:#bababa;
 .liebiao{
 height:80rpx;
 background:#fff;
+font-size:30rpx;
 }
 .yinru{
 float:left;

@@ -1,5 +1,5 @@
 /* duoduo/security/shezhi.wxss */
-page{background-color:#edf0f3;}
+page{background-color:#f6f6f6;}
  .xiugaik{
 height:100rpx;
 
@@ -8,7 +8,7 @@ border-bottom:1rpx solid #ddd;
 .login{
 width:90%;
 height:100rpx;
-background:#edf0f3;
+background:#f6f6f6;
 border-bottom:1rpx solid #ddd;
 margin:0 auto;
 line-height:100rpx;

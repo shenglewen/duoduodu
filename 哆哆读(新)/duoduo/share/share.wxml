@@ -1,9 +1,20 @@
 <!--duoduo/share/share.wxml-->
-<button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==1?false:true}}">扫码填书</button>
+<view class="zuping_k"> 
+  <view class="zuping">
+ <view class="zuping_left"> 扫码填书 </view> 
+ </view>
+ </view>
 
+
+<view class="shaoma_k">
+    <view class="shaoma"  bindtap="shaoma" wx:if="{{hidden==1?false:true}}">
+     <text class="da sao_d"> 扫码填书</text>
+     <image class="tu-da" src="https://dododu.2om.cn/public/images/s_2.png" mode="aspectFill"> </image>
+     </view>
+ </view>
 <view wx:if="{{hidden==0?false:true}}"> 
 <view class="shuji_k">
-<view class="shuji">书籍详情</view>
+<view class="shuji">书籍详情</view>                                                         
 </view>
 <!-- 书名 -->
 <view class="shuming_k">
@@ -18,7 +29,6 @@
 <view class="fengmian_k">
    <view class="fengmian">
       <view class="fengmian_l">
-      
        <text class="da">  封面</text>
       <view class="fmtu"><image class='thumb' src='{{thumb}}'></image></view>
       </view>
@@ -49,7 +59,6 @@
 <view class="shuming_k">
    <view class="xia">
       <view class="shuming_l">
-      
         <text class="daa"> 出版社</text>
        <input class="tianxie" type="text" style="text-align:right" placeholder="请输入出版社"placeholder-style="color:#bababa;" value='{{chubanshe}}'></input>
       </view>

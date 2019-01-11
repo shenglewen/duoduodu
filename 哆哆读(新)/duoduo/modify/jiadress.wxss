@@ -11,7 +11,7 @@ border-top:1rpx solid #edf0f3;
 width:90%;
 height:100rpx;
 line-height:100rpx;
-
+font-size:30rpx;
 margin:0 auto;
 display: flex;
 justify-content: space-between;
@@ -30,7 +30,7 @@ color:#bababa;
 width:90%;
 height:100rpx;
 line-height:100rpx;
-
+font-size:30rpx;
 margin:0 auto;
 display: flex;
 justify-content: space-between;
@@ -52,9 +52,9 @@ height:100rpx;
 
 }
 .tu{
-width:33rpx;
-height:40rpx;
-margin-top:33rpx;
+width:20rpx;
+height:32rpx;
+margin-top:36rpx;
 }
 .xiax{
 margin:30rpx auto;
@@ -76,6 +76,7 @@ margin:0 auto;
  width:95%;
 height:199rpx;
 background:#fff;
+font-size:30rpx;
 display:flex;
 justify-content: space-between;
 }

@@ -140,6 +140,7 @@ this.setData({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
+        console.log(res)
         if (res.data.code == 200) {
 
           wx.showModal({

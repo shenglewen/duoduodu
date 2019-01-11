@@ -1,4 +1,4 @@
-// duoduo/check/check.js
+// pages/dyncmic/dyncmic.js
 Page({
 
   /**
@@ -6,11 +6,6 @@ Page({
    */
   data: {
 
-  },
-  kejie: function () {
-    wx: wx.switchTab({
-      url: '../index/index'
-    })
   },
 
   /**
