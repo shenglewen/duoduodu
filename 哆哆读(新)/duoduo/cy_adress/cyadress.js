@@ -48,23 +48,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that=this
-wx.request({
-  url: 'https://dododu.2om.cn/api.php/user/listsaddress',
-  data: {
-    userid: app.data.user.userid,
-  },
-  header: {
-    'content-type': 'application/json' // 默认值
-  },
-  success(res) {
-    var data= res.data.data
-   that.setData({
-     masg: data
-   })
-   console.log(that.data.masg)
-  }
-})
+  
   },
   jmp:function(e){
     var a = '../modify/jiadress?id='+e.target.id
@@ -84,14 +68,29 @@ wx.request({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/user/listsaddress',
+      data: {
+        userid: app.data.user.userid,
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        var data = res.data.data
+        that.setData({
+          masg: data
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+ 
   },
 
   /**

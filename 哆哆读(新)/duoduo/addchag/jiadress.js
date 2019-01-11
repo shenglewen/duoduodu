@@ -1,5 +1,6 @@
 // duoduo/add/jiadress.js
 var app = getApp()
+
 Page({
 
   /**
@@ -22,11 +23,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
   /**
-     * 选择地址标签
-    */
+   * 选择地址标签
+  */
   xzdizhi: function (e) {
     var val = this.data.dizhi[e.detail.value]
     console.log(val)
@@ -42,7 +43,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var pages = getCurrentPages(); // 获取页面栈
+    var prevPage = pages[pages.length - 2]; // 上一个页面
   },
 
   /**
@@ -161,7 +163,6 @@ this.setData({
       }
     })
   },
-  //map
   aaa:function(){
     var that=this;
     wx.chooseLocation({

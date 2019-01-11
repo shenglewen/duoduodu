@@ -4,10 +4,10 @@
 <view class="head">
 <view class="head_left">
 <view class="b_headtu">
-        <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        <image class="img_tu2" src="{{mag.face}}" mode="aspectFill">
         </image>
    </view>
-<text class="hong">王世家的书馆</text>
+<text class="hong">{{mag.shop_name}}</text>
 
   </view>
 <view class="head_right">
@@ -25,10 +25,10 @@
   <view class="connei">
   <image class="kejie"src="https://dododu.2om.cn/public/images/1可.png" mode="aspectFill">
     </image>
-<image class="fengmian" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+<image class="fengmian" src="{{mag.thumb}}" mode="aspectFill">
     </image>
   </view>
-  <text class="shuna_me">爱丽丝梦游仙境 </text>
+  <text class="shuna_me">{{mag.title}} </text>
   </view>
 
 </view>
@@ -37,21 +37,21 @@
 <view class="jianjie_n">
       <view class="jianjie_left">
             <view class="zuozhe">作者:
-            <text class="nei">圣·埃克苏佩里圣·埃克苏佩... </text>
+            <text class="nei">{{mag.zuozhe}}</text>
             </view>
-            <view class="zuozhe">出版时间：2018.09.02
+            <view class="zuozhe">出版时间:
             <text class="nei">2018.09.02</text>
             </view>
             <view class="zuozhe">取书地址：
-            <text class="nei">北京市昌平区沙河高教园 </text>
+            <text class="nei">{{mag.address}} </text>
             </view>
       </view>
       <view class="jianjie_right">
             <view class="zuozhe">ISBN：
-            <text class="nei">978753134086 </text>
+            <text class="nei">{{mag.isbn}} </text>
             </view>
             <view class="zuozhe">出版社：
-            <text class="nei">浙江人民出版社 </text>
+            <text class="nei">{{mag.chubanshe}} </text>
             </view>
       </view>
       
@@ -59,23 +59,17 @@
 </view>
 <!-- 文学类名获取 -->
     <view class="huoqu">
+    <text class="xze">{{mag.biaoqian}}</text>
+    <!-- <text class="xze">儿童文学</text>
     <text class="xze">儿童文学</text>
     <text class="xze">儿童文学</text>
-    <text class="xze">儿童文学</text>
-    <text class="xze">儿童文学</text>
-    <text class="xze">儿童文学</text>
+    <text class="xze">儿童文学</text> -->
     </view>
 </view>
 <!-- 简介描述 -->
 <view class="miaoshu_k">简介</view>
 <view class="miaoshu_kk">
-小王子是一个超凡脱俗的仙童，他住在一颗只比他大一丁点儿的小行星上。陪
-伴他的是一朵他非常喜爱的小玫瑰花。但小玫瑰花的虚荣心伤害了小王子对她
-的感情。小王子告别小行星，开始了遨游太空的旅行。他先后访问了六个行星，
-各种见闻使他陷入忧伤，他感到大人们荒唐可笑、爱慕虚荣。只有在其中一个
-点灯人的星球上，小王子才找到一个可以作为朋友的人。但点灯人的天地又十
-分狭小，除了点灯人，不能容下第二个人。在地理学家的指点下，孤单的小王
-子来到人类居住的地球。
+{{mag.description}}
 </view>
 
 <!-- 评价 -->
@@ -135,14 +129,17 @@
 <!-- 底部 -->
 <view class="footer">
   <view class="xianshang zhifuj">
-        <text class="yuan1">线上支付租金:</text>
-        <text class="yuan">¥6.5</text>
+        <text class="yuan1">线下支付租金:</text>
+        <text class="yuan" wx:if="{{mag.rentfree==1}}">¥0/天</text>
+        <text class="yuan" wx:else>¥{{mag.price}}/天</text>
+
   </view>
   <view class="xianshang zhifuj">
-          <text class="yuan1">线上支付租金:</text>
-          <text class="yuan">¥15.5</text>
+          <text class="yuan1">线上支付押金:</text>
+        <text class="yuan" wx:if="{{mag.freedeposit==1}}">¥0</text>
+        <text class="yuan" wx:else>¥{{mag.price_collage}}</text>
   </view>
       <view class="xianshang yuan3"bindtap='showcart'  >
-              支付押金
+            支付押金
       </view>
 </view>

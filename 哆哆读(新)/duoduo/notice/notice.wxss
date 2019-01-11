@@ -31,12 +31,16 @@ height:100%;
 
 }
 .wen1{
+  width: 75%;
 padding-top:10rpx;
 font-size:36rpx;
+position: relative;
 }
 .wen2{
 font-size:28rpx;
 padding:25rpx 0rpx;
+position: absolute;
+bottom: 0px;
 
 color:#999;
 }

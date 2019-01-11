@@ -6,6 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    dizhival: "",
+    dizhi: ['学校', '家', '公司', '其他'],
+    dizhitext: '请选择',
     usename:"",
     mobile:"",
     address:"请选择",
@@ -13,8 +16,22 @@ Page({
     latitude: '',
     status:0,
     detailed:'',
-    addressid:''
+    addressid:'',
   },
+  /**
+     * 选择地址标签
+    */
+  xzdizhi: function (e) {
+    var val = this.data.dizhi[e.detail.value]
+    console.log(val)
+
+    this.setData({
+      dizhitext: val,
+      dizhival: e.detail.value
+    })
+
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -31,14 +48,18 @@ Page({
           addressid: options.id,
         },
         success(res) {
+          console.log(res)
        that.setData({
+         address:res.data.data.dd,
          addressid: res.data.data.addressid,
          usename: res.data.data.username,
          mobile: res.data.data.mobile,
          longitude: res.data.data.longitude,
          latitude: res.data.data.latitude,
          detailed: res.data.data.address,
-         status:res.data.data.status
+         status:res.data.data.status,
+         dizhitext:res.data.data.tag
+
        })
        console.log(that.data)
           } 
@@ -118,6 +139,16 @@ this.setData({
   //是否默認
 
   status:function(){
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/user/defaddress',
+      data:{
+        userid:app.data.user.userid,
+        addressid:this.data.addressid
+      },
+      success(res){
+        console.log(res)
+      }
+    })
     if (this.data.status==0){
      this.setData({
        status: 1
@@ -142,7 +173,9 @@ this.setData({
         longitude: that.data.longitude,
         latitude: that.data.latitude,
         status: that.data.status,
-        address:that.data.detailed
+        address:that.data.detailed,
+        dd: that.data.address,
+        tag: that.data.dizhitext
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -151,8 +184,8 @@ this.setData({
         if (res.data.code == 200) {
 
           wx.showModal({
-            title: '添加成功',
-            content: '新地址已添加成功',
+            title: '修改成功',
+            content: '地址已修改成功',
             success: function (res) {
               if (res.confirm) {
                 wx.switchTab({
@@ -162,6 +195,11 @@ this.setData({
             }
           })
 
+        }else{
+          wx.showModal({
+            title: '所填信息不完整',
+            content: '是不是有什么忘记填写了？'
+          })
         }
       }
     })

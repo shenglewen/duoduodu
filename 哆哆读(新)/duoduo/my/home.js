@@ -15,11 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      username: app.data.user.nickname,
-      headerimg: app.data.user.face,
-
-    })
+   
   },
 
   /**
@@ -33,7 +29,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      username: app.data.user.nickname,
+      headerimg: app.data.user.face,
+
+    })
   },
 
   /**

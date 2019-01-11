@@ -1,59 +1,120 @@
 <!--duoduo/my_collect/mycollect.wxml-->
 <view class="shoucang">
   <view class="shoucang_k">
-     <view class="liebiao hongk">收藏的图书</view>
-     <view class="liebiao" bindtap="linkTo">收藏的书房</view>
+     <view class='{{tap==0?"hongk":"liebiao"}}' bindtap="linkbook">收藏的图书</view>
+     <view class='{{tap==1?"hongk":"liebiao"}}' bindtap="linkshop">收藏的书房</view>
   </view>
 </view>
-<!--duoduo/my_share/myshare.wxml-->
+<block wx:for="{{book}}" wx:for-index="i" wx:for-item="a" wx:key="productid" wx:if="{{tap==0?true:false}}">
 <view class="kuang">
 <view class="kuang_k">
         <view class="wenb_left">
-    <image class="img_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+    <image class="img_tu" src="{{a.thumb}}" mode="aspectFill">
     </image>
       </view>
 <!--  文本图之类       -->
+
         <view class="wenb_right">
         <view class="wenb_li">
-        <text>爱丽斯漫游记</text>
+        <text>{{a.title}}</text>
         </view>
          <view class="wenb_rq">借阅日期:2018.06.29-2018.07.29<text class="hong">(03/20)</text></view>
             <view class="tou_tu">
            <view class="tou_yuan">
-           <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+           <image class="img_tu2" src='{{a.face}}' mode="aspectFill">
 </image>
            </view>
-          <text class="w_name">王世家</text>
+          <text class="w_name">{{a.username}}</text>
           <!-- 这是心-->
-                 <span class="iconfont icon-xin6"></span> 
+                 <span class="iconfont icon-xin6" id="{{a.productid}}" bindtap="collection"></span> 
           
           </view>
         </view>
 </view>
 </view>
-<view class="kuang">
-<view class="kuang_k">
+</block>
+<!--  wx:for="{{book}}" wx:for-index="i" wx:for-item="a" wx:key="productid"  -->
+<block wx:if="{{tap==1?true:false}}">
+<!-- 书馆 -->
+<view class='conter'>
+    <view class='img_k'>
+        <view class='img_left'>
+            <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill"></image>
+            <text class="name">六合书馆</text>
+            <image class="hg" src="https://dododu.2om.cn/public/images/90h.png" mode="aspectFill"> </image>
+        </view>
+        <view class='img_right'>
+        <!-- 借过的馆 -->
+            <image class="xin" src="https://dododu.2om.cn/public/images/91xin.png" mode="aspectFill"></image>
+        </view>
+    </view>
+<!-- 书展示 -->
+<view class='library_k'>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/1s.png" mode="aspectFill"></image>
+      <view class="s_ming">重来</view>
 
-        <view class="wenb_left">
-    <image class="img_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
-    </image>
       </view>
-<!--  文本图之类       -->
-        <view class="wenb_right">
-        <view class="wenb_li">
-        <text>爱丽斯漫游记</text>
-        </view>
-         <view class="wenb_rq">借阅日期:2018.06.29-2018.07.29<text class="hong">(03/20)</text></view>
-          <view class="tou_tu">
-           <view class="tou_yuan">
-           <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
-</image>
-           </view>
-          <text class="w_name">王世家</text>
-       <!-- 这是心-->      
-          <span class="iconfont icon-xin6"></span> 
-          </view>
-        </view>
-</view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/2s.png" mode="aspectFill"></image>
+      <view class="s_ming">解忧杂货铺</view>
+      </view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/4s.png" mode="aspectFill"></image>
+      <view class="s_ming">小王子</view>
+      </view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/3s.png" mode="aspectFill"></image>
+      <view class="s_ming">永不说再见</view>
+      </view>
+
+      </view>
+  <view class='library_top'>
+    <view class='gong'>共<text class="hong">12</text>本  </view>
+      <view class='juli'>
+        <image class="bushu" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill"></image>
+      <text>300m</text>
+      </view>
+    </view>
 </view>
 
+</block>
+<!-- 内容二 -->
+<!-- <view class='conter'>
+    <view class='img_k'>
+        <view class='img_left'>
+            <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill"></image>
+            <text class="name">六合书馆</text>
+            <image class="hg2" src="https://dododu.2om.cn/public/images/hg2.png" mode="aspectFill"> </image>
+        </view>
+       
+    </view> -->
+<!-- 书展示 -->
+<!-- <view class='library_k'>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/1s.png" mode="aspectFill"></image>
+      <view class="s_ming">重来</view>
+      </view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/2s.png" mode="aspectFill"></image>
+      <view class="s_ming">解忧杂货铺</view>
+      </view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/4s.png" mode="aspectFill"></image>
+      <view class="s_ming">小王子</view>
+      </view>
+      <view class='library'>
+      <image class="shu" src="https://dododu.2om.cn/public/images/3s.png" mode="aspectFill"></image>
+      <view class="s_ming">永不说再见</view>
+      </view>
+      </view>
+  <view class='library_top'>
+    <view class='gong'>共<text class="hong">12</text>本  </view>
+     <view class='juli'>
+        <image class="bushu" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill"></image>
+      <text class="ziji">300m</text>
+       <span class="iconfont icon-xin6"></span> 
+      </view>
+    </view>
+</view>
+ -->

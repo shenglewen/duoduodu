@@ -43,7 +43,6 @@ display: flex;
 justify-content: space-between;
 }
 .xuanze{
-/* width:60%; */
 height:100rpx;
 line-height:100rpx;
 text-align: right;
@@ -99,9 +98,10 @@ overflow: hidden;
 }
 
 .text{
+    margin-left: 0rpx;
     overflow:hidden; 
     text-overflow:ellipsis;
     white-space:nowrap; 
-    width:10rem;
+    width:350rpx;
     text-align: right;
 }

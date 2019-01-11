@@ -1,7 +1,9 @@
 var app = getApp();
 Page({
   data: {
-   books:""
+   books:"",
+   shopname:"",
+   img:""
   },
   jmp:function(){
 wx.navigateTo({
@@ -21,7 +23,9 @@ wx.navigateTo({
         console.log(res)
         var books=res.data.data
         that.setData({
-          books:books
+          books:books,
+          shopname: app.data.shop.shop_name,
+          img: app.data.user.face
         })
         console.log(that.data.books)
       }

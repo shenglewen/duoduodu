@@ -464,7 +464,6 @@ border-bottom:1rpx solid #f6f6f6;
 
 }
 .bie{
-margin-left: 0.5rem;
 font-size:35rpx;
 }
 .address{
@@ -472,4 +471,8 @@ font-size:35rpx;
   color: #fff;
   width: 90%;
   border: none;
+}
+.qushu{
+  margin: 0.5rem;
+  font-size: 35rpx;
 }

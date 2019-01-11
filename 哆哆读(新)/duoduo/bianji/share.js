@@ -26,10 +26,28 @@ Page({
     addressid:'',
     userid:'',
     shopid:'',
-    biaoqian:"111",
    bookid:"",
+    biaoqian: "请选择",
+    biaoqianarry: "",
+    biaoqianindex: 0
     
-  },//检查参数完整
+  },
+  /**
+  * 选择地址
+  */
+  bindPickerChange: function (e) {
+    console.log(this.data.address)
+
+    var address = this.data.address[e.detail.value].address
+    var addressid = this.data.address[e.detail.value].addressid
+
+    this.setData({
+      address1: address,
+      addressid: addressid
+    })
+
+  },
+  //检查参数完整
   aaa:function(){
     console.log(this.data)
   },
@@ -120,7 +138,6 @@ Page({
   },
   //面页第一次加载时加载
   onLoad: function (options) {
-    console.log(options)
     var that=this
     wx.request({
       url: "https://dododu.2om.cn/api.php/product/infoproduct",
@@ -130,9 +147,7 @@ Page({
         productid: options.id
       },
       success:function(res){
-        
         var book=res.data.data[0]
-        console.log(book)
         that.setData({
           sbn:book.isbn,
           freedeposit: book.freedeposit,
@@ -169,6 +184,17 @@ Page({
           shopid:app.data.shop.shopid
         })
 
+      }
+    })
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/order/shujui',
+      data: {
+        type: 'biaoqian'
+      },
+      success(res) {
+        that.setData({
+          biaoqianarry: res.data.data
+        })
       }
     })
   },

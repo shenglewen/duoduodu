@@ -23,7 +23,8 @@ Page({
     address:"",
     address1:"",
     mobile:"",
-    book:""
+    book:"",
+    addressid:''
   },
 
   /**
@@ -68,11 +69,14 @@ Page({
         var data = res.data.data
         that.setData({
           address: data,
-          address1:data[0].address
+          address1:data[0].address,
+          addressid: data[0].addressid
         })
   
       }
     })
+
+    console.log(this.data)
   },
   changeDateTime1(e) {
     this.setData({ dateTime1: e.detail.value });
@@ -91,9 +95,12 @@ Page({
   bindPickerChange: function (e) {
 
     var address = this.data.address[e.detail.value].address
+    var addressid = this.data.address[e.detail.value].addressid
 
+    console.log(this.data.address)
     this.setData({
-      address1: address
+      address1: address,
+      addressid: addressid
     })
 
   },
@@ -176,17 +183,32 @@ Page({
         shop_mobile:that.data.mobile,
         deposit: that.data.money,
         rent: that.data.daysmoney,
-        renttime: that.data.days
+        renttime: that.data.days,
+        addressid:that.data.addressid
       },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success(res) {
     console.log(res)
-        wx.navigateTo({
-          url: '../my_library/mylibraries',
-        })
-
+    if(res.data.code==200){
+      wx.showModal({
+        title: '修改成功',
+        content: '书馆已修改成功',
+        success: function (res) {
+          if (res.confirm) {
+            wx.navigateBack({
+              url: '../my_library/mylibraries',
+            })
+          }
+        }
+      })
+    }else{
+          wx.showModal({
+            title: '修改失败',
+            content: '是不是什么东西忘记填写啦呀~~',
+          })
+    }
       }
     })
   },

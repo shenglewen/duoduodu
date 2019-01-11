@@ -1,25 +1,25 @@
-<!--duoduo/add/jiadress.wxml-->
+<!--duoduo/addchang/jiadress.wxml-->
 <view class="xiax">
 <!-- 出借人 -->
 <view class="xinxi_k">
   <view class="name_n">
   出借人
-          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='usename' value='{{usename}}'></input>
+          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='usename'></input>
   </view>
 </view>
 <!-- 手机号 -->
 <view class="xinxi_k">
   <view class="name_n">
   手机号
-          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='mobile' value='{{mobile}}'></input>
+          <input class="tianxie" type="text" style="text-align:right" placeholder="请填写" placeholder-style="color:#bababa;" bindinput='mobile'></input>
   </view>
 </view>
 <!-- 所在地区-->
 <view class="xinxi_k">
       <view class="xingbie">
       所在地点
-              <view class="xuanze text" bindtap='aaa'>
-                  <view class='text'> {{address}}</view>
+              <view class="xuanze" bindtap='aaa'>
+              <view class='text'> {{address}}</view>
               <view class="tuk">   
             <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
           </image>
@@ -67,4 +67,4 @@
                 </view>
       </view>
 </view> 
-<button bindtap='updiz' class='button'>保存修改</button>
+<button class="button" bindtap='updiz'>保存地址</button>

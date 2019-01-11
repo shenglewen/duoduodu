@@ -42,7 +42,6 @@
 
   <view class="more">更多</view>
 </view>
-  <view class="meng" bindtap="onChangeShowState"></view> 
 
 
 

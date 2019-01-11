@@ -7,8 +7,9 @@
     "duoduo/bank/read",
     "duoduo/my/home",
     "duoduo/fabugx/fabugx",
-    
 
+    "duoduo/zhifu/zhifu",
+    "duoduo/addchag/jiadress",
     "duoduo/bianji/share",    
     "duoduo/add/jiadress",
     "duoduo/modify/jiadress",
@@ -27,6 +28,8 @@
     "duoduo/select/check",
     "duoduo/fxyl/fxyl",
     "duoduo/accredit_bd/bdshouji",
+    "duoduo/accredit_xg/bdshouji",
+    
     "duoduo/borrow_library/library_borr",
     "duoduo/cy_adress/cyadress",
     "duoduo/check/check",

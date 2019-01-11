@@ -27,12 +27,26 @@ Page({
     addressid:'',
     userid:'',
     shopid:'',
-    biaoqian:"111",
-
-    
-  },//检查参数完整
+    biaoqian:"请选择",
+    biaoqianarry:"",
+    biaoqianindex:0
+  },
+  //检查参数完整
   aaa:function(){
     console.log(this.data)
+  },
+  /**
+     * 选择地址标签
+    */
+  xzdizhi: function (e) {
+    var val = this.data.biaoqianarry[e.detail.value]
+    console.log(val)
+
+    this.setData({
+      biaoqian: val,
+      biaoqianindex: e.detail.value
+    })
+
   },
   //添加书籍共享
   updiz: function () {
@@ -78,7 +92,11 @@ Page({
     })
   },
 
-
+add:function(){
+wx.navigateTo({
+  url: '../addchag/jiadress',
+})
+},
   /**
    * 选择地址
    */
@@ -97,6 +115,17 @@ Page({
   //面页第一次加载时加载
   onLoad: function (options) {
     var that = this
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/order/shujui',
+      data:{
+        type: 'biaoqian'
+       },
+       success(res){
+        that.setData({
+          biaoqianarry: res.data.data
+        })
+       }
+    })
     wx.request({
       url: 'https://dododu.2om.cn/api.php/user/listsaddress',
       data: {
