@@ -190,5 +190,7 @@
   </view>
 </view>
 <button class="shaoma" type="warn" bindtap="shaoma" wx:if="{{hidden==0?false:true}}">扫码填书</button>
+  <navigator url="../add/jiadress?status=000" >添加地址</navigator>   
+
 <button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>

@@ -1,6 +1,7 @@
 // duoduo/share/share.js
 // duoduo/share/share.js
 var app= getApp()
+
 Page({
 
   /**

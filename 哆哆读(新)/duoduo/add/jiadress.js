@@ -17,13 +17,16 @@ Page({
     latitude: '',
     status:0,
     detailed:'',
+    h_url:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if (options['status'] == '000'){
+      this.data.h_url = options.status 
+    }
   },
 
   /**
@@ -148,9 +151,15 @@ this.setData({
             content: '新地址已添加成功',
             success: function (res) {
               if (res.confirm) {
-                wx.switchTab({
-                  url: '../my/home',
-                })
+                if(that.data.h_url == '000'){
+                  wx.navigateBack({
+                  })
+                }else{
+                  wx.switchTab({
+                    url: '../my/home',
+                  })
+                }
+              
               }
             }
           })
@@ -160,6 +169,7 @@ this.setData({
       }
     })
   },
+  //调用插件(地)(图)
   aaa:function(){
     var that=this;
     wx.chooseLocation({
@@ -181,4 +191,7 @@ this.setData({
       }
     })
   }
+
+
+
 })
