@@ -12,4 +12,6 @@ margin: 0 auto;
  margin-top: 4rem;
  margin-bottom: 4rem
 }
-
+.goRegistRtn{
+  width: 80%;
+}

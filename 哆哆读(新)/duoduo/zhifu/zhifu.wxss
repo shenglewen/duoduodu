@@ -1,0 +1,127 @@
+/* duoduo/zhifu/zhifu.wxss */
+.toux{
+   height:100rpx;
+   background:#fff;
+   border-top:10rpx solid #f6f6f6;
+    border-bottom:1rpx solid #f6f6f6;
+}
+.head{
+width:90%;
+height:100rpx;
+background:#fff;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+.img_tu2{
+width:90rpx;
+height:90rpx;
+border-radius:50%;
+margin-top:6rpx;
+}
+.head_left{
+  display:flex;
+}
+.hong{
+color:#f45a61;
+font-size:32rpx;
+padding-left:20rpx;
+padding-top:22rpx;
+}
+.zhu{
+height:100rpx;
+font-size:20rpx;
+}
+.zhu_k{
+width:90%;
+margin:0 auto;
+padding-top:20rpx;
+color:#666;
+}
+/*内容*/
+.book{
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  padding: 15rpx;
+}
+.bookleft{
+flex:1;
+height:230rpx;
+
+}
+.bookright{
+  flex:3;
+height:230rpx;
+}
+.leftimg{
+  width: 150rpx;
+  height: 230rpx;
+}
+.bookname{
+  margin-top: 6rpx;
+ font-size: 36rpx;
+ font-weight: bold;
+}
+.cont{
+line-height: 22rpx;
+height: 110rpx;
+font-size:22rpx;
+display:block; 
+color: #5e5e5e;
+width:80%;
+overflow: hidden;
+text-overflow: ellipsis;
+margin-top:10rpx;
+
+}
+.zuozhe{
+  margin-top: 1rpx;
+ font-size: 24rpx;
+ color: #474747;
+
+}
+/* 底部 */
+.footer{
+  width:100%;
+height:120rpx;
+background:#f0f;
+display: flex;
+position:fixed;
+bottom:0;
+right:0;
+}
+.xianshang{
+flex:1;
+height:120rpx;
+background:#fff;
+}
+ 
+.yuan1{
+float:right;
+margin-right:20rpx;
+font-size:26rpx;
+color:#f45a61;
+}
+.yuan{
+float:right;
+font-size:24rpx;
+margin-right:20rpx;
+color:#f45a61;
+margin-top:16rpx;
+
+}
+.yuan3{
+flex:2;
+background:#f45a61;
+text-align: center;
+line-height:120rpx;
+color:#fff;
+}
+.quan{
+height:120rpx;
+background:#f6f6f6;
+
+
+}

@@ -7,7 +7,8 @@ App({
     shop:{},
     code:'',
     latitude:'',
-    longitude:''
+    longitude:'',
+    http:'https://dododu.2om.cn/public/',
   },
   onLaunch: function () {
     // 展示本地存储能力
@@ -17,33 +18,7 @@ App({
     
 
     // 登录code
-    wx.login({
-      success: res => {
-       res // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        this.globalData.code = res.code
-        this.data.code = res.code
-        console.log(this.globalData.code)
-        var that=this
-        wx.request({
-          url: 'https://dododu.2om.cn/api.php/user/getopenid',
-          data: {
-            code: that.globalData.code,
-          },
-          success: function (res) {
-            console.log(res)
-            if (res.data.code != '200') {
-              wx.navigateTo({
-                url: '/login/bangding/dff',
-              })
-            } else {
-              that.data.user = res.data.data;
-              that.data.shop = res.data.shop;
-              console.log(res.data);
-            }
-          }
-        })
-      }
-    })
+  
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -64,6 +39,9 @@ App({
         }
       }
     })
+  },
+  onShow:function(){
+  
   },
   globalData: {
     userInfo: null,

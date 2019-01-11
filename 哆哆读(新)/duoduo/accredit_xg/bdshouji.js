@@ -9,8 +9,7 @@ Page({
   data: {
     mobile:"",
     code:"",
-    time: 0,
-
+    time:0,
   },
 
   /**
@@ -97,16 +96,34 @@ Page({
     } 
     
   },
+  /*daojis*/
+  time:function(){
+    var that = this
+    that.setData({
+      time: 60
+    })
+    var time=that.data.time
+    var aaa=setInterval(function(){
+    time=time-1
+      that.setData({
+        time: time
+      })
+      if(time==0){
+        clearInterval(aaa)
+      }
+    },1000)
+  },
   /** 
    * 获取验证码
   */
   hqyz:function(){
     var num = this.data.mobile
+    this.time()
 wx.request({
   url: 'https://dododu.2om.cn/api.php/sms/yzm',
   data: {
     mobile: num,
-    type:'1'
+    type:'2'
   },
   header: {
     'content-type': 'application/json' // 默认值
@@ -143,7 +160,7 @@ wx.request({
     var code = this.data.code
     var userid = app.data.user.userid
     wx.request({
-      url: 'https://dododu.2om.cn/api.php/user/bangdingmobile',
+      url: 'https://dododu.2om.cn/api.php/user/upmobile',
       data: {
         mobile: mobile,
         mobilecode: code,

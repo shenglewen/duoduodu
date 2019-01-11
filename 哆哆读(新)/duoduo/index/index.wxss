@@ -71,7 +71,7 @@ height:80rpx;
 height:80rpx;
 background:#fff;
 margin-top:20rpx;
-border-bottom:1rpx solid  #f6f6f6;
+border-bottom:1rpx solid  #797979;
 }
 .kejie{
 float:left;
@@ -84,8 +84,8 @@ color:#bababa;
 
 }
 .kuang{
-border-left:1rpx solid #f6f6f6;
-border-right:1rpx solid  #f6f6f6;
+border-left:1rpx solid #797979;
+border-right:1rpx solid  #797979;
 }
 
 .icon-zuobiao{
@@ -95,13 +95,14 @@ color:#f45a61;
 color:#f45a61;
 }
 .zi{
+  color: #3e3e3e;
   padding-left:10rpx;
 }
 .icon-iconfontdiqiu{
-color:#bababa;
+color:#3e3e3e;
 }
  .icon-shaixuan{
-color:#bababa;
+color:#3e3e3e;
 
  }
 .icon-angle-down{
@@ -128,7 +129,7 @@ justify-content: space-between;
 }
 .mao{
 
- width:30%;
+ width:31%;
 height:260rpx; 
 display:table-cell; 
 }
@@ -182,8 +183,10 @@ color: #3e3e3e;
 
 }
 .biati_zn{
-  width: 470rpx;
-height:64rpx;
+  line-height: 34rpx;
+  margin-left: 16rpx;
+  width: 400rpx;
+height:66rpx;
 overflow: hidden;
 /* white-space:nowrap; */
 display: -webkit-box;
@@ -203,6 +206,7 @@ text-overflow: ellipsis;
 -webkit-box-orient:vertical;
 } */
 .yue{
+   margin-left: 16rpx;
 font-size:28rpx;
 color:#f45a61;
 }
@@ -211,6 +215,7 @@ padding-left:10rpx;
 }
 .zuobiao_a{
 
+   margin-left: 16rpx;
   margin-top: 20rpx;
 height:40rpx;
 line-height:40rpx;
@@ -239,7 +244,9 @@ color:#bababa;
   color:#bababa;
 }
 
-
+.xin5{
+  color: #f45a61;
+}
 .icon-saoyisao-copy{
 position:fixed;
 bottom:32rpx;

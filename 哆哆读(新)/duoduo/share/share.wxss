@@ -467,3 +467,13 @@ border-bottom:1rpx solid #f6f6f6;
 
 font-size:35rpx;
 }
+.address{
+  background:#fd8800;
+  color: #fff;
+  width: 90%;
+  border: none;
+}
+.qushu{
+  margin: 0.5rem;
+  font-size: 35rpx;
+}

@@ -1,10 +1,10 @@
 <view class="head">
   <view class="head_n" bindtap='jmp'>
-    <image class="touxiang" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+    <image class="touxiang" src="{{img}}" mode="aspectFill">
     </image>
 
 
-    <text class="hehe">王呵呵的书馆</text>
+    <text class="hehe">{{shopname}}</text>
 
     <span class="iconfont icon-right"></span>
   </view>

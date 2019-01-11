@@ -1,12 +1,12 @@
 // duoduo/add/jiadress.js
 var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
     dizhival: "",
     dizhi: ['学校', '家', '公司', '其他'],
     dizhitext: '请选择',
@@ -17,20 +17,17 @@ Page({
     latitude: '',
     status:0,
     detailed:'',
-    h_url:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (options['status'] == '000'){
-      this.data.h_url = options.status 
-    }
+    
   },
   /**
-     * 选择地址标签
-    */
+   * 选择地址标签
+  */
   xzdizhi: function (e) {
     var val = this.data.dizhi[e.detail.value]
     console.log(val)
@@ -46,20 +43,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  }, 
-
-  /**
-   * 选择地址标签
-  */
-  xzdizhi: function (e) {
-    var val = this.data.dizhi[e.detail.value]
-    console.log(val)
-
-    this.setData({
-      dizhitext:val,
-      dizhival:val
-    })
-
+    var pages = getCurrentPages(); // 获取页面栈
+    var prevPage = pages[pages.length - 2]; // 上一个页面
   },
 
   /**
@@ -166,15 +151,9 @@ this.setData({
             content: '新地址已添加成功',
             success: function (res) {
               if (res.confirm) {
-                if(that.data.h_url == '000'){
-                  wx.navigateBack({
-                  })
-                }else{
-                  wx.switchTab({
-                    url: '../my/home',
-                  })
-                }
-              
+                wx.switchTab({
+                  url: '../my/home',
+                })
               }
             }
           })
@@ -184,7 +163,6 @@ this.setData({
       }
     })
   },
-  //调用插件(地)(图)
   aaa:function(){
     var that=this;
     wx.chooseLocation({
@@ -206,7 +184,4 @@ this.setData({
       }
     })
   }
-
-
-
 })

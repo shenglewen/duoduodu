@@ -103,9 +103,9 @@
 
 <!-- 兴趣选择器 -->
 <checkbox-group bindchange="checkboxChange">
-    <label class="checkbox" wx:for-items="{{hobby}}">
+    <label class="checkbox" wx:for="{{hobby}}" wx:for-index="i" wx:for-item="a" wx:key="val">
     <view class="nini">
-        <checkbox value="{{item.value}}"  checked="{{item.checked}}"/><text class="hah">{{item.name}}</text>
+        <checkbox value="{{i}}"  checked="{{hobby[i].status==true?true:false}}" id="{{hobby[i].status}}"/><text class="hah">{{a.val}}</text>
         </view>
     </label>
 </checkbox-group>
@@ -123,9 +123,9 @@
 
 <!-- 身份选择器 -->
 <radio-group class="radio-group" bindchange="radioChange">
-    <label class="radio" wx:for="{{items}}" wx:key="property">
+    <label class="radio" wx:for="{{items}}" wx:for-index="i">
 <view class="nini">
-        <radio value="{{item.value}}" checked="{{item.checked}}"/><text class="hah">{{item.name}}</text>
+        <radio value="{{i}}" checked="{{i==identity?true:false}}"/><text class="hah">{{item}}</text>
         </view>
     </label>
 </radio-group>

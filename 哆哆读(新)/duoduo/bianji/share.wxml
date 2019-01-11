@@ -59,13 +59,18 @@
 <view class="suo">
 <view class="suo_k">
 <!-- 点击 -->
-      <view class="xingbie"  bindtap='showcart'>
-      <text class="bie">标签 </text> 
-                <view class="xuanze">
-                请选择
-              <view class="tuk">   
-            <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
-          </image>
+     
+        <view class="xingbie" bindtap='showcart'>
+          <text class="bie">标签 </text>
+          <view class="xuanze">
+            <picker bindchange="xzdizhi" value="{{biaoqianindex}}" range="{{biaoqianarry}}" mode="selector">
+              <view class="picker">
+                {{biaoqian}}
+              </view>
+            </picker>
+            <view class="tuk">
+              <image class="tu" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
+              </image>
            </view>
                 </view>
       </view>

@@ -19,93 +19,70 @@ Page({
     yeargrade: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'],
     schools: "请选择",
     school: ['xx', 'xx', 'xx', 'xx'],
-    items: [{
-      name: '学生',
-      value: '1',
-      checked: false
-    }, {
-      name: '爸爸',
-      value: '2',
-      checked: false
-    }, {
-      name: '妈妈',
-      value: '3',
-      checked: false
-    }, {
-      name: '爷爷',
-      value: '4',
-      checked: false
-    }, {
-      name: '奶奶',
-      value: '5',
-      checked: false
-    }, {
-      name: '书馆馆长',
-      value: '6',
-      checked: false
-    }, {
-      name: '其他',
-      value: '7',
-      checked: false
-    }, ],
-    hobby: [{
-        name: '读书',
-        value: '1',
-        checked: false
-      },
-      {
-        name: '写作',
-        value: '2',
-        checked: false
-      },
-      {
-        name: '画画',
-        value: '3',
-        checked: false
-      },
-      {
-        name: '唱歌',
-        value: '4',
-        checked: false
-      },
-    ]
+    items:'',
+    hobby:"",
   },
   // 面页加载
   onReady: function() {
+    //标签
+    var that = this
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/order/shujui',
+      data: {
+        type: 'hobby',
+      },
+      success(res) {
+        var hobby=res.data.data
+        var hobbys = app.data.user.hobby
+        if (hobbys != null) {
+          var hobbys = hobbys.split(",");
+          hobbys.pop()
+          for (var i = 0; i < hobbys.length; i++) {
+            var a = hobbys[i]
+            hobby[a].status = true
+          }
+        }
+        that.setData({
+          hobby: res.data.data
+        })
+      
+        console.log(that.data.hobby[2].status)
+      }
+    })
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/order/shujui',
+      data: {
+        type: 'identity',
+      },
+      success(res) {
+
+        that.setData({
+
+          items: res.data.data
+        })
+      }
+    })
     //如果有年龄显示年龄
-    var sex = this.data.objectArray[app.data.user.gender]
+    var sex = that.data.objectArray[app.data.user.gender]
     if (app.data.user.index != "") {
-      this.setData({
+      that.setData({
         sex: sex
       })
     }
     //如果有年级。。。
     if (app.data.user.yeargrade != "" && app.data.user.yeargrade != null) {
-      this.setData({
+      that.setData({
         yeargrades: app.data.user.yeargrade
       })
     }
     //如果有学校。。。
 
     if (app.data.user.school != "" && app.data.user.school != null) {
-      this.setData({
+      that.setData({
         schools: app.data.user.school
       })
     }
-    //爱好r
-    var hobby = app.data.user.hobby
-    if (hobby != null) {
-      var hobby = hobby.split(",");
-      var hobbys = this.data.hobby
-      hobby.pop()
-      for (var i = 0; i < hobby.length; i++) {
-        var a = hobby[i] - 1
-        var uphobby = "hobby["+a+"].checked";
-        this.setData({
-          [uphobby]: true,
-        })
-      }
-    }
+   
 
     //身份
    
@@ -113,27 +90,27 @@ Page({
       var identity = app.data.user.identity - 1;
       console.log(app.data.user.identity)
       var upidentity = "items[" + identity + "].checked";
-        this.setData({
+        that.setData({
           [upidentity]: true,
         })
       }
     
     //如果有年级。。。
     if (app.data.user.birthday != "" && app.data.user.birthday != null) {
-      this.setData({
+      that.setData({
         dates: app.data.user.birthday
       })
     }
     //显示微信头像.昵称和默认选中身份
 
-    this.setData({
+    that.setData({
       username: app.data.user.nickname,
       name: app.data.user.truename,
       headerimg: app.data.user.face,
       hobbys: app.data.user.hobby,
       identity: app.data.user.identity,
     })
-    console.log(this.data)
+    
   },
   //  点击时间组件确定事件  
   bindTimeChange: function(e) {
@@ -190,24 +167,26 @@ Page({
     })
 
   },
-
+//爱好
   checkboxChange: function(e) {
     var arr = e.detail.value
-
-    var str = "0";
+    console.log(e)
+    var str = "";
     for (var i = 0; i < arr.length; i++) {
       str += arr[i] + ","
     }
+    console.log(str)
     this.setData({
       hobbys: str
     })
   },
+  //身份
   radioChange: function(e) {
     var str = e.detail.value;
+    console.log(str)
     this.setData({
       identity: str
     })
-    console.log(str)
   },
 
 
