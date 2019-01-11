@@ -6,6 +6,7 @@
 
     <text class="hehe">{{shopname}}</text>
 
+
     <span class="iconfont icon-right"></span>
   </view>
 </view>

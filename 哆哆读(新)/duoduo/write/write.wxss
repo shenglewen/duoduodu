@@ -1,0 +1,119 @@
+/* duoduo/write/write.wxss */
+page{
+  background: #ffffff;
+  font-size: 28rpx;
+  color: #343434;
+}
+.content_area{
+  background: #fff;
+  padding: 0 65rpx;
+}
+.content{
+  width: 100%;
+  min-height: 200rpx;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  text-align: justify;
+}
+.pic_box{
+  padding-top: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  z-index: 99999;
+}
+.img_box{
+  width: 25%;
+  height:150rpx;
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
+}
+.pic{
+  width: 100%;
+  height: 150rpx;
+}
+.flexs{
+   padding: 0 20rpx;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   padding-bottom: 28rpx;
+   margin-bottom: 200rpx;
+ }
+.xueke{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 28rpx;
+  color: #343434;
+  float:left;
+  width:70%;
+}
+.chooice_arrow{
+  width: 22rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-right: 22rpx;
+ }
+ .location_icon{
+   width: 38rpx;
+   height: 38rpx;
+   margin-right: 10rpx;
+ }
+ .warning{
+   color: red;
+ }
+ .gallery { 
+width:630rpx;
+margin: 0 auto;
+display: flex; 
+justify-content: flex-start; 
+flex-wrap: wrap;
+}
+/*每张图片所占容器*/
+.item { 
+position: relative; 
+margin:10rpx 5rpx;
+width: 200rpx;
+height: 200rpx;
+}
+.item image{
+width: 100%;
+height: 100%;
+}
+/*add按钮*/
+.item .addIcon{
+position:relative;
+width:200rpx;
+height:200rpx;
+text-align:center;
+line-height:200rpx;
+font-size:80rpx;
+background: #ffffff;
+color: rgb(158, 154, 154);
+border:1px dashed rgb(158, 154, 154);
+}
+/*删除按钮*/
+.delete { 
+position:absolute;
+right:0;
+top:0;
+/* background:#ccc; */
+opacity:1;
+height: 36rpx;
+font-size:22rpx;
+font-weight:700;
+padding:0 8rpx 0 10rpx;
+}
+.bao{
+ width: 90%;
+  margin-top: 30rpx;
+  background-color: #f45a61;
+  color: #FFF;
+}
+
+

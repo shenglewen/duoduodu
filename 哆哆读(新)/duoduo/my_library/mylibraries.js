@@ -4,6 +4,7 @@ Page({
    books:"",
    shopname:"",
    img:""
+
   },
   jmp:function(){
 wx.navigateTo({
@@ -25,6 +26,7 @@ wx.navigateTo({
           books:books,
           shopname: app.data.shop.shop_name,
           img: app.data.user.face
+
         })
         console.log(that.data.books)
       }

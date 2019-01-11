@@ -72,6 +72,7 @@ Page({
     //如果有年级。。。
     if (app.data.user.yeargrade != "" && app.data.user.yeargrade != null) {
       that.setData({
+
         yeargrades: app.data.user.yeargrade
       })
     }
@@ -84,6 +85,7 @@ Page({
     }
    
 
+
     //身份
    
     if (hobby != null) {
@@ -91,6 +93,7 @@ Page({
       console.log(app.data.user.identity)
       var upidentity = "items[" + identity + "].checked";
         that.setData({
+
           [upidentity]: true,
         })
       }
@@ -98,19 +101,21 @@ Page({
     //如果有年级。。。
     if (app.data.user.birthday != "" && app.data.user.birthday != null) {
       that.setData({
+
         dates: app.data.user.birthday
       })
     }
     //显示微信头像.昵称和默认选中身份
 
     that.setData({
+
       username: app.data.user.nickname,
       name: app.data.user.truename,
       headerimg: app.data.user.face,
       hobbys: app.data.user.hobby,
       identity: app.data.user.identity,
     })
-    
+
   },
   //  点击时间组件确定事件  
   bindTimeChange: function(e) {
@@ -176,6 +181,7 @@ Page({
       str += arr[i] + ","
     }
     console.log(str)
+
     this.setData({
       hobbys: str
     })
@@ -187,6 +193,7 @@ Page({
     this.setData({
       identity: str
     })
+
   },
 
 

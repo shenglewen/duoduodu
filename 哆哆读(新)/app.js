@@ -19,6 +19,7 @@ App({
 
     // 登录code
   
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -33,6 +34,7 @@ App({
               // 所以此处加入 callback 以防止这种情况
               if (that.userInfoReadyCallback) {
                 that.userInfoReadyCallback(res)
+
               }
             }
           })
@@ -43,6 +45,7 @@ App({
   onShow:function(){
   
   },
+
   globalData: {
     userInfo: null,
     code:''

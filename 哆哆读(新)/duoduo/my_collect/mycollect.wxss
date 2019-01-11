@@ -34,6 +34,7 @@ text-align: center;
 height:100rpx;
 line-height:100rpx;
 color: #f45a61;
+
 border-bottom:1rpx solid #f45a61;
 }
 

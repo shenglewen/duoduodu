@@ -1,5 +1,6 @@
 // duoduo/library_x/details.js
 var app=getApp()
+
 Page({
 
   /**
@@ -8,6 +9,7 @@ Page({
   data: {
      mag:"",
      productid:""
+  
   },
 
   /**
@@ -52,11 +54,12 @@ Page({
 
 
 
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
- 
+
   },
 
   /**

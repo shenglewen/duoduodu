@@ -1,8 +1,10 @@
 /* duoduo/setting_book/ library .wxss */
-page{background-color:#edf0f3;}
+
+page{background-color:#fff;}
 .library_k{
-height:100rpx;
+height:105rpx;
 border-bottom:1rpx solid #ddd;
+background-color:#fff;
 }
 .library{
 width:90%;
@@ -108,4 +110,15 @@ color:#444;
 .input{
   height: 100%;
   text-align: right;
+
+}
+.ba_n{
+background:#f45a61;
+color:#fff;
+border:0;
+position:absolute;
+width:90%;
+bottom:30rpx;
+left:5%;
+right:5%;
 }

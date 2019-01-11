@@ -21,6 +21,7 @@
     <view class="wanche" bindtap='hqyz' wx:else>
 获取验证码
     </view>
+
 </view>
 
 <!--按钮-->

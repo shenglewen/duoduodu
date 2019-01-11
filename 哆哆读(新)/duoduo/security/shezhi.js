@@ -26,6 +26,7 @@ change: function () {
   this.setData({
     mobile: app.data.user.mobile
   })
+
   },
 
   /**

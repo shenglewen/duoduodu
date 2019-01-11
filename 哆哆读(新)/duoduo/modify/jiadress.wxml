@@ -20,6 +20,7 @@
       所在地点
               <view class="xuanze text" bindtap='aaa'>
                   <view class='text'> {{address}}</view>
+
               <view class="tuk">   
             <image class="tu" src="https://dododu.2om.cn/public/images/a121.png"mode="aspectFill">
           </image>
@@ -54,6 +55,7 @@
       </view>
     </view>
   </view>
+
 </view>
 <!-- 默认-->
 <view class="xinxi_k">

@@ -26,7 +26,7 @@ Page({
     addressid:'',
     userid:'',
     shopid:'',
-    bookid:"",
+   bookid:"",
     biaoqian: "请选择",
     biaoqianarry: "",
     biaoqianindex: 0

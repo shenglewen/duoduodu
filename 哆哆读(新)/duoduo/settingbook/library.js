@@ -25,6 +25,7 @@ Page({
     mobile:"",
     book:"",
     addressid:''
+
   },
 
   /**
@@ -71,12 +72,14 @@ Page({
           address: data,
           address1:data[0].address,
           addressid: data[0].addressid
+
         })
   
       }
     })
 
     console.log(this.data)
+
   },
   changeDateTime1(e) {
     this.setData({ dateTime1: e.detail.value });
@@ -101,6 +104,7 @@ Page({
     this.setData({
       address1: address,
       addressid: addressid
+
     })
 
   },
@@ -185,6 +189,7 @@ Page({
         rent: that.data.daysmoney,
         renttime: that.data.days,
         addressid:that.data.addressid
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -209,6 +214,7 @@ Page({
             content: '是不是什么东西忘记填写啦呀~~',
           })
     }
+
       }
     })
   },

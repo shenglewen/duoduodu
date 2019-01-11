@@ -1,5 +1,6 @@
 // duoduo/accredit/accredit.js
 var app=getApp()
+
 Page({
 
   /**
@@ -7,6 +8,7 @@ Page({
    */
   data: {
   http:app.data.http
+
   },
 
   /**

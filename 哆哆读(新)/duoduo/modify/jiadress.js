@@ -9,6 +9,7 @@ Page({
     dizhival: "",
     dizhi: ['学校', '家', '公司', '其他'],
     dizhitext: '请选择',
+
     usename:"",
     mobile:"",
     address:"请选择",
@@ -31,6 +32,7 @@ Page({
     })
 
   },
+
 
 
   /**
@@ -149,6 +151,7 @@ this.setData({
         console.log(res)
       }
     })
+
     if (this.data.status==0){
      this.setData({
        status: 1
@@ -176,6 +179,7 @@ this.setData({
         address:that.data.detailed,
         dd: that.data.address,
         tag: that.data.dizhitext
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -186,6 +190,7 @@ this.setData({
           wx.showModal({
             title: '修改成功',
             content: '地址已修改成功',
+
             success: function (res) {
               if (res.confirm) {
                 wx.switchTab({
@@ -200,6 +205,7 @@ this.setData({
             title: '所填信息不完整',
             content: '是不是有什么忘记填写了？'
           })
+
         }
       }
     })

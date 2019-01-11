@@ -126,6 +126,7 @@
     <label class="radio" wx:for="{{items}}" wx:for-index="i">
 <view class="nini">
         <radio value="{{i}}" checked="{{i==identity?true:false}}"/><text class="hah">{{item}}</text>
+
         </view>
     </label>
 </radio-group>

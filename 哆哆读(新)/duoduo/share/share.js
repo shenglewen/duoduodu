@@ -49,6 +49,7 @@ Page({
     })
 
   },
+
   //添加书籍共享
   updiz: function () {
     var that = this
@@ -71,6 +72,7 @@ Page({
         zuyong: that.data.days,
         address: that.data.address1,
         addressid: that.data.addressid
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -98,6 +100,7 @@ wx.navigateTo({
   url: '../addchag/jiadress',
 })
 },
+
   /**
    * 选择地址
    */
@@ -128,6 +131,7 @@ wx.navigateTo({
        }
     })
     wx.request({
+
       url: 'https://dododu.2om.cn/api.php/user/listsaddress',
       data: {
         userid: app.data.user.userid,

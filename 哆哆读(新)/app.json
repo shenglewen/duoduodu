@@ -42,7 +42,10 @@
     "duoduo/library_x/details",
     "duoduo/share/share",
     "login/bangding/dff",
-    "duoduo/settingbook/library"
+    "duoduo/settingbook/library",
+    "duoduo/write/write"
+
+
   
   ],
   "window": {

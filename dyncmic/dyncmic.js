@@ -1,4 +1,4 @@
-// duoduo/niticexq/noticexq.js
+// pages/dyncmic/dyncmic.js
 Page({
 
   /**
@@ -12,16 +12,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
-wx.request({
-  url: 'https://dododu.2om.cn/api.php/content/lists',
-  data:{
-    categoryid: options.id
-  },
-  success(res){
-    console.log(res)
-  }
-})
 
   },
 

@@ -9,6 +9,7 @@
    </view>
 <text class="hong">{{mag.shop_name}}</text>
 
+
   </view>
 <view class="head_right">
       <image class="img_xin" src="https://dododu.2om.cn/public/images/91xin.png" mode="aspectFill">
@@ -29,6 +30,7 @@
     </image>
   </view>
   <text class="shuna_me">{{mag.title}} </text>
+
   </view>
 
 </view>
@@ -44,6 +46,7 @@
             </view>
             <view class="zuozhe">取书地址：
             <text class="nei">{{mag.address}} </text>
+
             </view>
       </view>
       <view class="jianjie_right">
@@ -52,6 +55,7 @@
             </view>
             <view class="zuozhe">出版社：
             <text class="nei">{{mag.chubanshe}} </text>
+
             </view>
       </view>
       
@@ -141,5 +145,6 @@
   </view>
       <view class="xianshang yuan3"bindtap='showcart'  >
             支付押金
+
       </view>
 </view>

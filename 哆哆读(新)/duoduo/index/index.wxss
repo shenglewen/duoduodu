@@ -215,7 +215,6 @@ padding-left:10rpx;
 }
 .zuobiao_a{
 
-   margin-left: 16rpx;
   margin-top: 20rpx;
 height:40rpx;
 line-height:40rpx;

@@ -34,6 +34,7 @@ Page({
     wx: wx.navigateTo({
       url: url
     })
+
   },
   read: function () {
     wx: wx.navigateTo({
@@ -43,17 +44,15 @@ Page({
  
    read_j: function() {
     wx: wx.navigateTo({
-
-      url: '../readnuma/bang'
+      url: '../readnum/bang'
     })
   },
- 
   borrow: function() {
     wx: wx.navigateTo({
       url: '../borrow_library/library_borr'
     })
   },
-  
+
   borrow_s: function() {
     wx: wx.navigateTo({
       url: '../my_borrow/myborrow'
@@ -65,7 +64,7 @@ Page({
       url: '../fxyl/fxyl'
     })
   },
- 
+
   shain : function() {
     wx: wx.navigateTo({
       url: '../check/check'
@@ -99,6 +98,7 @@ Page({
       }
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -116,6 +116,7 @@ Page({
         app.globalData.code = res.code
         app.data.code = res.code
         console.log(app.globalData.code)
+
         wx.request({
           url: 'https://dododu.2om.cn/api.php/user/getopenid',
           data: {
@@ -125,6 +126,7 @@ Page({
             wx.hideLoading()
             if (res.data.code != '200') {
               console.log(res)
+
               wx.navigateTo({
                 url: '/login/bangding/dff',
               })
@@ -170,11 +172,12 @@ Page({
       },
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
@@ -183,7 +186,6 @@ Page({
   onShow: function () {
 
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */

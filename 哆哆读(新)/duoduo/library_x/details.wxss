@@ -70,7 +70,7 @@ top:-113rpx;
 width:100rpx;
 height:100rpx;
 position:relative;
-left:-106rpx;
+left:-125rpx;
 top:-6rpx;
 z-index: 666;
 }

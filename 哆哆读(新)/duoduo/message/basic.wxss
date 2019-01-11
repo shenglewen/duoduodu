@@ -260,6 +260,7 @@ radradio{
   border: none;
   color: #fff;
   background: red;
+
 }
 .picker{
   font-weight:100;
