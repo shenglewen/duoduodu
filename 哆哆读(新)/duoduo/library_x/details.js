@@ -43,6 +43,7 @@ Page({
         userid:app.data.user.userid
       },
       success(res) {
+        console.log(res)
         // wx.navigateTo({
         //   url: '../zhifu/zhifu',
         // })
