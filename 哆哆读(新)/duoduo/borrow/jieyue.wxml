@@ -22,6 +22,7 @@
           <view class="tou_tu">
            <view class="tou_yuan">
            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
+
 </image>
            </view>
           <text class="w_name">王世家</text>
@@ -34,9 +35,8 @@
 <!-- 阅读中书籍 -->
  <view class="wenb_k">
  <view class="wenb_kk">
-        <view class="wenb_left">
-        
-    <image class="img_tu" src="{{http}}images/a1.jpg" mode="aspectFill">
+        <view class="wenb_left">     
+   <image class="img_tu" src="{{http}}images/a1.jpg" mode="aspectFill">
     </image>
       </view>
 <!--  文本图之类       -->
@@ -46,6 +46,7 @@
           <view class="tou_tu">
            <view class="tou_yuan">
            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
+
 </image>
            </view>
           <text class="w_name">王世家</text>
@@ -71,6 +72,7 @@
           <view class="tou_tu">
            <view class="tou_yuan">
            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
+
 </image>
            </view>
           <text class="w_name">王世家</text>
@@ -84,7 +86,6 @@
  <view class="wenb_k">
  <view class="wenb_kk">
         <view class="wenb_left">
-        
     <image class="img_tu" src="{{http}}images/a1.jpg" mode="aspectFill">
     </image>
       </view>

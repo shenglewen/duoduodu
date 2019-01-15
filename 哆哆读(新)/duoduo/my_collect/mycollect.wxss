@@ -243,11 +243,6 @@ text-align:center;
 line-height:26rpx;
 font-size:30rpx;
 color:#474747;
-
-
-
-
-
 }
 .library_top{
 width:90%;

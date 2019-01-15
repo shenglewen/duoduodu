@@ -10,17 +10,8 @@
    
 <!--  内容 -->
  <view class="name_n">品牌活动让“线下读书节”遍地发芽</view>
-
-
 <view class="n_cont">　　{{mags.description}}</view>
 <view class="n_cont">{{mags.description}}</view>
-
-
-  
-
-
-
-
 </view>
        
 

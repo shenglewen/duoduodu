@@ -8,7 +8,6 @@ Page({
    */
   data: {
     http: app.data.http,
-
   },
 
   /**

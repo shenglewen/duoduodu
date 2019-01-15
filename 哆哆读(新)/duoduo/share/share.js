@@ -1,5 +1,4 @@
 // duoduo/share/share.js
-// duoduo/share/share.js
 var app = getApp()
 
 Page({
@@ -98,7 +97,6 @@ Page({
       }
     })
   },
-
 add:function(){
 wx.navigateTo({
   url: '../addchag/jiadress',
@@ -155,7 +153,6 @@ wx.navigateTo({
           money: 1,
           buyNumMin: 1,
           buyNumMax: 200,
-
           freedeposit: 0,
           rentfree: 0,
         

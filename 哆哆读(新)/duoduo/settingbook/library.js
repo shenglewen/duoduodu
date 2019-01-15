@@ -2,9 +2,7 @@
 // duoduo/share/share.js
 var dateTimePicker = require('../../utils/dateTimePicker.js');
 var app = getApp()
-
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -27,6 +25,7 @@ Page({
     mobile:"",
     book:"",
     addressid:''
+
   },
 
   /**
@@ -73,11 +72,11 @@ Page({
           address: data,
           address1:data[0].address,
           addressid: data[0].addressid
+
         })
   
       }
     })
-
     console.log(this.data)
   },
   changeDateTime1(e) {
@@ -98,7 +97,6 @@ Page({
 
     var address = this.data.address[e.detail.value].address
     var addressid = this.data.address[e.detail.value].addressid
-
     console.log(this.data.address)
     this.setData({
       address1: address,
@@ -187,6 +185,7 @@ Page({
         rent: that.data.daysmoney,
         renttime: that.data.days,
         addressid:that.data.addressid
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -211,6 +210,7 @@ Page({
             content: '是不是什么东西忘记填写啦呀~~',
           })
     }
+
       }
     })
   },

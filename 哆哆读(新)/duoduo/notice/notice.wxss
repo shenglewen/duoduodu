@@ -35,6 +35,7 @@ height:100%;
 padding-top:10rpx;
 font-size:36rpx;
 position: relative;
+
 }
 .wen2{
 font-size:28rpx;

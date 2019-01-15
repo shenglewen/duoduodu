@@ -10,6 +10,7 @@ Page({
     http: app.data.http,
     selected: true,
     selected1: false,
+
   },
   selected: function (e) {
     this.setData({

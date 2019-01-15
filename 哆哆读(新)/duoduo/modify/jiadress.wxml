@@ -22,6 +22,7 @@
                   <view class='text'> {{address}}</view>
               <view class="tuk">   
             <image class="tu" src="{{http}}images/a121.png"mode="aspectFill">
+
           </image>
            </view>
                 </view>
@@ -54,6 +55,7 @@
       </view>
     </view>
   </view>
+
 </view>
 <!-- 默认-->
 <view class="xinxi_k">

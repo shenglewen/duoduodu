@@ -80,6 +80,7 @@ Page({
       }
     })
 },
+
   //添加书籍共享
   updiz: function () {
     var that = this
@@ -145,7 +146,7 @@ Page({
     wx.request({
 
       url: "https://dododu.2om.cn/api.php/product/infoproduct",
-      data: {
+
         userid: app.data.user.userid,
         shopid:app.data.shop.shopid,
         productid: options.id
@@ -168,7 +169,7 @@ Page({
           chubanshe: book.chubanshe,
           biaoqian:book.biaoqian,
           bookid: options.id
-        })
+
       }
     })
     wx.request({
@@ -202,6 +203,7 @@ Page({
         })
       }
     })
+
   },
   //免租金
   freedeposit:function(){

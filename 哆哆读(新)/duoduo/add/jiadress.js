@@ -11,6 +11,7 @@ Page({
     dizhival: "",
     dizhi: ['学校', '家', '公司', '其他'],
     dizhitext: '请选择',
+
     usename:"",
     mobile:"",
     address:"请选择",
@@ -19,6 +20,7 @@ Page({
     status:0,
     detailed:'',
     h_url:'',
+
   },
 
   /**
@@ -41,12 +43,14 @@ Page({
       dizhival: val
     })
 
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
   }, 
 
   /**
@@ -152,9 +156,11 @@ this.setData({
         longitude: that.data.longitude,
         latitude: that.data.latitude,
         status: that.data.status,
+
         address:that.data.detailed,
         dd: that.data.address,
         tag: that.data.dizhitext
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -175,7 +181,8 @@ this.setData({
                     url: '../my/home',
                   })
                 }
-              
+             
+
               }
             }
           })
@@ -187,6 +194,7 @@ this.setData({
   },
   //调用插件(地)(图)
   aaa:function(){
+
     var that=this;
     wx.chooseLocation({
       success: function (res) {
@@ -207,7 +215,5 @@ this.setData({
       }
     })
   }
-
-
 
 })

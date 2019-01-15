@@ -4,6 +4,7 @@
 <view class="head">
 <view class="head_left">
 <view class="b_headtu">
+
         <image class="img_tu2" src="{{mag.face}}" mode="aspectFill">
         </image>
    </view>
@@ -14,6 +15,7 @@
       <image class="img_xin" src="{{http}}images/91xin.png" mode="aspectFill">
               </image>
       <image class="img_fan" src="{{http}}images/2f.png" mode="aspectFill">
+
               </image>
     </view>
    </view>
@@ -23,6 +25,7 @@
   <view class="con_shu">
   
   <view class="connei">
+
   <image class="kejie"src="{{http}}images/1可.png" mode="aspectFill">
     </image>
 <image class="fengmian" src="{{mag.thumb}}" mode="aspectFill">

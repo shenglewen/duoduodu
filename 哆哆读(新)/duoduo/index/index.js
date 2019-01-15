@@ -1,6 +1,5 @@
 // duoduo/index/index.js
 var app = getApp()
-
 Page({
 
   /**
@@ -35,6 +34,7 @@ Page({
     wx: wx.navigateTo({
       url: url
     })
+
   },
   read: function () {
     wx: wx.navigateTo({
@@ -44,17 +44,17 @@ Page({
  
    read_j: function() {
     wx: wx.navigateTo({
-
       url: '../readnuma/bang'
     })
   },
  
+
   borrow: function() {
     wx: wx.navigateTo({
       url: '../borrow_library/library_borr'
     })
   },
-  
+
   borrow_s: function() {
     wx: wx.navigateTo({
       url: '../my_borrow/myborrow'
@@ -65,8 +65,7 @@ Page({
     wx: wx.navigateTo({
       url: '../fxyl/fxyl'
     })
-  },
- 
+ },
   shain : function() {
     wx: wx.navigateTo({
       url: '../check/check'
@@ -104,7 +103,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
     //等待 code 的写入
     var that = this
     wx.showLoading({
@@ -126,6 +124,7 @@ Page({
             wx.hideLoading()
             if (res.data.code != '200') {
               console.log(res)
+
               wx.navigateTo({
                 url: '/login/bangding/dff',
               })
@@ -199,11 +198,11 @@ Page({
       },
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
   },
 
   /**
@@ -216,7 +215,6 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
 
   },
 

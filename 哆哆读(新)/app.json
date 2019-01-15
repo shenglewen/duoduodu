@@ -1,7 +1,5 @@
 {
-  "pages": [
-    
-    
+  "pages": [   
     "duoduo/index/index",
     "duoduo/borrow/jieyue",
     "duoduo/bank/read",
@@ -29,7 +27,7 @@
     "duoduo/fxyl/fxyl",
     "duoduo/accredit_bd/bdshouji",
     "duoduo/accredit_xg/bdshouji",
-    
+     "duoduo/write/write",
     "duoduo/borrow_library/library_borr",
     "duoduo/cy_adress/cyadress",
     "duoduo/check/check",

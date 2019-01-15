@@ -1,3 +1,4 @@
+
 var app = getApp()
 
 Page({
@@ -28,9 +29,11 @@ wx.navigateTo({
       success:function(res){
         var books=res.data.data
         that.setData({
+
           books:books,
           shopname: app.data.shop.shop_name,
           img: app.data.user.face
+
         })
         console.log(that.data.books)
       }

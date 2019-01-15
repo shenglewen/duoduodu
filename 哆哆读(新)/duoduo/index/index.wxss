@@ -128,7 +128,6 @@ margin-top:20rpx;
 justify-content: space-between;  
 }
 .mao{
-
  width:31%;
 height:260rpx; 
 display:table-cell; 
@@ -157,7 +156,6 @@ display: flex;
 justify-content: space-between;
 }  
 .biati_z{
-
 font-weight: 900;
 font-size:32rpx;
 display:block; 
@@ -174,7 +172,6 @@ height:80rpx;
 border-radius:50%;
 }
 .biaoati_n{
-
 height:80rpx;
 line-height:31rpx;
 background:#fff;
@@ -191,7 +188,6 @@ overflow: hidden;
 /* white-space:nowrap; */
 display: -webkit-box;
 text-overflow: ellipsis;
-
 -webkit-line-clamp:2;
 -webkit-box-orient:vertical;
 }
@@ -214,7 +210,6 @@ color:#f45a61;
 padding-left:10rpx;
 }
 .zuobiao_a{
-
    margin-left: 16rpx;
   margin-top: 20rpx;
 height:40rpx;
@@ -224,7 +219,6 @@ justify-content: space-between;
 }
 .adress{
   font-size:26rpx;
-
   color: #474747;
 }
 .tian{
@@ -243,7 +237,6 @@ color:#bababa;
 .icon-xin5{
   color:#bababa;
 }
-
 .xin5{
   color: #f45a61;
 }
@@ -262,7 +255,6 @@ height:56rpx;
 position:fixed;
 bottom:0rpx;
 right:20rpx;
-
 }
 
 

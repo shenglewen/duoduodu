@@ -180,7 +180,6 @@
 <!-- 取书点 -->
 <view class="qushu_k">
 
-
   <view class="qushu_suo">
     <view class="qushu_k">
       <!-- 点击 -->
@@ -204,3 +203,4 @@
 
 <button class="agong" type="warn" bindtap="updiz"> 立即共享 </button>
 <view class="top"></view>
+

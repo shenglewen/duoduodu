@@ -2,6 +2,7 @@
 
 <view class="beijing">
 <image style='height:{{winHeight}}px;width:{{winWidth}}px' src="{{http}}images/001.png" mode="aspectFill">
+
 </image>
  <button class="fb" bindtap='jomp'>发布共享</button>
  <button class="sg" bindtap='jompa'>进入我的书馆</button>  

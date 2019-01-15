@@ -1,5 +1,7 @@
 // duoduo/security/shezhi.js
+
 var app = getApp()
+
 
 Page({
 
@@ -8,7 +10,6 @@ Page({
    */
   data: {
     http: app.data.http,
-  
   },
 bangding:function(){
   wx.navigateTo({
@@ -17,18 +18,19 @@ bangding:function(){
 },
 change: function () {
     wx.navigateTo({
+
       url: '../accredit_xg/bdshouji',
+
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-
   this.setData({
     mobile: app.data.user.mobile
   })
+
   },
 
   /**

@@ -1,6 +1,5 @@
 // duoduo/borrow_library/library_borr.js
 var app = getApp()
-
 Page({
 
   /**

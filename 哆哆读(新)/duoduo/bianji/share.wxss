@@ -460,7 +460,6 @@ border-bottom:1rpx solid #f6f6f6;
 
 font-size:35rpx;
 }
-
 .delbook{
   width:90%;
 margin:0 auto;

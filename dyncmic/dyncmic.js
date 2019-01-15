@@ -1,7 +1,4 @@
-// duoduo/readnum/bang.js
-
-var app = getApp()
-
+// pages/dyncmic/dyncmic.js
 Page({
 
   /**
@@ -9,35 +6,12 @@ Page({
    */
   data: {
 
-    http: app.data.http,
-
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-
-    wx.request({
-      url: 'https://dododu.2om.cn/api.php/ranking/lists',
-      data:{
-         type:1
-      },
-      success:function(res){
-          console.log(res)
-      }
-    })
-    wx.request({
-      url: 'https://dododu.2om.cn/api.php/ranking/lists',
-      data: {
-        type: 2
-      },
-      success: function (res) {
-        console.log(res)
-      }
-    })
 
   },
 

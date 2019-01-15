@@ -9,6 +9,7 @@ Page({
   data: {
     http: app.data.http,
 
+
   },
   jomp:function(){
     wx.navigateTo({

@@ -32,16 +32,9 @@
     <view class='nei'> {{item.name}}</view>
   </label>
 </radio-group>   
-
 <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
-</image>
-           
+</image>       
           <text class="w_name">王世家</text>
-        
-
-
-
-
     </view>
 
 

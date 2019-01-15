@@ -13,6 +13,7 @@ border-bottom:1rpx solid #f6f6f6;
   position:relative;
    top:-30rpx;
     left:20rpx;
+   font-size:35prx;
 }
 .head_n{
 width:90%;
@@ -36,6 +37,8 @@ color:#bababa;
 }
 .liebiao{
 height:80rpx;
+
+font-size:30rpx;
 background:#fff;
 }
 .yinru{
@@ -57,7 +60,6 @@ background:#fff;
 margin:20rpx auto;
 border:1rpx solid #f6f6f6;
 display: flex;
-
 border-radius: 5px;
 }
 .shufeng{
@@ -76,6 +78,7 @@ margin-left: 20rpx
 .kuang{
 margin-top:20rpx;
 border-radius: 5px;
+
 }
 
 

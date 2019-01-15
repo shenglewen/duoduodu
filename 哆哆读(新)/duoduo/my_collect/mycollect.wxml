@@ -17,16 +17,19 @@
         <view class="wenb_right">
         <view class="wenb_li">
         <text>{{a.title}}</text>
+
         </view>
          <view class="wenb_rq">借阅日期:2018.06.29-2018.07.29<text class="hong">(03/20)</text></view>
             <view class="tou_tu">
            <view class="tou_yuan">
+
            <image class="img_tu2" src='{{a.face}}' mode="aspectFill">
 </image>
            </view>
           <text class="w_name">{{a.username}}</text>
           <!-- 这是心-->
                  <span class="iconfont icon-xin6" id="{{a.productid}}" bindtap="collection"></span> 
+
           
           </view>
         </view>
@@ -118,3 +121,4 @@
     </view>
 </view>
  -->
+

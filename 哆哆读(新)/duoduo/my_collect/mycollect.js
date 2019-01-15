@@ -1,5 +1,6 @@
 // duoduo/my_collect/mycollect.js
 
+
 var app = getApp()
 
 Page({
@@ -8,6 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+
     http: app.data.http,
       book:'',
       shop:"",
@@ -27,11 +29,13 @@ Page({
     this.setData({
       tap: 1
     })
+
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
 
     var that=this
        wx.request({
@@ -69,6 +73,7 @@ Page({
        
       }
     })
+
   },
 
   /**
@@ -91,6 +96,7 @@ Page({
   onHide: function () {
 
   },
+
   //收藏
   collection: function (e) {
     var that = this
@@ -109,6 +115,7 @@ Page({
       
     })
   },
+
   /**
    * 生命周期函数--监听页面卸载
    */

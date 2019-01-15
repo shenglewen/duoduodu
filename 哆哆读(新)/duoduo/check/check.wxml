@@ -42,16 +42,6 @@
 
   <view class="more">更多</view>
 </view>
-
-
-
-
-
-
-
-
-
-
 <!-- 筛选内容 -->
 <view class="fujin_k">
   <view class="fujin">
@@ -64,7 +54,7 @@
     <view class="mao_right">
       <view class="biaoati">
         <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
-        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill">
+        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill"
         </image>
       </view>
       <view class="biaoati_n">
@@ -123,6 +113,7 @@
         </view>
         <view class="tian_right">
           <image class="zou_img" src="{{http}}images/1z.png" mode="aspectFill">
+
           </image>
 
           <text class="pao">200m</text>

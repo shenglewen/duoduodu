@@ -41,6 +41,7 @@
           <view class="tou_tu">
            <view class="tou_yuan">
            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
+
 </image>
            </view>
           <text class="w_name">王世家</text>

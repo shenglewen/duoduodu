@@ -108,6 +108,7 @@
         <view class='img_right'>
           
             <image class="xin" src="{{http}}/images/xin2.png" mode="aspectFill"></image>
+
         </view>
     </view>
 <!-- 书展示 -->
@@ -134,6 +135,7 @@
     <view class='gong'>共<text class="hong">12</text>本  </view>
       <view class='juli'>
         <image class="bushu" src="{{http}}/images/1z.png" mode="aspectFill"></image>
+
       <text>300m</text>
       </view>
     </view>

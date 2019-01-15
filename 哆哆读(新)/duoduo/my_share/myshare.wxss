@@ -10,6 +10,7 @@ background:#fff;
 border:1rpx solid #fff;
 
 border-radius: 5px;
+
 }
 .kuang_k{
 width:90%;
@@ -18,8 +19,8 @@ background:#fff;
 margin:0 auto;
 margin-top:25rpx;
 display: flex;
-
 border-radius: 5px;
+
 }
 .wenb_left{
 width:35%;

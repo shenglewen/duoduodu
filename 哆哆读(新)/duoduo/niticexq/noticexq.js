@@ -1,6 +1,5 @@
 // duoduo/niticexq/noticexq.js
 var app = getApp()
-
 Page({
 
   /**

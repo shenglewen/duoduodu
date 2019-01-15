@@ -18,6 +18,11 @@ height:80rpx;
 background:#fff;
 
 }
+.sao_d{
+
+line-height:100rpx;
+
+}
 .shuming{
  width:90%;
 height:80rpx;
@@ -105,6 +110,7 @@ display: -webkit-box;
 text-overflow: ellipsis;
 -webkit-line-clamp:4;
 -webkit-box-orient:vertical; 
+
 }
 .shang{
 height:40rpx;
@@ -165,6 +171,12 @@ width:45rpx;
 height:100rpx;
  /* background:#f00;  */
 
+}
+.tu-da{
+width:80rpx;
+height:80rpx;
+float:right;
+margin-top:10rpx;
 }
 .tu{
 width:33rpx;
@@ -363,13 +375,19 @@ font-size:35rpx;
 margin-left:40rpx; 
 
 }
-.shaoma{
-  width:90%;
+
+.shaoma_k{
+width:100%;
+background:#fff;
 margin:0 auto;
-margin-top:150rpx;
-margin-bottom: 150rpx;
 height:100rpx;
-line-height:100rpx;
+
+}
+.shaoma{
+width:90%;
+margin:0 auto;
+height:100rpx;
+background:#fff;
 }
 .agong{
 width:90%;
@@ -480,3 +498,4 @@ font-size:35rpx;
   margin: 0.5rem;
   font-size: 35rpx;
 }
+

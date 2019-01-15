@@ -24,17 +24,22 @@
  <view class="niha">
  <text class="shu">200</text> 
  <image class="zuo" src="{{http}}images/2zuo.png" mode="aspectFill">
+
        </image>
 </view>
 </view>
 <!-- 头像 -->
+
 <image class="xiang" src="{{http}}images/a2.jpg" mode="aspectFill">
+
        </image> 
  
 <!-- 整体内容 -->
 <view class="conter">
   <view class="kuai_tou">
+
       <image class="tou_img" src="{{http}}images/2.jpg" mode="aspectFill">
+
           </image>
   </view>
   
@@ -63,18 +68,38 @@
           </image>
  <!-- 评论 -->
  <image class="ping" src="{{http}}images/1ping.png" mode="aspectFill">
+
           </image>
 
 </view>
 <!-- 点赞 -->
 <view class="right">
-     <image class="dzan" src="{{http}}images/1dian.png" mode="aspectFill">
-          </image>
-   <text class="xiao">赞</text>
+     <!-- <image class="dzan" src="https://dododu.2om.cn/public/images/d1.png" mode="aspectFill">
+          </image> -->
+ <image class="dzan {{showView?'show':''}}" src="{{http}}images/d1.png" bindtap="onChangeShowState" mode="aspectFill"></image>
+ <image class="dzan {{showView?'':'show'}}" src="{{http}}images/d2.png" bindtap="onChangeShowState"></image>
 
       </view>
    </view>
   </view>
+
+  <!-- 评论 -->
+<view class="dizab">
+<image class="jians" src="{{http}}images/sa3.png" mode="aspectFill">
+          </image> 
+<view class="zanm">
+<image class="szan" src="{{http}}images/d1.png" mode="aspectFill"></image> 
+<text class="zming">1123</text>
 </view>
+
+
+</view>
+</view>
+
+
+
+
+
+
 <!-- 挤一挤 -->
-<view class="jiyi">记一记</view>
+<!-- <view class="jiyi" bindtap="onBtnClick" >记一记</view> -->

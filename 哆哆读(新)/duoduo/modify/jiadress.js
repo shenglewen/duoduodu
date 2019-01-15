@@ -33,8 +33,6 @@ Page({
     })
 
   },
-
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -61,7 +59,6 @@ Page({
          detailed: res.data.data.address,
          status:res.data.data.status,
          dizhitext:res.data.data.tag
-
        })
        console.log(that.data)
           } 
@@ -196,7 +193,6 @@ this.setData({
               }
             }
           })
-
         }else{
           wx.showModal({
             title: '所填信息不完整',

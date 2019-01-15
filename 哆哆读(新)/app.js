@@ -15,10 +15,7 @@ App({
     var that = this
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
-    
-
     // 登录code
-  
     // 获取用户信息
     wx.getSetting({
       success: res => {

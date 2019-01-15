@@ -1,6 +1,5 @@
 // duoduo/cy_adress/cyadress.js
 var app = getApp()
-
 Page({
 
   /**
@@ -50,7 +49,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
   },
   jmp:function(e){
     var a = '../modify/jiadress?id='+e.target.id
@@ -86,13 +84,13 @@ Page({
         })
       }
     })
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
- 
   },
 
   /**

@@ -2,7 +2,6 @@
 var app = getApp()
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -117,7 +116,6 @@ Page({
       hobbys: app.data.user.hobby,
       identity: app.data.user.identity,
     })
-    
   },
   //  点击时间组件确定事件  
   bindTimeChange: function(e) {

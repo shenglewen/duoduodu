@@ -1,6 +1,5 @@
 // duoduo/message_gl/manage.js
 var app = getApp()
-
 Page({
 
   /**
