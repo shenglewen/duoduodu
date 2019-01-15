@@ -19,11 +19,11 @@
   <view class="xiaoxi">
     <span class="iconfont icon-laba"></span>
     <swiper class="sss" autoplay="true" vertical="true" interval="5000">
-      <swiper-item class="tongzhi" id='{{notice[4].categoryid}}' bindtap="noticexq">{{notice[4].categoryid}}</swiper-item>
-      <swiper-item class="tongzhi" id='{{notice[3].categoryid}}' bindtap="noticexq">{{notice[3].categoryid}}</swiper-item>
-      <swiper-item class="tongzhi" id='{{notice[2].categoryid}}' bindtap="noticexq">{{notice[2].categoryid}}</swiper-item>
-      <swiper-item class="tongzhi" id='{{notice[1].categoryid}}' bindtap="noticexq">{{notice[1].categoryid}}</swiper-item>
-      <swiper-item class="tongzhi" id='{{notice[0].categoryid}}' bindtap="noticexq">{{notice[0].categoryid}}</swiper-item>
+      <swiper-item class="tongzhi" id='{{notice[4].categoryid}}' bindtap="noticexq">{{notice[4].title}}</swiper-item>
+      <swiper-item class="tongzhi" id='{{notice[3].categoryid}}' bindtap="noticexq">{{notice[3].title}}</swiper-item>
+      <swiper-item class="tongzhi" id='{{notice[2].categoryid}}' bindtap="noticexq">{{notice[2].title}}</swiper-item>
+      <swiper-item class="tongzhi" id='{{notice[1].categoryid}}' bindtap="noticexq">{{notice[1].title}}</swiper-item>
+      <swiper-item class="tongzhi" id='{{notice[0].categoryid}}' bindtap="noticexq">{{notice[0].title}}</swiper-item>
       <!-- <swiper-item class="tongzhi" bindtap="noticexq">567</swiper-item>
       <swiper-item class="tongzhi" bindtap="noticexq">567</swiper-item> -->
     </swiper>
@@ -34,27 +34,27 @@
 <view class="liebiao_k">
   <view class="liebiao">
     <view class="wentu" bindtap="read">
-      <image class="wentu_img" src="https://dododu.2om.cn/public/images/2shubang.png" mode="aspectFill">
+      <image class="wentu_img" src="{{http}}images/2shubang.png" mode="aspectFill">
       </image>
       <text>读书榜</text>
     </view>
     <view class="wentu" bindtap="read_j">
-      <image class="wentu_img" src="https://dododu.2om.cn/public/images/2借书.png" mode="aspectFill">
+      <image class="wentu_img" src="{{http}}images/2借书.png" mode="aspectFill">
       </image>
       <text>借书榜</text>
     </view>
     <view class="wentu" bindtap="borrow">
-      <image class="wentu_img" src="https://dododu.2om.cn/public/images/2shuguan.png" mode="aspectFill">
+      <image class="wentu_img" src="{{http}}images/2shuguan.png" mode="aspectFill">
       </image>
       <text>借书馆</text>
     </view>
     <view class="wentu" bindtap="borrow_s">
-      <image class="wentu_img" src="https://dododu.2om.cn/public/images/3jieshu.png" mode="aspectFill">
+      <image class="wentu_img" src="{{http}}images/3jieshu.png" mode="aspectFill">
       </image>
       <text>我要借书</text>
     </view>
     <view class="wentu" bindtap="share">
-      <image class="wentu_img" src="https://dododu.2om.cn/public/images/3youli.png" mode="aspectFill">
+      <image class="wentu_img" src="{{http}}images/3youli.png" mode="aspectFill">
       </image>
       <text>分享有礼</text>
     </view>
@@ -107,7 +107,7 @@
             <text class="adress">{{a.address}}</text>
           </view>
           <view class="tian_right">
-            <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+            <image class="zou_img" src="{{http}}images/1z.png" mode="aspectFill">
             </image>
 
             <text class="pao">200m</text>
@@ -123,10 +123,10 @@
 
 </block>
 <!-- 扫一扫 -->
-<view class="saoma">
-  <span class="iconfont icon-saoyisao-copy"></span>
+<view class="saoma" bindtap="saoma">
+  <span class="iconfont icon-saoyisao-copy" ></span>
 
-  <image class="jilu" src="https://dododu.2om.cn/public/images/002118.png" mode="">
+  <image class="jilu" src="{{http}}images/002118.png" mode="">
   </image>
 
 </view>
@@ -135,7 +135,7 @@
 <view class="fujin_k">
   <view class="fujin">
     <view class="mao">
-      <image class="mao_img" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+      <image class="mao_img" src="{{http}}images/mao.png" mode="aspectFill">
       </image>
       <!-- <image class="hong_img" src="/images/21192.png" mode="aspectFill">
        </image> -->
@@ -143,7 +143,7 @@
     <view class="mao_right">
       <view class="biaoati">
         <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
-        <image class="xiang_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill">
         </image>
       </view>
       <view class="biaoati_n">
@@ -160,7 +160,7 @@
           <text class="adress">世贸天阶11号</text>
         </view>
         <view class="tian_right">
-          <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+          <image class="zou_img" src="{{http}}images/1z.png" mode="aspectFill">
           </image>
 
           <text class="pao">200m</text>

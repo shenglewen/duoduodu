@@ -2,7 +2,7 @@
 <view class="b_head">
    <view class="b_head_z">
      <view class="b_headtu">
-        <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill">
         </image>
       </view>
      <text class="shuguan">孙世家的书馆</text>
@@ -11,7 +11,7 @@
 <view class="shuji">
    <view class="shujik">
   <view class="shujik_left">
-  <image class="left_tu" src="https://dododu.2om.cn/public/images/a1.jpg" mode="aspectFill">
+  <image class="left_tu" src="{{http}}images/a1.jpg" mode="aspectFill">
     </image>
   </view>
       <view class="shujik_right">
@@ -62,7 +62,7 @@
 <view class="conter_l">
 <view class="conter_z">已支付</view>
 <view class="conter_tu">请联系出借人
- <image class="imgtu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+ <image class="imgtu" src="{{http}}images/a2.jpg" mode="aspectFill">
         </image>
 
 

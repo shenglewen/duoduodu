@@ -1,12 +1,14 @@
 // duoduo/my_collect/mycollect.js
 
-var app=getApp()
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
       book:'',
       shop:"",
       tap:0,

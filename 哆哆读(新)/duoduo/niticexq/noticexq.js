@@ -1,25 +1,32 @@
 // duoduo/niticexq/noticexq.js
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    http: app.data.http,
+   mags:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this
     console.log(options)
 wx.request({
-  url: 'https://dododu.2om.cn/api.php/content/lists',
+  url: 'https://dododu.2om.cn/api.php/content/details',
   data:{
-    categoryid: options.id
+    contentid: options.id
   },
   success(res){
-    console.log(res)
+    console.log(res.data)
+   that.setData({
+     mags:res.data.data
+   })
   }
 })
   },

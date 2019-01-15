@@ -19,7 +19,7 @@
 <!-- 筛选选择 -->
 <view class="s_kuang">
   <view class="search">
-    <image class="" src="https://dododu.2om.cn/public/images/a8.png" bindtap="query"></image>
+    <image class="" src="{{http}}images/a8.png" bindtap="query"></image>
     <input type="text" placeholder="请搜索关键词" placeholder-style="color:#bababa;"         confirm-type="search" value="" bindinput="inputBind" bindconfirm="query"></input>
   </view>
   <!-- 书籍标签   -->
@@ -56,7 +56,7 @@
 <view class="fujin_k">
   <view class="fujin">
     <view class="mao">
-      <image class="mao_img" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+      <image class="mao_img" src="{{http}}images/mao.png" mode="aspectFill">
       </image>
       <!-- <image class="hong_img" src="/images/21192.png" mode="aspectFill">
        </image> -->
@@ -64,7 +64,7 @@
     <view class="mao_right">
       <view class="biaoati">
         <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
-        <image class="xiang_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill">
         </image>
       </view>
       <view class="biaoati_n">
@@ -81,7 +81,7 @@
           <text class="adress">世贸天阶11号</text>
         </view>
         <view class="tian_right">
-          <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+          <image class="zou_img" src="{{http}}images/1z.png" mode="aspectFill">
           </image>
 
           <text class="pao">200m</text>
@@ -97,7 +97,7 @@
 <view class="fujin_k">
   <view class="fujin">
     <view class="mao">
-      <image class="mao_img" src="https://dododu.2om.cn/public/images/mao.png" mode="aspectFill">
+      <image class="mao_img" src="{{http}}images/mao.png" mode="aspectFill">
       </image>
       <!-- <image class="hong_img" src="/images/21192.png" mode="aspectFill">
        </image> -->
@@ -105,7 +105,7 @@
     <view class="mao_right">
       <view class="biaoati">
         <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
-        <image class="xiang_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill">
         </image>
       </view>
       <view class="biaoati_n">
@@ -122,7 +122,7 @@
           <text class="adress">世贸天阶11号</text>
         </view>
         <view class="tian_right">
-          <image class="zou_img" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill">
+          <image class="zou_img" src="{{http}}images/1z.png" mode="aspectFill">
           </image>
 
           <text class="pao">200m</text>

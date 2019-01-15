@@ -96,12 +96,15 @@ justify-content: space-between;
 padding-left:25rpx;
 }
 .wenzi_k{
-height:160rpx;
+height:180rpx;
 font-size:30rpx;
 background:#fff;
-margin-top:20rpx;
-overflow: hidden;       
-    
+margin-top:6rpx;
+overflow: hidden;      
+display: -webkit-box;
+text-overflow: ellipsis;
+-webkit-line-clamp:4;
+-webkit-box-orient:vertical; 
 }
 .shang{
 height:40rpx;

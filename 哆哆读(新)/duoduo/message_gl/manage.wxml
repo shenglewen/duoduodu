@@ -3,7 +3,7 @@
 <!-- 消息一 -->
 <view class="xiaoxi_l">
 <view class="xiaoxi">
-   <image class="xiaoxi_tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+   <image class="xiaoxi_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
     </image> 
           <view class="xiaoxi_wen">
               王世家
@@ -17,7 +17,7 @@
 <!-- 消息二 -->
 <view class="xiaoxi_l">
 <view class="xiaoxi">
-   <image class="xiaoxi_tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+   <image class="xiaoxi_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
     </image> 
           <view class="xiaoxi_wen">
               王世家
@@ -31,7 +31,7 @@
 <!-- 消息三 -->
 <view class="xiaoxi_l">
 <view class="xiaoxi">
-   <image class="xiaoxi_tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+   <image class="xiaoxi_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
     </image> 
           <view class="xiaoxi_wen">
               王世家

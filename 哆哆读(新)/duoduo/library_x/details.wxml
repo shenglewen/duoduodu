@@ -11,9 +11,9 @@
 
   </view>
 <view class="head_right">
-      <image class="img_xin" src="https://dododu.2om.cn/public/images/91xin.png" mode="aspectFill">
+      <image class="img_xin" src="{{http}}images/91xin.png" mode="aspectFill">
               </image>
-      <image class="img_fan" src="https://dododu.2om.cn/public/images/2f.png" mode="aspectFill">
+      <image class="img_fan" src="{{http}}images/2f.png" mode="aspectFill">
               </image>
     </view>
    </view>
@@ -23,7 +23,7 @@
   <view class="con_shu">
   
   <view class="connei">
-  <image class="kejie"src="https://dododu.2om.cn/public/images/1可.png" mode="aspectFill">
+  <image class="kejie"src="{{http}}images/1可.png" mode="aspectFill">
     </image>
 <image class="fengmian" src="{{mag.thumb}}" mode="aspectFill">
     </image>
@@ -80,7 +80,7 @@
 <!-- 任务一 -->
 <view class="pingjia_k">
 <view class="pingjia_kk">
-        <image class="ping_tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        <image class="ping_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
         </image>
   <view class="pingjia_nei">
       <view class="pj_nei_m">
@@ -96,7 +96,7 @@
 
 <view class="pingjia_k">
 <view class="pingjia_kk">
-        <image class="ping_tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+        <image class="ping_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
         </image>
   <view class="pingjia_nei">
       <view class="pj_nei_m">

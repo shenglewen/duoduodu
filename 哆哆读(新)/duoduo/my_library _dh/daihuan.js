@@ -1,8 +1,13 @@
 // duoduo/my_library _dh/daihuan.js
+var app = getApp()
 
 Page({
 
+  /**
+   * 页面的初始数据
+   */
   data: {
+    http: app.data.http,
 
     items: [{
       name: '延长时间',

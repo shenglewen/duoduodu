@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
     buyNumber: 2,
     days:7,
     daysmoney:1,

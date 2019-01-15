@@ -1,7 +1,7 @@
 <!--duoduo/bank/read.wxml-->
 <!-- 头部 -->
 <view class="banner">
-<image class="banner_img" src="https://dododu.2om.cn/public/images/1banner.png" mode="aspectFill">
+<image class="banner_img" src="{{http}}images/1banner.png" mode="aspectFill">
        </image>
 
 </view>
@@ -12,7 +12,7 @@
  </view>
  <view class="niha">
  <text class="shu">200</text> 
- <image class="zuo" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill">
+ <image class="zuo" src="{{http}}images/2zuo.png" mode="aspectFill">
        </image>
 </view>
 </view>
@@ -23,18 +23,18 @@
  </view>
  <view class="niha">
  <text class="shu">200</text> 
- <image class="zuo" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill">
+ <image class="zuo" src="{{http}}images/2zuo.png" mode="aspectFill">
        </image>
 </view>
 </view>
 <!-- 头像 -->
-<image class="xiang" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+<image class="xiang" src="{{http}}images/a2.jpg" mode="aspectFill">
        </image> 
  
 <!-- 整体内容 -->
 <view class="conter">
   <view class="kuai_tou">
-      <image class="tou_img" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+      <image class="tou_img" src="{{http}}images/2.jpg" mode="aspectFill">
           </image>
   </view>
   
@@ -46,9 +46,9 @@
     </view>
  <!-- 图片区域    -->
 <view class="xie_tu">
-      <image class="bujitu" src="https://dododu.2om.cn/public/images/1bj.png" mode="aspectFill">
+      <image class="bujitu" src="{{http}}images/1bj.png" mode="aspectFill">
           </image>
-           <image class="bujitu" src="https://dododu.2om.cn/public/images/1bj.png" mode="aspectFill">
+           <image class="bujitu" src="{{http}}images/1bj.png" mode="aspectFill">
           </image>
           
 
@@ -59,16 +59,16 @@
 <view class="dianzan_right">
 <view class="left">
 <!-- 分享 -->
- <image class="fen" src="https://dododu.2om.cn/public/images/1fen.png" mode="aspectFill">
+ <image class="fen" src="{{http}}images/1fen.png" mode="aspectFill">
           </image>
  <!-- 评论 -->
- <image class="ping" src="https://dododu.2om.cn/public/images/1ping.png" mode="aspectFill">
+ <image class="ping" src="{{http}}images/1ping.png" mode="aspectFill">
           </image>
 
 </view>
 <!-- 点赞 -->
 <view class="right">
-     <image class="dzan" src="https://dododu.2om.cn/public/images/1dian.png" mode="aspectFill">
+     <image class="dzan" src="{{http}}images/1dian.png" mode="aspectFill">
           </image>
    <text class="xiao">赞</text>
 

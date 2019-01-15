@@ -66,16 +66,15 @@ border-radius: 5px;
   padding:32rpx;
   }
 .shu_name{
-font-size:45rpx;
+font-size:41rpx;
+font-weight: bold
 }
 .name{
-font-size:32rpx;
-margin-top:20rpx;
+font-size:28rpx;
+margin-left: 20rpx
 }
 .kuang{
-margin-top:80rpx;
-margin-left:20rpx;
-
+margin-top:20rpx;
 border-radius: 5px;
 }
 

@@ -39,7 +39,7 @@
  <view class="shufang_lie">
  <!-- 我的书房 -->
  <navigator class="lie" url='../my_library/mylibraries'>
-    <image class="lie_img" src="https://dododu.2om.cn/public/images/2shu.png" mode="aspectFill">
+    <image class="lie_img" src="{{http}}images/2shu.png" mode="aspectFill">
     </image>   
       <view class="zi">我的书房</view>
  </navigator>
@@ -47,20 +47,20 @@
        <!-- 我的共享 -->
  <navigator class="lie" url='../my_share/myshare'>
 
-    <image class="lie_img" src="https://dododu.2om.cn/public/images/2gong.png" mode="aspectFill">
+    <image class="lie_img" src="{{http}}images/2gong.png" mode="aspectFill">
     </image>   
      <view class="zi">我的共享</view>
  </navigator>
 
        <!-- 我的借阅 -->
  <navigator class="lie" url="../my_borrow/myborrow">
-    <image class="lie_img" src="https://dododu.2om.cn/public/images/2jie.png" mode="aspectFill">
+    <image class="lie_img" src="{{http}}images/2jie.png" mode="aspectFill">
     </image>   
      <view class="zi">我的借阅</view>
        </navigator> 
        <!-- 我的笔记 -->
  <navigator class="lie" url='#'>
-    <image class="lie_img" src="https://dododu.2om.cn/public/images/2ji.png" mode="aspectFill">
+    <image class="lie_img" src="{{http}}images/2ji.png" mode="aspectFill">
     </image>   
      <view class="zi">我的笔记</view>
        </navigator>
@@ -70,7 +70,7 @@
 <navigator class="xinxi_k" url="../message/basic">
 <view class="xinxi nini">
   <text class="name">个人信息</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 
@@ -78,42 +78,42 @@
 <navigator class="xinxi_k" url="../my_collect/mycollect">
 <view class="xinxi">
   <text class="name">我的收藏</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 <!-- 消息管理 -->
 <navigator class="xinxi_k" url='../message_gl/manage'>
 <view class="xinxi">
  <text class="name">消息管理</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 <!-- 安全设置 -->
 <navigator class="xinxi_k" url="../security/shezhi">
 <view class="xinxi">
   <text class="name">安全设置</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 <!-- 常用地址 -->
 <navigator class="xinxi_k" url='../cy_adress/cyadress'>
 <view class="xinxi">
   <text class="name">常用地址</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 <!-- 邀请好友 -->
 <navigator class="xinxi_k" url='../fxyl/fxyl'>
 <view class="xinxi">
   <text class="name">邀请好友</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 <!-- 怎样哆哆读 -->
 <navigator class="xinxi_k">
 <view class="xinxi">
   <text class="name">怎样哆哆读</text>
-    <image class="jian" src="https://dododu.2om.cn/public/images/2zuo.png" mode="aspectFill"> </image> 
+    <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
 

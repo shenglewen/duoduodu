@@ -8,7 +8,7 @@
       <view class="left"> 
             <view class="num"> 1 </view>
           
-            <image class="tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+            <image class="tu" src="{{http}}images/a2.jpg" mode="aspectFill">
             </image>
             <view class="name"> 
                 <view class="num_n"> 我们不一样 </view>  
@@ -31,7 +31,7 @@
       <view class="left"> 
             <view class="num"> 1 </view>
           
-            <image class="tu" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill">
+            <image class="tu" src="{{http}}images/a2.jpg" mode="aspectFill">
             </image>
             <view class="name"> 
                 <view class="num_n"> 我们不一样 </view>  

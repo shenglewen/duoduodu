@@ -1,8 +1,15 @@
 // duoduo/borrow/jieyue.js
+var app = getApp()
+
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
+    http: app.data.http,
     selected: true,
-    selected1: false
+    selected1: false,
   },
   selected: function (e) {
     this.setData({

@@ -14,7 +14,7 @@
    </view>
 <!-- 内容 -->
 <view class='book'>
-<view class='bookleft'><image class='leftimg' mode='aspectFit' src='https://dododu.2om.cn/public/images/mao.png'></image></view>
+<view class='bookleft'><image class='leftimg' mode='aspectFit' src='{{http}}images/mao.png'></image></view>
 <view class='bookright'>
 <view class='bookname'>哭猫日记</view>
 <view class='cont'><text>简介：这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事这是一个故事</text></view>

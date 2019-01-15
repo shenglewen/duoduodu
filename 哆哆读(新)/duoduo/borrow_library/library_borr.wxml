@@ -3,7 +3,7 @@
 <view class="search_k">
 <!-- 搜索框 -->
 <view class='search'>
-  <image class="" src='https://dododu.2om.cn/public/images/a8.png' bindtap='query'></image>
+  <image class="" src='{{http}}images/a8.png' bindtap='query'></image>
           <input type='text' placeholder='搜索书名、作者、关键词'placeholder-style='color:#bababa;'
           confirm-type='search' value=""      bindinput='inputBind' bindconfirm='query'></input>  
         </view>
@@ -14,33 +14,33 @@
 <view class='conter'>
     <view class='img_k'>
         <view class='img_left'>
-            <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill"></image>
+            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill"></image>
             <text class="name">六合书馆</text>
-            <image class="hg" src="https://dododu.2om.cn/public/images/90h.png" mode="aspectFill"> </image>
+            <image class="hg" src="{{http}}images/90h.png" mode="aspectFill"> </image>
         </view>
         <view class='img_right'>
         <!-- 借过的馆 -->
            <view class='jiguog'>借过的馆 </view> 
-            <image class="xin" src="https://dododu.2om.cn/public/images/91xin.png" mode="aspectFill"></image>
+            <image class="xin" src="{{http}}images/91xin.png" mode="aspectFill"></image>
         </view>
     </view>
 <!-- 书展示 -->
 <view class='library_k'>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/1s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/1s.png" mode="aspectFill"></image>
       <view class="s_ming">重来</view>
 
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/2s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/2s.png" mode="aspectFill"></image>
       <view class="s_ming">解忧杂货铺</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/4s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/4s.png" mode="aspectFill"></image>
       <view class="s_ming">小王子</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/3s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/3s.png" mode="aspectFill"></image>
       <view class="s_ming">永不说再见</view>
       </view>
 
@@ -48,7 +48,7 @@
   <view class='library_top'>
     <view class='gong'>共<text class="hong">12</text>本  </view>
       <view class='juli'>
-        <image class="bushu" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill"></image>
+        <image class="bushu" src="{{http}}images/1z.png" mode="aspectFill"></image>
       <text>300m</text>
       </view>
     </view>
@@ -58,31 +58,31 @@
 <view class='conter'>
     <view class='img_k'>
         <view class='img_left'>
-            <image class="img_tu2" src="https://dododu.2om.cn/public/images/a2.jpg" mode="aspectFill"></image>
+            <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill"></image>
             <text class="name">六合书馆</text>
-            <image class="hg2" src="https://dododu.2om.cn/public/images/hg2.png" mode="aspectFill"> </image>
+            <image class="hg2" src="{{http}}images/hg2.png" mode="aspectFill"> </image>
         </view>
         <view class='img_right'>
            
-            <image class="xin" src="https://dododu.2om.cn/public/images/xin2.png" mode="aspectFill"></image>
+            <image class="xin" src="{{http}}images/xin2.png" mode="aspectFill"></image>
         </view>
     </view>
 <!-- 书展示 -->
 <view class='library_k'>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/1s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/1s.png" mode="aspectFill"></image>
       <view class="s_ming">重来</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/2s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/2s.png" mode="aspectFill"></image>
       <view class="s_ming">解忧杂货铺</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/4s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/4s.png" mode="aspectFill"></image>
       <view class="s_ming">小王子</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public/images/3s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}images/3s.png" mode="aspectFill"></image>
       <view class="s_ming">永不说再见</view>
       </view>
 
@@ -90,7 +90,7 @@
   <view class='library_top'>
     <view class='gong'>共<text class="hong">12</text>本  </view>
       <view class='juli'>
-        <image class="bushu" src="https://dododu.2om.cn/public/images/1z.png" mode="aspectFill"></image>
+        <image class="bushu" src="{{http}}images/1z.png" mode="aspectFill"></image>
       <text>300m</text>
       </view>
     </view>
@@ -100,32 +100,32 @@
 <view class='conter'>
     <view class='img_k'>
         <view class='img_left'>
-            <image class="img_tu2" src="https://dododu.2om.cn/public//images/a2.jpg" mode="aspectFill"></image>
+            <image class="img_tu2" src="{{http}}/images/a2.jpg" mode="aspectFill"></image>
             <text class="name">六合书馆</text>
-            <image class="hg2" src="https://dododu.2om.cn/public//images/zs1.png" mode="aspectFill"> </image>
-            <image class="hg2" src="https://dododu.2om.cn/public//images/zs1.png" mode="aspectFill"> </image>
+            <image class="hg2" src="{{http}}/images/zs1.png" mode="aspectFill"> </image>
+            <image class="hg2" src="{{http}}/images/zs1.png" mode="aspectFill"> </image>
         </view>
         <view class='img_right'>
           
-            <image class="xin" src="https://dododu.2om.cn/public//images/xin2.png" mode="aspectFill"></image>
+            <image class="xin" src="{{http}}/images/xin2.png" mode="aspectFill"></image>
         </view>
     </view>
 <!-- 书展示 -->
 <view class='library_k'>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public//images/1s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}/images/1s.png" mode="aspectFill"></image>
       <view class="s_ming">重来</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public//images/2s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}/images/2s.png" mode="aspectFill"></image>
       <view class="s_ming">解忧杂货铺</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public//images/4s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}/images/4s.png" mode="aspectFill"></image>
       <view class="s_ming">小王子</view>
       </view>
       <view class='library'>
-      <image class="shu" src="https://dododu.2om.cn/public//images/3s.png" mode="aspectFill"></image>
+      <image class="shu" src="{{http}}/images/3s.png" mode="aspectFill"></image>
       <view class="s_ming">永不说再见</view>
       </view>
 
@@ -133,7 +133,7 @@
   <view class='library_top'>
     <view class='gong'>共<text class="hong">12</text>本  </view>
       <view class='juli'>
-        <image class="bushu" src="https://dododu.2om.cn/public//images/1z.png" mode="aspectFill"></image>
+        <image class="bushu" src="{{http}}/images/1z.png" mode="aspectFill"></image>
       <text>300m</text>
       </view>
     </view>

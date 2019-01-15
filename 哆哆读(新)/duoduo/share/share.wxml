@@ -10,7 +10,7 @@
     <view class="shuming">
       <view class="shuming_l">
         <text class="daa">  书名</text>
-        <input class="tianxie" type="text" style="text-align:right" placeholder="请输入书名" placeholder-style="color:#bababa;" value='{{title}}'></input>
+        <input class="tianxie" type="text" disabled='disabled' style="text-align:right" placeholder="" placeholder-style="color:#bababa;" value='{{title}}'></input>
       </view>
     </view>
   </view>
@@ -31,7 +31,7 @@
     <view class="jianjie">
       <view class="jianjie_l">
         <text class="wenzi">简介</text>
-        <textarea class="wenzi_k">{{description}} </textarea>
+        <textarea disabled='disabled' class="wenzi_k">{{description}} </textarea>
       </view>
     </view>
   </view>
@@ -42,7 +42,7 @@
       <view class="shuming_l">
 
         <text class="daa"> 作者</text>
-        <input class="tianxie" type="text" style="text-align:right" placeholder="请输入作者" placeholder-style="color:#bababa;" value='{{author}}'></input>
+        <input class="tianxie"  disabled='disabled' type="text" style="text-align:right" placeholder="请输入作者" placeholder-style="color:#bababa;" value='{{author}}'></input>
       </view>
     </view>
   </view>
@@ -53,7 +53,7 @@
       <view class="shuming_l">
 
         <text class="daa"> 出版社</text>
-        <input class="tianxie" type="text" style="text-align:right" placeholder="请输入出版社" placeholder-style="color:#bababa;" value='{{chubanshe}}'></input>
+        <input class="tianxie"  disabled='disabled' type="text" style="text-align:right" placeholder="请输入出版社" placeholder-style="color:#bababa;" value='{{chubanshe}}'></input>
       </view>
     </view>
   </view>
@@ -64,7 +64,7 @@
       <view class="suo_k">
         <!-- 点击 -->
 
-        <view class="xingbie" bindtap='showcart'>
+        <view class="xingbie">
           <text class="bie">标签 </text>
           <view class="xuanze">
             <picker bindchange="xzdizhi" value="{{biaoqianindex}}" range="{{biaoqianarry}}" mode="selector">
@@ -73,7 +73,7 @@
               </view>
             </picker>
             <view class="tuk">
-              <image class="tu" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
+              <image class="tu" src="{{http}}images/a121.png" mode="aspectFill">
               </image>
             </view>
           </view>
@@ -124,7 +124,7 @@
         <view id='add_r'>
           <view class='add'>
             <view class="disf" bindtap="numJianTap">-</view>
-            <input class="" value="{{money}}"></input>
+            <input class="" disabled='disabled' value="{{money}}"></input>
             <view class="disf" bindtap="numJiaTap">+</view>
           </view>
         </view>
@@ -143,7 +143,7 @@
         <view id='add_r'>
           <view class='add'>
             <view class="disf" bindtap="numJianTap2">-</view>
-            <input class="" value="{{daysmoney}}"></input>
+            <input class="" disabled='disabled' value="{{daysmoney}}"></input>
             <view class="disf" bindtap="numJiaTap2">+</view>
           </view>
         </view>
@@ -169,7 +169,7 @@
       <view id='add_r'>
         <view class='add'>
           <view class="disf" bindtap="numJianTap1">-</view>
-          <input class="" value="{{days}}"></input>
+          <input class="" disabled='disabled' value="{{days}}"></input>
           <view class="disf" bindtap="numJiaTap1">+</view>
         </view>
       </view>
@@ -191,7 +191,7 @@
             {{address1}}
           </picker>
           <view class="tukk">
-            <image class="tu_t" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
+            <image class="tu_t" src="{{http}}images/a121.png" mode="aspectFill">
             </image>
           </view>
         </view>

@@ -1,10 +1,13 @@
 // duoduo/duihua_k/duihua.js
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
 
   },
 

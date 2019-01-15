@@ -1,13 +1,15 @@
 // duoduo/setting_book/ library .js
 // duoduo/share/share.js
 var dateTimePicker = require('../../utils/dateTimePicker.js');
-var app=getApp()
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
     dateTimeArray1: null,
     dateTime1: null,
     buyNumber: 2,

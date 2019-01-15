@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
 
     dizhival: "",
     dizhi: ['学校', '家', '公司', '其他'],

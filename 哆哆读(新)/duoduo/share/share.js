@@ -1,6 +1,6 @@
 // duoduo/share/share.js
 // duoduo/share/share.js
-var app= getApp()
+var app = getApp()
 
 Page({
 
@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
     hidden:0,
     buyNumber: 2,
     days:7,
@@ -40,11 +41,16 @@ Page({
      * 选择地址标签
     */
   xzdizhi: function (e) {
+    var biaoqian = this.data.biaoqian
     var val = this.data.biaoqianarry[e.detail.value]
     console.log(val)
-
+    if (biaoqian =="请选择"){
+      biaoqian = val
+    }else{
+      biaoqian =biaoqian+","+val
+    }
     this.setData({
-      biaoqian: val,
+      biaoqian: biaoqian,
       biaoqianindex: e.detail.value
     })
 
@@ -149,12 +155,7 @@ wx.navigateTo({
           money: 1,
           buyNumMin: 1,
           buyNumMax: 200,
-          sbn: '',
-          author: '',
-          chubanshe: '',
-          description: '',
-          thumb: '',
-          title: '',
+
           freedeposit: 0,
           rentfree: 0,
         
@@ -199,9 +200,10 @@ wx.navigateTo({
             sbn: res.result
           })
           wx.request({
-            url: 'https://dododu.2om.cn/api.php/product/gteisbn',
+            url: 'http://api.2om.cn/api.php/Isbn/lists',
             data: {
-              isbn: res.result
+              type:1,
+              isbn: 9787508646626
             },
             header: {
               'content-type': 'application/json' // 默认值
@@ -210,9 +212,9 @@ wx.navigateTo({
               console.log(data)
               that.setData({
                 author: data.data.data.author,
-                chubanshe: data.data.data.chubanshe,
-                description: data.data.data.description,
-                thumb: data.data.data.thumb,
+                chubanshe: data.data.data.publisher,
+                description: data.data.data.summary,
+                thumb: data.data.data.images_medium,
                 title: data.data.data.title,
                 hidden:1
               })

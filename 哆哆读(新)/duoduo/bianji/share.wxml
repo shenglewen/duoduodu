@@ -69,7 +69,7 @@
               </view>
             </picker>
             <view class="tuk">
-              <image class="tu" src="https://dododu.2om.cn/public/images/a121.png" mode="aspectFill">
+              <image class="tu" src="{{http}}images/a121.png" mode="aspectFill">
               </image>
            </view>
                 </view>

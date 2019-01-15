@@ -23,7 +23,7 @@
  <view class="xuanze_k">
    <view class="xuanze">
       <view class="xuanze_tu">
-  <image class="img_tu" src="https://dododu.2om.cn/public/images/a6.png" mode="aspectFill">
+  <image class="img_tu" src="{{http}}images/a6.png" mode="aspectFill">
         </image>   
 <view class="ti_xian"> 微信提现 </view> 
        </view>

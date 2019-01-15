@@ -1,6 +1,6 @@
 <!--duoduo/fxyl/fxyl.wxml-->
 <view class="tu_fx">
-  <image class="fxyl_tu" src="https://dododu.2om.cn/public/images/zu2111.png" mode="aspectFill">
+  <image class="fxyl_tu" src="{{http}}images/zu2111.png" mode="aspectFill">
   </image>
 
 </view>

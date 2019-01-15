@@ -1,12 +1,13 @@
 // duoduo/index/index.js
-const app = getApp() 
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    sbn:'',
    book:'',
    a:"",
    latitude:"",
@@ -167,6 +168,34 @@ Page({
           }
         })
 
+      },
+    })
+  },
+  saoma:function(){
+    var that = this;
+    wx.scanCode({
+      success: (res) => {
+        var num = res.result
+        var pd = /[9][7][7-9][0-9]{1,}/
+        if (pd.test(num)) {
+          that.setData({
+            sbn: res.result
+          })
+          wx.request({
+            url: 'https://dododu.2om.cn/api.php/product/isbnget',
+            data: {
+              isbn: that.data.sbn
+            },
+            header: {
+              'content-type': 'application/json' // 默认值
+            },
+            success: function (data) {
+  
+            }
+          })
+        } else {
+          //返回提示不是书籍
+        }
       },
     })
   },

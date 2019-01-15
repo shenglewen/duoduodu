@@ -1,21 +1,19 @@
 <!--duoduo/niticexq/noticexq.wxml-->
 
 <view class="wai">
- <text class="name">据通知2019.01.02读书线下活动关于新的活动场地筹备已在进行  </text> 
+ <text class="name">{{mags.title}}</text> 
  
-  <view class="time"> 2019-01-02</view>
+  <view class="time"> {{mags.addtime}}</view>
 
-   <image class="xitu" src="https://dododu.2om.cn/public/images/2.jpg" mode="aspectFill">
+   <image class="xitu" src="{{http}}images/2.jpg" mode="aspectFill">
     </image>   
    
 <!--  内容 -->
  <view class="name_n">品牌活动让“线下读书节”遍地发芽</view>
 
 
-<view class="n_cont">　　第十四届线下读书节的主题为“新时代，新作为——共创全民阅读新气象”，本次活动的举办旨在深入贯彻落实党的十九大精神和习近平新时代中国特色社会主义思想，把新思想、新要求、新举措落实到公共文化服务体系工作中，进一步推广全民阅读，培养良好阅读风尚，建设书香社会。期间，力求通过丰富多彩的阅读活动，点燃广大市民的读书热情，进一步营造浓郁的书香氛围，推动文明城市建设，促进文化兰州发展。</view>
-<view class="n_cont">　　第十四届线下读书节的主题为“新时代，新作为——共创全民阅读新气象”，本次活动的举办旨在深入贯彻落实党的十九大精神和习近平新时代中国特色社会主义思想，把新思想、新要求、新举措落实到公共文化服务体系工作中，进一步推广全民阅读，培养良好阅读风尚，建设书香社会。期间，力求通过丰富多彩的阅读活动，点燃广大市民的读书热情，进一步营造浓郁的书香氛围，推动文明城市建设，促进文化兰州发展。</view>
-
-
+<view class="n_cont">　　{{mags.description}}</view>
+<view class="n_cont">{{mags.description}}</view>
 
 
   

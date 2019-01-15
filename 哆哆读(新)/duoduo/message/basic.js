@@ -2,7 +2,12 @@
 var app = getApp()
 
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
+    http: app.data.http,
     hobbys: "",
     identity: "",
     username: "",
@@ -33,7 +38,9 @@ Page({
       },
       success(res) {
         var hobby=res.data.data
+        console.log(hobby)
         var hobbys = app.data.user.hobby
+        console.log(hobbys)
         if (hobbys != null) {
           var hobbys = hobbys.split(",");
           hobbys.pop()
@@ -86,7 +93,7 @@ Page({
 
     //身份
    
-    if (hobby != null) {
+    if (app.data.user.identity != null) {
       var identity = app.data.user.identity - 1;
       console.log(app.data.user.identity)
       var upidentity = "items[" + identity + "].checked";

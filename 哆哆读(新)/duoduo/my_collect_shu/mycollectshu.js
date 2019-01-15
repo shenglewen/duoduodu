@@ -1,12 +1,14 @@
 // duoduo/my_collect_shu/mycollectshu.js
 
-// duoduo/my_collect/mycollect.js
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    http: app.data.http,
 
   },
   // 跳转到收藏的书房
