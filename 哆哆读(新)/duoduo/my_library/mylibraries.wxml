@@ -10,10 +10,10 @@
   </view>
 </view>
 <view class="liebiao">
-  <view class="yinru hong"> 上传</view>
-  <view class="yinru">待还</view>
-  <view class="yinru">已还</view>
-  <view class="yinru">超时</view>
+  <view class="{{tapindex==1?'hong':'yinru'}}" id='1' bindtap='tap'>上传</view>
+  <view class="{{tapindex==2?'hong':'yinru'}}" id='2' bindtap='tap'>待还</view>
+  <view class="{{tapindex==3?'hong':'yinru'}}" id='3' bindtap='tap'>已还</view>
+  <view class="{{tapindex==4?'hong':'yinru'}}" id='4' bindtap='tap'>超时</view>
 </view>
 <!-- 书 -->
 <block wx:for="{{books}}" wx:for-index="i" wx:for-item="a">

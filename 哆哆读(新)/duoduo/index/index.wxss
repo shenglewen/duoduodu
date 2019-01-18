@@ -40,6 +40,7 @@ color:#797979;
 font-size:28rpx;
 }
 .liebiao_k{
+  color: #595959;
 width:100%;
 height:200rpx;
 background:#fff;
@@ -71,7 +72,7 @@ height:80rpx;
 height:80rpx;
 background:#fff;
 margin-top:20rpx;
-border-bottom:1rpx solid  #797979;
+border-bottom:2rpx solid  #797979;
 }
 .kejie{
 float:left;
@@ -84,8 +85,8 @@ color:#bababa;
 
 }
 .kuang{
-border-left:1rpx solid #797979;
-border-right:1rpx solid  #797979;
+border-left:2rpx solid #c1c1c1;
+border-right:2rpx solid  #c1c1c1;
 }
 
 .icon-zuobiao{
@@ -116,7 +117,7 @@ height:300rpx;
 background:#fff;
 margin:0rpx auto;
 overflow:hidden;
-border-bottom:1rpx solid  #f6f6f6;
+border-bottom:2rpx solid  #f6f6f6;
 }
 .fujin{
   width:95%;
@@ -150,7 +151,7 @@ height:25%;
 }
 .biaoati{
 height:80rpx;
-line-height:80rpx;
+line-height:55rpx;
 background:#fff;
 display: flex;
 justify-content: space-between;
@@ -159,16 +160,15 @@ justify-content: space-between;
 font-weight: 900;
 font-size:32rpx;
 display:block; 
-color: #494949;
+color: #595959;
 width:80%;
 overflow: hidden;
 white-space:nowrap;
 text-overflow: ellipsis;
-
 }
 .xiang_img{
-width:80rpx;
-height:80rpx;
+width:70rpx;
+height:70rpx;
 border-radius:50%;
 }
 .biaoati_n{
@@ -181,7 +181,7 @@ color: #3e3e3e;
 }
 .biati_zn{
   line-height: 34rpx;
-  margin-left: 16rpx;
+  margin-left: 6rpx;
   width: 400rpx;
 height:66rpx;
 overflow: hidden;
@@ -202,7 +202,7 @@ text-overflow: ellipsis;
 -webkit-box-orient:vertical;
 } */
 .yue{
-   margin-left: 16rpx;
+   margin-left: 6rpx;
 font-size:28rpx;
 color:#f45a61;
 }
@@ -210,7 +210,6 @@ color:#f45a61;
 padding-left:10rpx;
 }
 .zuobiao_a{
-   margin-left: 16rpx;
   margin-top: 20rpx;
 height:40rpx;
 line-height:40rpx;
@@ -225,9 +224,9 @@ justify-content: space-between;
  color:#616161;
 }
 .zou_img{
-margin-right:6rpx;
-width:22rpx;
-height:35rpx;
+margin-right:3px;
+width:9px;
+height:15px;
 }
 .pao{
 font-size:26rpx;
@@ -235,7 +234,9 @@ padding-right:60rpx;
 color:#bababa;
 }
 .icon-xin5{
-  color:#bababa;
+  color:#919191;
+  font-size:14px;
+
 }
 .xin5{
   color: #f45a61;

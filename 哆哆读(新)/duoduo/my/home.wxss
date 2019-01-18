@@ -50,6 +50,9 @@ font-size:38rpx;
 }
 .icon-bianji{
 float:right;
+position: absolute;
+right:-15rpx;
+top:-60rpx;
 
 }
 .name_x{
@@ -102,23 +105,13 @@ font-size:30rpx;
 width:100%;
 height:1000rpx;
 background:#fff;
-position:absolute;
-top:260rpx;
 border-radius:30rpx 30rpx 0rpx 0rpx;
 }
- .nini{
-position:relative;
-top:-12rpx;
- }
 .shufang_lie{
 width:100%;
-height:220rpx;
+height:200rpx;
 background:#fff;
-
-margin:0 auto;
-position:relative;
-top:30rpx;
-
+color: #494949;
 }
 .lie{
   float:left;
@@ -129,24 +122,20 @@ top:30rpx;
 .zi{
 font-size:30rpx;
 text-align:center;
-position:relative;
-top:-38rpx;
 }
 .lie_img{
 width:90rpx;
 height:90rpx;
-margin:20px;
+margin-top: 30rpx
 }
 .xinxi_k{
  width:100%;
  height:90rpx;
 border-top:1rpx solid #ddd;
 background:#fff;
-position:relative;
-top:30rpx;
 }
 .xinxi{
- width:95%;
+ width:90%;
  height:90rpx;
 line-height:90rpx;
 margin:0 auto;
@@ -159,6 +148,7 @@ width:50rpx;
  height:50rpx;
 position:relative;
 top:22rpx;
+
 }
 .name{
 

@@ -146,13 +146,12 @@ Page({
     wx.request({
 
       url: "https://dododu.2om.cn/api.php/product/infoproduct",
-
+      data:{
         userid: app.data.user.userid,
         shopid:app.data.shop.shopid,
         productid: options.id
       },
       success:function(res){
-
         var book=res.data.data[0]
         that.setData({
           sbn:book.isbn,
@@ -169,7 +168,7 @@ Page({
           chubanshe: book.chubanshe,
           biaoqian:book.biaoqian,
           bookid: options.id
-
+        })
       }
     })
     wx.request({

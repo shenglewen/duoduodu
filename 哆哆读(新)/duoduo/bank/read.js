@@ -68,5 +68,10 @@ var app=getApp()
    */
   onShareAppMessage: function () {
   
-  }
+  },
+    onBtnClick:function(){
+      wx.navigateTo({
+        url: '../write/write',
+      })
+    }
 })

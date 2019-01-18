@@ -2,7 +2,7 @@
 <view class="head"></view>
 <!-- 消息一 -->
 <view class="xiaoxi_l">
-<view class="xiaoxi">
+<view class="xiaoxi" bindtap='jomp'>
    <image class="xiaoxi_tu" src="{{http}}images/a2.jpg" mode="aspectFill">
     </image> 
           <view class="xiaoxi_wen">

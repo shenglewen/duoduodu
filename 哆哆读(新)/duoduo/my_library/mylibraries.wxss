@@ -52,6 +52,10 @@ border-bottom:3rpx solid #f6f6f6;
 .hong{
 color:#f45a61;
 border-bottom:3rpx solid #f45a61;
+float:left;
+width:25%;
+text-align:center;
+line-height:80rpx;
 }
 .contect{
 width:95%;

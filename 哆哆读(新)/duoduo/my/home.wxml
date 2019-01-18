@@ -68,12 +68,11 @@
 <!-- 信息类 -->
 <!-- 个人信息呢 -->
 <navigator class="xinxi_k" url="../message/basic">
-<view class="xinxi nini">
+<view class="xinxi">
   <text class="name">个人信息</text>
     <image class="jian" src="{{http}}images/2zuo.png" mode="aspectFill"> </image> 
 </view>
 </navigator>
-
 <!-- 我的收藏 -->
 <navigator class="xinxi_k" url="../my_collect/mycollect">
 <view class="xinxi">

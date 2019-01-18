@@ -10,21 +10,43 @@ Page({
     http: app.data.http,
    books:"",
    shopname:"",
-   img:""
+   img:"",
+   tapindex:0,
   },
   jmp:function(){
 wx.navigateTo({
   url: "../settingbook/library",
 })
   },
+  tap:function(e){
+   var that=this
+    wx.request({
+      url: 'https://dododu.2om.cn/api.php/product/listsproduct',
+      data: {
+        shopid: app.data.shop.shopid,
+        status: e.target.id
+      },
+      success: function (res) {
+        var books = res.data.data
+        that.setData({
+          books: books,
 
+        })
+        console.log(that.data.books)
+      }
+    })
+    that.setData({
+      tapindex: e.target.id
+    })
+  },
 
   onLoad: function () {
    var that=this
     wx.request({
       url: 'https://dododu.2om.cn/api.php/product/listsproduct',
       data: {
-        shopid: app.data.shop.shopid
+        shopid: app.data.shop.shopid,
+        status:'0',
       },
       success:function(res){
         var books=res.data.data

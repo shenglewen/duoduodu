@@ -185,25 +185,30 @@ wx.navigateTo({
       })
     }
   },
-  
+  //扫码
   shaoma: function () {
-    var that=this;
+    var that = this;
     wx.scanCode({
       success: (res) => {
         var num = res.result
         var pd = /[9][7][7-9][0-9]{1,}/
-        if (pd.test(num)){
+        if (pd.test(num)) {
           that.setData({
             sbn: res.result
           })
           wx.request({
+            method: 'POST',
             url: 'http://api.2om.cn/api.php/Isbn/lists',
             data: {
-              type:1,
-              isbn: 9787508646626
+              type: 1,
+              isbn: res.result
+              // isbn: res.result
             },
             header: {
-              'content-type': 'application/json' // 默认值
+              "Authorization": "Basic YWRtaW46MTExMTEx",
+              "Content-Type": "application/x-www-form-urlencoded",
+              "cache-control": "no-cache",
+              "Postman-Token": "24a769f1-5510-4091-8ea3-d5aa6fb143b9"
             },
             success: function (data) {
               console.log(data)
@@ -213,19 +218,19 @@ wx.navigateTo({
                 description: data.data.data.summary,
                 thumb: data.data.data.images_medium,
                 title: data.data.data.title,
-                hidden:1
+                hidden: 1
               })
             }
           })
-        }else{
+        } else {
           //返回提示不是书籍
         }
-       
+
       },
       fail: (res) => {
       }
     })
-  
+
   },
  
   /**

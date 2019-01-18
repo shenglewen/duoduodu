@@ -54,7 +54,7 @@
     <view class="mao_right">
       <view class="biaoati">
         <text class="biati_z">转动伞哈哈哈哈哈哈哈哈哈哈哈哈哈哈</text>
-        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill"
+        <image class="xiang_img" src="{{http}}images/2.jpg" mode="aspectFill">
         </image>
       </view>
       <view class="biaoati_n">

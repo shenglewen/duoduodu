@@ -1,33 +1,19 @@
-// duoduo/my_share/myshare.js
-
-var app = getApp()
-
-
+// duoduo/liaotian/liaotian.js
+var app=getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
     http: app.data.http,
-
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  wx.request({
-    url: 'https://dododu.2om.cn/api.php/product/listsproduct',
-    data: {
-      shopid: app.data.shop.shopid,
-    },
-    success(res){
-      console.log(res)
-    }
-  })
+
   },
 
   /**

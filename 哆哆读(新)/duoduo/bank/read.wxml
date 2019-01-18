@@ -102,4 +102,4 @@
 
 
 <!-- 挤一挤 -->
-<!-- <view class="jiyi" bindtap="onBtnClick" >记一记</view> -->
+<view class="jiyi" bindtap="onBtnClick" >记一记</view>

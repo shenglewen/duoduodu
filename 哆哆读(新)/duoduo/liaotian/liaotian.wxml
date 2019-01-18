@@ -1,0 +1,40 @@
+<!--duoduo/liaotian/liaotian.wxml-->
+<view class='news'>
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="history" wx:for="{{centendata}}" wx:key=''>
+      <view>
+        <text class='time'>{{item.time}}</text>
+      </view>
+      <block wx:if="{{item.is_show_right ==1}}">
+        <view class='my_right'>
+          <view class='page_row'>
+            <text wx:if='{{!item.is_img}}' class='new_txt'>{{item.content}}</text>
+            <image wx:if='{{item.is_img}}' src='http://sz800800.cn/Uploads/{{item.content}}' class='new_imgtent'></image>
+            <view wx:if='{{!item.is_img}}' class='sanjiao my'></view>
+            <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+             <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='you_left'>
+          <view class='page_row'>
+            <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+             <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image>
+            <view wx:if='{{!item.is_img}}' class='sanjiao you'></view>
+            <text wx:if='{{!item.is_img}}' class='new_txt'>{{item.content}}</text>
+            <image wx:if='{{item.is_img}}' src='http://sz800800.cn/Uploads/{{item.content}}' class='new_imgtent'></image>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+<view class="sendmessage">
+
+  <image class='mages' src='{{http}}images/zx_1.png' bindtap="add"></image> 
+
+  <input type="" bindinput="bindChange" confirm-type="done" placeholder="" />
+   <!-- <button bindtap="upimg1" class='jia_img'>+</button> -->
+  <image class='mages' bindtap='upimg1' src='{{http}}images/zx_2.png'></image> 
+
+</view>

@@ -4,27 +4,30 @@
 <!-- 搜索框 -->
 <view class='search'>
   <image class="" src='{{http}}images/a8.png' bindtap='query'></image>
-          <input type='text' placeholder='搜索书名、作者、关键词'placeholder-style='color:#bababa;'
+          <input type='text' placeholder='搜索作者、书馆、关键词'placeholder-style='color:#bababa;'
           confirm-type='search' value=""      bindinput='inputBind' bindconfirm='query'></input>  
         </view>
 <view class='que'>搜索</view>
 </view>
 </view>
 <!-- 内容 -->
+<block wx:for="{{shop}}" wx:for-index="i" wx:for-item="a">
 <view class='conter'>
     <view class='img_k'>
         <view class='img_left'>
             <image class="img_tu2" src="{{http}}images/a2.jpg" mode="aspectFill"></image>
-            <text class="name">六合书馆</text>
+            <text class="name">{{a.shop_name}}</text>
             <image class="hg" src="{{http}}images/90h.png" mode="aspectFill"> </image>
         </view>
         <view class='img_right'>
         <!-- 借过的馆 -->
-           <view class='jiguog'>借过的馆 </view> 
-            <image class="xin" src="{{http}}images/91xin.png" mode="aspectFill"></image>
+           <view class='jiguog' wx:if="{{status>=2}}">借过的馆 </view>
+            <image class="xin" src="{{http}}images/91xin.png" mode="aspectFill" wx:if="{{}}"></image>
+            <image class="xin" src="{{http}}images/xin2.png" mode="aspectFill"></image>
         </view>
     </view>
 <!-- 书展示 -->
+
 <view class='library_k'>
       <view class='library'>
       <image class="shu" src="{{http}}images/1s.png" mode="aspectFill"></image>
@@ -46,14 +49,14 @@
 
       </view>
   <view class='library_top'>
-    <view class='gong'>共<text class="hong">12</text>本  </view>
+    <view class='gong'>共<text class="hong">12</text>本</view>
       <view class='juli'>
         <image class="bushu" src="{{http}}images/1z.png" mode="aspectFill"></image>
       <text>300m</text>
       </view>
     </view>
 </view>
-
+</block>
 <!-- 内容二 -->
 <view class='conter'>
     <view class='img_k'>
